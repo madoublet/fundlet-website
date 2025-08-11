@@ -72,6 +72,13 @@ body a, body a:visited{
     font-weight: normal;
 }
 
+@media (max-width: 768px) {
+    .index-pitch p {
+        padding: 0 10px 0 40px;
+        text-align: left;
+    }
+}
+
 .index-pitch p>span {
     position: absolute;
     display: inline-block;

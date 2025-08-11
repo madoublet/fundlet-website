@@ -148,7 +148,7 @@ footer .footer-cta img {
 #toggle-mobile-menu {
     display: none;
     position: absolute;
-    top: 27px;
+    top: 38px;
     right: 20px;
     background: #fff;
     border-radius: 10px;
@@ -174,7 +174,7 @@ footer .footer-cta img {
 
 #mobile-menu {
     position: absolute;
-    top: 70px;
+    top: 80px;
     right: 20px;
     z-index: 10;
     border: none;
