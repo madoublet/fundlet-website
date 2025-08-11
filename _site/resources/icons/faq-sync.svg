@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="500px" viewBox="0 0 750 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <rect id="path-1" x="31" y="28" width="688" height="437" rx="20"></rect>
+        <filter x="-4.4%" y="-6.9%" width="108.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FAQ" transform="translate(-146, -110)">
+            <g id="icon" transform="translate(146, 110)">
+                <rect id="Rectangle-Copy-2" x="0" y="0" width="750" height="500"></rect>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M61,48 L689,48 C694.522847,48 699,52.4771525 699,58 L699,435 C699,440.522847 694.522847,445 689,445 L61,445 C55.4771525,445 51,440.522847 51,435 L51,58 C51,52.4771525 55.4771525,48 61,48 Z" id="Rectangle" fill="#FFFFFF" transform="translate(375, 246.5) scale(-1, 1) translate(-375, -246.5)"></path>
+                <path d="M61,92 L301,92 C306.522847,92 311,96.4771525 311,102 L311,399 C311,404.522847 306.522847,409 301,409 L61,409 C55.4771525,409 51,404.522847 51,399 L51,102 C51,96.4771525 55.4771525,92 61,92 Z" id="Rectangle" fill="#E9AF58" transform="translate(181, 250.5) scale(-1, 1) translate(-181, -250.5)"></path>
+                <path d="M208.651536,250.569987 C209.433714,249.805191 210.685226,249.810728 211.460606,250.582415 L243.302905,282.273085 C244.088838,283.062746 244.085816,284.329072 243.302905,285.108255 L211.460606,316.798924 C210.685226,317.570612 209.433714,317.576149 208.651536,316.811353 L201.632283,309.948083 L201.612933,309.928904 C200.833751,309.145994 200.836773,307.879667 201.619683,307.100485 L218.208493,290.59067 L115,290.59067 C113.895431,290.59067 113,289.695239 113,288.59067 L113,278.79067 C113,277.6861 113.895431,276.79067 115,276.79067 L218.208493,276.79067 L201.619683,260.280855 L201.600504,260.261505 C200.82828,259.471731 200.842508,258.205481 201.632283,257.433257 Z M149.075737,184.569987 L156.09499,191.433257 C156.884765,192.205481 156.898992,193.471731 156.126768,194.261505 C156.120419,194.267999 156.114026,194.274449 156.107589,194.280855 L139.51878,210.79067 L242.727273,210.79067 C243.831842,210.79067 244.727273,211.6861 244.727273,212.79067 L244.727273,222.59067 C244.727273,223.695239 243.831842,224.59067 242.727273,224.59067 L139.51878,224.59067 L156.107589,241.100485 C156.8905,241.879667 156.893522,243.145994 156.11434,243.928904 L156.09499,243.948083 L149.075737,250.811353 C148.293559,251.576149 147.042047,251.570612 146.266667,250.798924 L114.424367,219.108255 C113.641457,218.329072 113.638435,217.062746 114.417617,216.279836 L146.266667,184.582415 C147.042047,183.810728 148.293559,183.805191 149.075737,184.569987 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <g id="Group" transform="translate(328, 95)">
+                    <rect id="Rectangle" fill="#E9AF58" x="0" y="0" width="370" height="208" rx="8"></rect>
+                    <rect id="Rectangle" fill="#3B8B96" x="0" y="227" width="370" height="87" rx="8"></rect>
+                    <g id="arrows" transform="translate(323.5, 44.5) rotate(90) translate(-323.5, -44.5)translate(319, 19)" fill="#FFFFFF">
+                        <rect id="Rectangle" x="0" y="7.92783023e-15" width="9" height="51" rx="4.5"></rect>
+                    </g>
+                    <g id="arrows" transform="translate(322.5, 271.5) rotate(90) translate(-322.5, -271.5)translate(297, 246)" fill="#FFFFFF">
+                        <rect id="Rectangle" x="21" y="2.18275714e-14" width="9" height="51" rx="4.5"></rect>
+                        <rect id="Rectangle" transform="translate(25.5, 25.5) rotate(90) translate(-25.5, -25.5)" x="21" y="2.18275714e-14" width="9" height="51" rx="4.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

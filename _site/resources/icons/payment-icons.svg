@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="500px" viewBox="0 0 750 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <rect id="path-1" x="31" y="28" width="688" height="437" rx="20"></rect>
+        <filter x="-4.4%" y="-6.9%" width="108.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Payment-Icons" transform="translate(-146, -110)">
+            <g id="icon" transform="translate(146, 110)">
+                <rect id="Rectangle" x="0" y="0" width="750" height="500"></rect>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M61,48 L682,48 C687.522847,48 692,52.4771525 692,58 L692,435 C692,440.522847 687.522847,445 682,445 L61,445 C55.4771525,445 51,440.522847 51,435 L51,58 C51,52.4771525 55.4771525,48 61,48 Z" id="Rectangle" fill="#C3DFD7"></path>
+                <g id="grid" transform="translate(77, 183)">
+                    <rect id="Rectangle" fill="#975D48" x="0" y="0" width="191" height="135" rx="7.72727251"></rect>
+                    <path d="M62.411736,47.7950311 L134.586513,47.7950311 C138.854168,47.7950311 142.313785,51.2546488 142.313785,55.5223036 C142.313785,56.0513319 142.259458,56.5789618 142.151658,57.0968905 L136.991128,81.8907927 C136.245173,85.4747524 133.08675,88.0434783 129.425983,88.0434783 L57.2512064,88.0434783 C52.9835516,88.0434783 49.5239339,84.5838605 49.5239339,80.3162058 C49.5239339,79.7871774 49.5782614,79.2595475 49.6860616,78.7416188 L54.8465912,53.9477167 C55.592546,50.3637569 58.7509689,47.7950311 62.411736,47.7950311 Z" id="Rectangle" fill="#FFFFFF"></path>
+                </g>
+                <g id="grid" transform="translate(277, 183)">
+                    <rect id="Rectangle" fill="#0F8060" x="0" y="0" width="191" height="135" rx="7.72727251"></rect>
+                    <g id="Group-26" transform="translate(45.2368, 38.5714)" fill="#FFFFFF">
+                        <ellipse id="Oval" cx="29.3201754" cy="29.3478261" rx="29.3201754" ry="29.3478261"></ellipse>
+                        <ellipse id="Oval-Copy" cx="71.2061404" cy="29.3478261" rx="29.3201754" ry="29.3478261"></ellipse>
+                    </g>
+                </g>
+                <g id="grid" transform="translate(476, 183)">
+                    <rect id="Rectangle" fill="#E9AF58" x="0" y="0" width="191" height="135" rx="7.72727251"></rect>
+                    <path d="M40.9990805,47.7950311 L86.5733093,47.7950311 C90.840964,47.7950311 94.3005818,51.2546488 94.3005818,55.5223036 C94.3005818,55.8928358 94.2739306,56.2628881 94.2208346,56.6295963 L90.6309009,81.4234985 C90.0806528,85.2237907 86.8232967,88.0434783 82.9833756,88.0434783 L37.4091469,88.0434783 C33.1414921,88.0434783 29.6818744,84.5838605 29.6818744,80.3162058 C29.6818744,79.9456736 29.7085255,79.5756212 29.7616216,79.208913 L33.3515552,54.4150108 C33.9018033,50.6147186 37.1591595,47.7950311 40.9990805,47.7950311 Z" id="Rectangle" fill="#FFFFFF"></path>
+                    <path d="M108.016624,47.7950311 L153.590853,47.7950311 C157.858508,47.7950311 161.318126,51.2546488 161.318126,55.5223036 C161.318126,55.8928358 161.291474,56.2628881 161.238378,56.6295963 L157.648445,81.4234985 C157.098197,85.2237907 153.840841,88.0434783 150.000919,88.0434783 L104.426691,88.0434783 C100.159036,88.0434783 96.6994182,84.5838605 96.6994182,80.3162058 C96.6994182,79.9456736 96.7260694,79.5756212 96.7791654,79.208913 L100.369099,54.4150108 C100.919347,50.6147186 104.176703,47.7950311 108.016624,47.7950311 Z" id="Rectangle" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

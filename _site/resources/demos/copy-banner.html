@@ -1,0 +1,157 @@
+<style>
+    body * {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+</style>
+<div id="shopify-section-template--22007975903547__sp_copy_banner_tKQAbJ" class="shopify-section">
+  <style>
+  
+    
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ.sp-copy-banner-wrap p,
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ.sp-copy-banner-wrap p a {
+      font-size: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      font-weight: 400;
+      line-height: 1.15;
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ.sp-copy-banner-wrap p {
+      color: #fff;
+      text-align: center
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ.sp-copy-banner-wrap {
+      position: relative;
+      background-image: linear-gradient(164deg, #111 0%, #333 0%);
+      width: 100%;
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ .sp-copy-banner {
+      position: relative;
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 15px 10px 15px 10px;
+    }
+  
+    /* link */
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ p {
+      margin: 0;
+      padding: 0 0 3px 0;
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ p a {
+      color: #0d8bf4;
+      cursor: pointer;
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ p a * {
+      color: #0d8bf4;
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ p a * {
+      pointer-events: none;
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ p a svg,
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ p a svg {
+      width: 20px;
+      height: 20px;
+      fill: #0d8bf4;
+      transform: translateY(3px);
+      margin: 0 0 0 2px;
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ .sp-copy-banner-toast {
+      position: absolute;
+      display: inline-block;
+      background-image: linear-gradient(164deg, #fff 0%, #fff 0%);
+      color: #111;
+      width: 20px;
+      height: 20px;
+      margin: 0 0 0 5px;
+      border-radius: 50%;
+      font-size: 13px;
+      transform: translateY(3px);
+      visibility: hidden;
+      transition: .15s all;
+      opacity: 0;
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ .sp-copy-banner-toast svg {
+      fill: #111;
+      width: 15px;
+      height: 15px;
+      transform: translateY(3px);
+    }
+  
+    #sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ .sp-copy-banner-toast[active] {
+      visibility: visible;
+      opacity: 1;
+    }
+  
+  </style>
+  
+  <div id="sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ" class="sp-copy-banner-wrap">
+  
+    <div class="sp-copy-banner">
+  
+      <p>
+        Get this item for 20% off with the following discount code:
+        <a id="sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ-link" data-to-copy="ABC1234">
+          ABC1234
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>
+        </a>
+        <span id="sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ-toast" class="sp-copy-banner-toast"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg></span>
+      </p>
+      
+    </div>
+    <!-- /.sp-copy-banner -->
+  
+  </div>
+  <!-- /.sp-copy-banner-wrap -->
+  
+  <script>
+    // Copies a string to the clipboard.
+    function copyToClipboard(text) {
+      if (window.clipboardData && window.clipboardData.setData) {
+          // Internet Explorer-specific code path to prevent textarea being shown while dialog is visible.
+          return window.clipboardData.setData("Text", text);
+  
+      }
+      else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+          var textarea = document.createElement("textarea");
+          textarea.textContent = text;
+          textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in Microsoft Edge.
+          document.body.appendChild(textarea);
+          textarea.select();
+          try {
+              return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+          }
+          catch (ex) {
+              console.warn("Copy to clipboard failed.", ex);
+              return prompt("Copy to clipboard: Ctrl+C, Enter", text);
+          }
+          finally {
+              document.body.removeChild(textarea);
+          }
+      }
+    }
+  
+    var sp_link = document.querySelector('#sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ-link');
+    var sp_toast = document.querySelector('#sp-copy-banner-template--22007975903547__sp_copy_banner_tKQAbJ-toast');
+  
+    sp_link.addEventListener('click', (e)=> {
+      var code = e.target.getAttribute('data-to-copy');
+  
+      copyToClipboard(code);
+  
+      sp_toast.setAttribute('active', '');
+  
+      setTimeout(() => {
+        sp_toast.removeAttribute('active');
+      }, "2000");
+    })
+  </script>
+  
+  </div>

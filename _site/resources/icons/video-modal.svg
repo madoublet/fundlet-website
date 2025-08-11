@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="500px" viewBox="0 0 750 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <rect id="path-1" x="31" y="28" width="688" height="437" rx="20"></rect>
+        <filter x="-4.4%" y="-6.9%" width="108.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Video-Modal" transform="translate(-146, -110)">
+            <g id="icon" transform="translate(146, 110)">
+                <rect id="Rectangle" x="0" y="0" width="750" height="500"></rect>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <rect id="Rectangle" fill="#F9EBD5" x="50.3844394" y="48" width="645" height="398" rx="10"></rect>
+                <g id="arrows" transform="translate(296, 170)">
+                    <circle id="Oval" fill="#3B8B96" cx="79.5" cy="79.5" r="79.5"></circle>
+                    <path d="M85.3403546,75.968147 L67.5245102,58.1151863 C65.5767916,56.1634099 65.5767916,53.0032568 67.5245102,51.0514804 L68.0283566,50.5465844 C69.9789451,48.5919321 73.1447683,48.5886378 75.0994205,50.5392263 C75.1018758,50.5416765 75.1043285,50.5441291 75.1067786,50.5465844 L100.47549,75.968147 C102.423208,77.9199234 102.423208,81.0800766 100.47549,83.031853 L75.1067786,108.453416 C73.15619,110.408068 69.9903669,110.411362 68.0357146,108.460774 C68.0332594,108.458324 68.0308067,108.455871 68.0283566,108.453416 L67.5245102,107.94852 C65.5767916,105.996743 65.5767916,102.83659 67.5245102,100.884814 L85.3403546,83.031853 C87.2880733,81.0800766 87.2880733,77.9199234 85.3403546,75.968147 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+                <g id="close_24dp_FILL0_wght400_GRAD0_opsz24" transform="translate(640, 70)" fill="#3B8B96" fill-rule="nonzero">
+                    <polygon id="Path" points="3.2 32 0 28.8 12.8 16 0 3.2 3.2 0 16 12.8 28.8 0 32 3.2 19.2 16 32 28.8 28.8 32 16 19.2"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

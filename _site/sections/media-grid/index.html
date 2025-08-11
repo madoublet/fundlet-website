@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Shopify Media Grid Section - Sections Pro</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Shopify Media Grid Section - Sections Pro">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- set base -->
+    <base href="">
+
+    <link rel="icon" href="/resources/img/favicon.png">
+
+    <!-- css -->
+    <link type="text/css" href="/resources/css/reset.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/brand.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/site.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/page.css" rel="stylesheet">
+</head>
+
+<!-- Preview: 1000 x 1100 -->
+
+<body>
+
+    <div class="container">
+
+        <header>
+    <div style="text-align: left;">
+        <a href="/index.html"><img src="/resources/img/sections-ai-logo.svg"> </a>
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div style="text-align: right;">
+        <a class="header-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</header>
+
+<button id="toggle-mobile-menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12"><path fill="#888" fill-rule="nonzero" d="M0 11a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Z"/></svg></button>
+
+<div id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/about">Why us?</a>
+    <a href="/documentation">Documentation</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/refund-policy">Refund Policy</a>
+    <a href="/contact">Get in Touch</a>
+</div>
+
+<script>
+    var toggle_mobile_menu = document.querySelector('#toggle-mobile-menu');
+    var mobile_menu = document.querySelector('#mobile-menu');
+
+    toggle_mobile_menu.addEventListener(`click`, (e)=> { 
+        mobile_menu.classList.toggle('active');
+    });
+</script>
+
+        <div class="page-pitch">
+            <h1>Shopify Media Grid Section</h1>
+            <p>Learn how to create a Media Grid section with Sections Pro in Shopify</p>
+        </div>
+
+    </div>
+
+    <div class="page-container">
+        <div class="page-content">
+            <h3>Description of the Section</h3>
+<p>The <strong>Media Grid</strong> section provides a sleek, customizable grid layout for displaying images and videos on your Shopify store. It's designed to enhance the visual appeal and user experience by offering various display options and configurations, including responsive design for mobile devices.</p>
+<h3>Demo of the Section</h3>
+<iframe src="/resources/demos/media-grid.html"></iframe>
+<h3>Installation Instructions</h3>
+<ol>
+<li>Download the Sections Pro app on the <a href="https://apps.shopify.com/sections-ai">Shopify App Store</a></li>
+<li>Open the app and navigate to Free Sections</li>
+<li>Search for &quot;Media Grid&quot;</li>
+<li>Click to Publish or Purchase</li>
+</ol>
+<h3>Sample Use Cases for a Shopify E-commerce Store</h3>
+<ol>
+<li><strong>Product Showcases</strong>: Ideal for displaying a collection of featured products with high-quality images and videos.</li>
+<li><strong>Customer Testimonials</strong>: Use the grid to showcase customer reviews and video testimonials in a visually appealing manner.</li>
+<li><strong>Brand Storytelling</strong>: Narrate your brand's story through a combination of images and videos, giving customers an engaging browsing experience.</li>
+<li><strong>Events and Promotions</strong>: Highlight upcoming sales, events, or promotions with captivating media content.</li>
+<li><strong>Blog Features</strong>: Create an engaging media-rich blog section that draws readers' attention with stunning visuals.</li>
+</ol>
+<h3>Overview of the Configuration Settings</h3>
+<ol>
+<li>
+<p><strong>Colors</strong>:</p>
+<ul>
+<li><strong>Background</strong>: Sets the background color or gradient for the section.</li>
+</ul>
+</li>
+<li>
+<p><strong>Dimensions</strong>:</p>
+<ul>
+<li><strong>Media Aspect Ratio</strong>: Choose from multiple aspect ratios (21:9, 16:9, 4:3, 1:1, 9:16, Auto).</li>
+<li><strong>Max Width of Section</strong>: Set the maximum width of the section in pixels.</li>
+<li><strong>Gap Between Images</strong>: Define the gap between images in the grid.</li>
+<li><strong>Padding</strong>: Customize padding for top, bottom, left, and right.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advanced</strong>:</p>
+<ul>
+<li><strong>Mobile Display</strong>: Choose between 'Slideshow' or 'Stacked' for mobile devices.</li>
+<li><strong>Columns (when stacked)</strong>: Configure the number of columns (1, 2, or 3) for stacked display on mobile.</li>
+<li><strong>Slideshow Progress Background Color</strong>: Set the background color for the slideshow progress bar.</li>
+<li><strong>Slideshow Progress Foreground Color</strong>: Set the foreground color for the slideshow progress bar.</li>
+<li><strong>Slideshow Indicator Color</strong>: Customize the color of the slideshow indicators.</li>
+<li><strong>Enable Autoplay</strong>: Option to enable autoplay for the slideshow.</li>
+<li><strong>Autoplay Time</strong>: Choose from several time intervals for autoplay (2s to 10s).</li>
+<li><strong>Show Big Play Button</strong>: Toggle visibility of a large play button for videos.</li>
+<li><strong>Media Radius</strong>: Adjust border radius to create rounded edges on media.</li>
+<li><strong>Subtle Shadow on Media</strong>: Add or remove a shadow effect on media.</li>
+<li><strong>Show Zoom on Hover?</strong>: Enable or disable a zoom effect on hover.</li>
+</ul>
+</li>
+<li>
+<p><strong>Blocks</strong>:</p>
+<ul>
+<li><strong>Image Block</strong>:
+<ul>
+<li><strong>Image</strong>: Upload an image.</li>
+<li><strong>Optional Link</strong>: Add an optional link.</li>
+</ul>
+</li>
+<li><strong>Video Block</strong>:
+<ul>
+<li><strong>Video</strong>: Upload a video file.</li>
+<li><strong>Poster Image</strong>: Upload an optional poster image for the video.</li>
+<li><strong>Optional Link</strong>: Add an optional link.</li>
+<li><strong>Play Inline</strong>: Toggle inline play for videos.</li>
+<li><strong>Autoplay</strong>: Enable or disable video autoplay.</li>
+<li><strong>Loop Video</strong>: Enable or disable looping of the video.</li>
+<li><strong>Show Video Controls</strong>: Toggle visibility of video controls.</li>
+<li><strong>Mute Video</strong>: Mute or unmute the video.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>These settings allow you to tailor the Media Grid section to fit your store's design and functionality needs seamlessly.</p>
+
+        </div>
+    </div>
+    
+    <footer>
+    <nav>
+        <a href="/" active>Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div>
+        <a class="footer-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</footer>
+
+</body>
+
+<script src="/resources/js/app.js""></script>
+
+
+</html>

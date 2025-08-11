@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="726px" height="477px" viewBox="0 0 726 477" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <path d="M11,4.06766917 L637,4.06766917 C642.522847,4.06766917 647,8.54482167 647,14.0676692 L647,391.067669 C647,396.590517 642.522847,401.067669 637,401.067669 L11,401.067669 C5.4771525,401.067669 1,396.590517 1,391.067669 L1,14.0676692 C1,8.54482167 5.4771525,4.06766917 11,4.06766917 Z" id="path-1"></path>
+        <filter x="-7.7%" y="-12.6%" width="115.5%" height="125.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="20" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Split-Parallax" transform="translate(-157, -118)">
+            <g id="icon" transform="translate(196, 153.9323)">
+                <g id="vh-box">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#FFFFFF" stroke-width="20" d="M637,-5.93233083 C642.522847,-5.93233083 647.522847,-3.69375458 651.142136,-0.0744664508 C654.761424,3.54482167 657,8.54482167 657,14.0676692 L657,391.067669 C657,396.590517 654.761424,401.590517 651.142136,405.209805 C647.522847,408.829093 642.522847,411.067669 637,411.067669 L11,411.067669 C5.4771525,411.067669 0.477152502,408.829093 -3.14213562,405.209805 C-6.76142375,401.590517 -9,396.590517 -9,391.067669 L-9,14.0676692 C-9,8.54482167 -6.76142375,3.54482167 -3.14213562,-0.0744664508 C0.477152502,-3.69375458 5.4771525,-5.93233083 11,-5.93233083 Z" fill="#FFFFFF" fill-rule="evenodd"></path>
+                </g>
+                <rect id="Rectangle" fill="#3B8B96" x="0" y="0" width="331" height="398" rx="7.72727251"></rect>
+                <g id="vh-text" transform="translate(362, 104.0677)">
+                    <rect id="Rectangle" fill="#E9AF58" x="0" y="82" width="279" height="40" rx="8"></rect>
+                    <rect id="Rectangle" fill="#E9AF58" x="0" y="144" width="140" height="40" rx="8"></rect>
+                    <rect id="Rectangle" fill="#975D48" x="1" y="0" width="279" height="60" rx="8"></rect>
+                </g>
+                <g id="vh-play" transform="translate(21, 223.5677)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="65" height="154" rx="30"></rect>
+                    <circle id="Oval" fill="#3B8B96" cx="32" cy="123" r="25"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

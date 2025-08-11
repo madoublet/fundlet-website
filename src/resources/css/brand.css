@@ -1,0 +1,23 @@
+:root {
+    --brand-pink: #0D8BF4;
+    --brand-teal: #35CBDD;
+    --brand-green: #8CCF05;
+    --brand-yellow: #F3CC40;
+    --brand-orange: #F77806;
+    --brand-blue: #4C90C8;
+    --brand-primary: var(--brand-teal);
+    --brand-secondary: var(--brand-pink);
+    --ui-dark: #111;
+    --ui-menu-dark: #111;
+    --ui-button-dark: #111;
+    --ui-sidebar-header: #111;
+    --ui-sidebar-primary-button: #111;
+    --ui-toast-success: var(--brand-green);
+    --ui-toast-failure: var(--brand-pink);
+    --ui-toast-loading: var(--brand-teal);
+    --ui-tabs: var(--ui-dark);
+    --ui-tabs-selected: var(--brand-teal);
+    --ui-tabs-unselected: #888;
+    --ui-tabs-border: #f0f0f0;
+    --ui-divider-border: #cccccc;
+  }

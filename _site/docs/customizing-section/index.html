@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Customizing your section - Sections Pro</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Customizing your section - Sections Pro">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- set base -->
+    <base href="">
+
+    <link rel="icon" href="/resources/img/favicon.png">
+
+    <!-- css -->
+    <link type="text/css" href="/resources/css/reset.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/brand.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/site.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/page.css" rel="stylesheet">
+</head>
+
+<!-- Preview: 1000 x 1100 -->
+
+<body>
+
+    <div class="container">
+
+        <header>
+    <div style="text-align: left;">
+        <a href="/index.html"><img src="/resources/img/sections-ai-logo.svg"> </a>
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div style="text-align: right;">
+        <a class="header-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</header>
+
+<button id="toggle-mobile-menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12"><path fill="#888" fill-rule="nonzero" d="M0 11a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Z"/></svg></button>
+
+<div id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/about">Why us?</a>
+    <a href="/documentation">Documentation</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/refund-policy">Refund Policy</a>
+    <a href="/contact">Get in Touch</a>
+</div>
+
+<script>
+    var toggle_mobile_menu = document.querySelector('#toggle-mobile-menu');
+    var mobile_menu = document.querySelector('#mobile-menu');
+
+    toggle_mobile_menu.addEventListener(`click`, (e)=> { 
+        mobile_menu.classList.toggle('active');
+    });
+</script>
+
+        <div class="page-pitch">
+            <h1>Customizing your section</h1>
+            <p>Learn how to customize your section within Sections Pro</p>
+        </div>
+
+    </div>
+
+    <div class="page-container">
+        <div class="page-content">
+            <p>Every section within Sections Pro comes with built-in settings to customize the look-and-feel of your section.</p>
+<h3>Customizing your section</h3>
+<p>To customize a section, click on it in the theme customizer and then use the customization panel to update the look-and-feel.</p>
+<p><img src="/screenshots/CleanShot%202024-08-15%20at%2012.34.11@2x.png" alt="alt text"></p>
+<h3>Customizing blocks</h3>
+<p>A lot of our sections contain blocks for elements that repeat in the UI. A good example of blocks are the images that show up in the Accordion grid. To customize blocks, navigate to the top level of the customizer and then click on the block. You can also add a block using the &quot;Add Block&quot; button.</p>
+<p><img src="/screenshots/CleanShot%202024-08-15%20at%2012.37.25@2x.png" alt="alt text"></p>
+<h3>Additional Customizations</h3>
+<p>Our free sections provide the most common customizations for each section. Our premium sections dive a little bit deeper to give you more control. But, if there is a setting not available or you want something to look different on mobile, you can use the custom CSS option for your section. With custom CSS, you can use media queries and more to target different states of your section.</p>
+<p><img src="/screenshots/CleanShot%202024-08-15%20at%2012.42.02@2x.png" alt="alt text"></p>
+
+        </div>
+    </div>
+    
+    <footer>
+    <nav>
+        <a href="/" active>Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div>
+        <a class="footer-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</footer>
+
+</body>
+
+<script src="/resources/js/app.js""></script>
+
+
+</html>

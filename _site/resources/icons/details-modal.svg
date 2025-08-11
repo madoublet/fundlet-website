@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="500px" viewBox="0 0 750 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <rect id="path-1" x="31" y="28" width="688" height="437" rx="20"></rect>
+        <filter x="-4.4%" y="-6.9%" width="108.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Details-Modal" transform="translate(-146, -110)">
+            <g id="icon" transform="translate(146, 110)">
+                <rect id="Rectangle" x="0" y="0" width="750" height="500"></rect>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <rect id="Rectangle" fill="#C3DFD7" x="50.3844394" y="48" width="645" height="398" rx="10"></rect>
+                <g id="close_24dp_FILL0_wght400_GRAD0_opsz24" transform="translate(640, 70)" fill="#3B8B96" fill-rule="nonzero">
+                    <polygon id="Path" points="3.2 32 0 28.8 12.8 16 0 3.2 3.2 0 16 12.8 28.8 0 32 3.2 19.2 16 32 28.8 28.8 32 16 19.2"></polygon>
+                </g>
+                <g id="Group-19" transform="translate(218, 129)">
+                    <path d="M10,90 L304,90 C309.522847,90 314,94.4771525 314,100 L314,139 C314,144.522847 309.522847,149 304,149 L10,149 C4.4771525,149 6.76353751e-16,144.522847 0,139 L0,100 C-6.76353751e-16,94.4771525 4.4771525,90 10,90 Z" id="Rectangle" fill="#3B8B96"></path>
+                    <path d="M10,180 L304,180 C309.522847,180 314,184.477153 314,190 L314,229 C314,234.522847 309.522847,239 304,239 L10,239 C4.4771525,239 6.76353751e-16,234.522847 0,229 L0,190 C-6.76353751e-16,184.477153 4.4771525,180 10,180 Z" id="Rectangle" fill="#3B8B96"></path>
+                    <path d="M10,0 L147,0 C152.522847,-1.01453063e-15 157,4.4771525 157,10 L157,49 C157,54.5228475 152.522847,59 147,59 L10,59 C4.4771525,59 6.76353751e-16,54.5228475 0,49 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z" id="Rectangle" fill="#E9AF58"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

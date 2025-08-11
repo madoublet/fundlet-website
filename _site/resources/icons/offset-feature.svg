@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="726px" height="477px" viewBox="0 0 726 477" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <path d="M10.4447236,0.0676691729 L636.444724,0.0676691729 C641.967571,0.0676691729 646.444724,4.54482167 646.444724,10.0676692 L646.444724,387.067669 C646.444724,392.590517 641.967571,397.067669 636.444724,397.067669 L10.4447236,397.067669 C4.92187612,397.067669 0.444723618,392.590517 0.444723618,387.067669 L0.444723618,10.0676692 C0.444723618,4.54482167 4.92187612,0.0676691729 10.4447236,0.0676691729 Z" id="path-1"></path>
+        <filter x="-7.7%" y="-12.6%" width="115.5%" height="125.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="20" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Offset-Feature" transform="translate(-157, -118)">
+            <g id="icon" transform="translate(196.5553, 157.9323)">
+                <g id="vh-box">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#FFFFFF" stroke-width="20" d="M636.444724,-9.93233083 C641.967571,-9.93233083 646.967571,-7.69375458 650.586859,-4.07446645 C654.206147,-0.455178325 656.444724,4.54482167 656.444724,10.0676692 L656.444724,387.067669 C656.444724,392.590517 654.206147,397.590517 650.586859,401.209805 C646.967571,404.829093 641.967571,407.067669 636.444724,407.067669 L10.4447236,407.067669 C4.92187612,407.067669 -0.0781238802,404.829093 -3.69741201,401.209805 C-7.31670013,397.590517 -9.55527638,392.590517 -9.55527638,387.067669 L-9.55527638,10.0676692 C-9.55527638,4.54482167 -7.31670013,-0.455178325 -3.69741201,-4.07446645 C-0.0781238802,-7.69375458 4.92187612,-9.93233083 10.4447236,-9.93233083 Z" fill="#FFFFFF" fill-rule="evenodd"></path>
+                </g>
+                <rect id="Rectangle" fill="#3B8B96" x="0" y="0" width="323" height="397" rx="7.72727251"></rect>
+                <rect id="Rectangle" fill="#CCE5E8" x="249.444724" y="74" width="397" height="242" rx="7.72727251"></rect>
+                <g id="vh-text" transform="translate(283.4447, 103.0677)">
+                    <rect id="Rectangle" fill="#FAEBD5" x="0" y="82" width="328" height="40" rx="8"></rect>
+                    <rect id="Rectangle" fill="#FAEBD5" x="0" y="144" width="140" height="40" rx="8"></rect>
+                    <rect id="Rectangle" fill="#3B8B96" x="1" y="0" width="279" height="60" rx="8"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

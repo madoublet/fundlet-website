@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="726px" height="477px" viewBox="0 0 726 477" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <path d="M10,0 L636,0 C641.522847,-1.01453063e-15 646,4.4771525 646,10 L646,387 C646,392.522847 641.522847,397 636,397 L10,397 C4.4771525,397 6.76353751e-16,392.522847 0,387 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z" id="path-1"></path>
+        <filter x="-7.7%" y="-12.6%" width="115.5%" height="125.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="20" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hero-Parallax" transform="translate(-157, -118)">
+            <g id="icon" transform="translate(197, 158)">
+                <g id="vh-box">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#FFFFFF" stroke-width="20" d="M636,-10 C641.522847,-10 646.522847,-7.76142375 650.142136,-4.14213562 C653.761424,-0.522847498 656,4.4771525 656,10 L656,387 C656,392.522847 653.761424,397.522847 650.142136,401.142136 C646.522847,404.761424 641.522847,407 636,407 L10,407 C4.4771525,407 -0.522847498,404.761424 -4.14213562,401.142136 C-7.76142375,397.522847 -10,392.522847 -10,387 L-10,10 C-10,4.4771525 -7.76142375,-0.522847498 -4.14213562,-4.14213562 C-0.522847498,-7.76142375 4.4771525,-10 10,-10 Z" fill="#FAEBD5" fill-rule="evenodd"></path>
+                </g>
+                <g id="vh-text" transform="translate(183, 101)">
+                    <rect id="Rectangle" fill="#975D48" x="0" y="0" width="279" height="60" rx="8"></rect>
+                    <rect id="Rectangle" fill="#E9AF58" x="0" y="87" width="279" height="40" rx="8"></rect>
+                    <rect id="Rectangle" fill="#E9AF58" x="70" y="155" width="140" height="40" rx="8"></rect>
+                </g>
+                <g id="vh-play" transform="translate(20, 223.5)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="65" height="154" rx="30"></rect>
+                    <circle id="Oval" fill="#975D48" cx="32" cy="123" r="25"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="500px" viewBox="0 0 750 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <rect id="path-1" x="31" y="28" width="688" height="437" rx="20"></rect>
+        <filter x="-4.4%" y="-6.9%" width="108.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Video-with-Text" transform="translate(-146, -110)">
+            <g id="icon" transform="translate(146, 110)">
+                <rect id="Rectangle" x="0" y="0" width="750" height="500"></rect>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M61,48 L360,48 C365.522847,48 370,52.4771525 370,58 L370,435 C370,440.522847 365.522847,445 360,445 L61,445 C55.4771525,445 51,440.522847 51,435 L51,58 C51,52.4771525 55.4771525,48 61,48 Z" id="Rectangle" fill="#CCE5E8"></path>
+                <g id="Group" transform="translate(402, 149)">
+                    <rect id="Rectangle" fill="#975D48" x="0" y="0" width="279" height="60" rx="8"></rect>
+                    <rect id="Rectangle" fill="#E9AF58" x="0" y="87" width="279" height="40" rx="8"></rect>
+                    <rect id="Rectangle" fill="#E9AF58" x="0" y="155" width="140" height="40" rx="8"></rect>
+                </g>
+                <g id="arrows" transform="translate(131, 167)">
+                    <circle id="Oval" fill="#3B8B96" cx="79.5" cy="79.5" r="79.5"></circle>
+                    <path d="M85.3403546,75.968147 L67.5245102,58.1151863 C65.5767916,56.1634099 65.5767916,53.0032568 67.5245102,51.0514804 L68.0283566,50.5465844 C69.9789451,48.5919321 73.1447683,48.5886378 75.0994205,50.5392263 C75.1018758,50.5416765 75.1043285,50.5441291 75.1067786,50.5465844 L100.47549,75.968147 C102.423208,77.9199234 102.423208,81.0800766 100.47549,83.031853 L75.1067786,108.453416 C73.15619,110.408068 69.9903669,110.411362 68.0357146,108.460774 C68.0332594,108.458324 68.0308067,108.455871 68.0283566,108.453416 L67.5245102,107.94852 C65.5767916,105.996743 65.5767916,102.83659 67.5245102,100.884814 L85.3403546,83.031853 C87.2880733,81.0800766 87.2880733,77.9199234 85.3403546,75.968147 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="500px" viewBox="0 0 750 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <rect id="path-1" x="31" y="28" width="688" height="437" rx="20"></rect>
+        <filter x="-4.4%" y="-6.9%" width="108.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile-Grid" transform="translate(-146, -110)">
+            <g id="icon" transform="translate(146, 110)">
+                <rect id="Rectangle" x="0" y="0" width="750" height="500"></rect>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M61,48 L355,48 C360.522847,48 365,52.4771525 365,58 L365,435 C365,440.522847 360.522847,445 355,445 L61,445 C55.4771525,445 51,440.522847 51,435 L51,58 C51,52.4771525 55.4771525,48 61,48 Z" id="Rectangle" fill="#FAEBD5"></path>
+                <g id="Group-3" transform="translate(86, 294)" fill="#E9AF58">
+                    <rect id="Rectangle" x="0" y="0" width="245" height="40" rx="8"></rect>
+                    <rect id="Rectangle" x="76" y="50" width="93" height="40" rx="8"></rect>
+                </g>
+                <circle id="Oval" fill="#975D48" cx="208.5" cy="187.5" r="79.5"></circle>
+                <path d="M395,48 L691,48 C696.522847,48 701,52.4771525 701,58 L701,435 C701,440.522847 696.522847,445 691,445 L395,445 C389.477153,445 385,440.522847 385,435 L385,58 C385,52.4771525 389.477153,48 395,48 Z" id="Rectangle" fill="#C3DFD7"></path>
+                <g id="Group-3" transform="translate(420, 294)" fill="#0F8060">
+                    <rect id="Rectangle" x="0" y="0" width="245" height="40" rx="8"></rect>
+                    <rect id="Rectangle" x="76" y="50" width="93" height="40" rx="8"></rect>
+                </g>
+                <circle id="Oval" fill="#0F8060" cx="543.5" cy="187.5" r="79.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

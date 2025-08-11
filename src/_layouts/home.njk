@@ -1,0 +1,127 @@
+---
+title: Base
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>{{ title }}</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Sections Pro - Elevate your Theme Design">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- set base -->
+    <base href="">
+
+    <link rel="icon" href="{{ '/resources/img/favicon.png' | url }}">
+
+    <!-- css -->
+    <link type="text/css" href="{{ '/resources/css/reset.css' | url }}" rel="stylesheet">
+    <link type="text/css" href="{{ '/resources/css/brand.css' | url }}" rel="stylesheet">
+    <link type="text/css" href="{{ '/resources/css/site.css' | url }}" rel="stylesheet">
+    <link type="text/css" href="{{ '/resources/css/index.css' | url }}" rel="stylesheet">
+</head>
+
+<!-- Preview: 1000 x 1100 -->
+
+<body>
+
+    <div class="container">
+
+        {% include "header.njk" %}
+
+        <div class="index-pitch">
+            <h1>Grow your sales with Fundraisers!</h1>
+
+            <p><span>•</span> Reach new customers through referral marketing</p> 
+            <p><span>•</span> Setup in minutes with zero code</p>
+            <p><span>•</span> Promote your products in your community</p>
+            <p><span>•</span> Track sales by campaign and participant</p>
+        </div>
+
+        <div class="index-highlight">
+            <h3><b>Built into Shopify</b>&mdash;Transform your Shopify store into a complete fundraising platform.</h3>
+        </div>
+
+        <div class="index-feature" style="background-color: #F4F2EF;">
+            <div>
+                <h2>Amazing Landing Pages</h2>
+                <p>The key to a great fundraiser is building excitement with an amazing landing page. Fundlet offers a complete fundraising solution and it is beautiful out-of-the-box.</p>
+                <p>
+                    <ul>
+                        <li><span>•</span> Upload campaign photots</li>
+                        <li><span>•</span> Track sales toward a goal</li>
+                        <li><span>•</span> Customize with unique collections</li>
+                    </ul>
+                </p>
+            </div>
+            <div><img class="img-pull-up sp-animate-slidein" src="resources/img/fundlet-landing-page.webp"></div>
+        </div>
+
+        <div class="index-highlight">
+            <h3><b>We Make it Easy!</b>&mdash;Fast setup and built-in onboarding make up-keep a breeze.</h3>
+        </div>
+
+        <div class="index-feature">
+            <div>
+                <h2>Built-in Onboarding</h2>
+                <p>🚀 Get started fast with our built-in forms to onboard new campaigns and participants.</p>
+                <p>
+                    <ul>
+                        <li><span>•</span> Add campaigns directly from your homepage!</li>
+                        <li><span>•</span> Share a single link to onboard participants</li>
+                        <li><span>•</span> Works on any device</li>
+                        <li><span>•</span> Fast and efficient!</li>
+                    </ul>
+                </p>
+            </div>
+            <div><img class="img-pull-up sp-animate-slidein" src="resources/img/fundlet-onboarding.webp"></div>
+        </div>
+
+        <div class="index-highlight">
+            <h3><b>Stay on Track!</b>&mdash;We make tracking campaign and participant sales easy!</h3>
+        </div>
+
+        <div class="index-feature" style="background-color: #F5FAF4;">
+            <div>
+                <h2>Simple Tracking</h2>
+                <p>Fundlet allows you to tag and track sales for campaigns and participants</p>
+                <p>
+                    <ul>
+                        <li><span>•</span> Track down to the participant sales</li>
+                        <li><span>•</span> Dashboard to keep track of progress</li>
+                        <li><span>•</span> Exportable reports</li>
+                        <li><span>•</span> Uses tags to integrate with built-in reporting</li>
+                    </ul>
+                </p>
+            </div>
+            <div><img class="sp-animate-slidein" src="resources/img/fundlet-tracking.webp"></div>
+        </div>
+
+    </div>
+
+    <div class="index-highlight">
+        <h3><b>Get the App!</b>&mdash;Amazing support and videos available in the app!</h3>
+    </div>
+
+    {{ content | safe }}
+
+    
+    {% include "footer.njk" %}
+
+</body>
+
+<script src="{{ '/resources/js/app.js' | url }}"></script>
+
+
+</html>

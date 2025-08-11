@@ -1,0 +1,226 @@
+<div id="shopify-section-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae" class="shopify-section">
+  <style>
+  
+    @font-face {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-style: normal;
+    src: url("//sections-ai-dev.myshopify.com/cdn/fonts/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?h1=c2VjdGlvbnMtYWktZGV2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=c013dcf7ffd35552eb4a6767c0b81a0a7ee7209fbb4498dbd7e0d44393b70dba") format("woff2"),
+         url("//sections-ai-dev.myshopify.com/cdn/fonts/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?h1=c2VjdGlvbnMtYWktZGV2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=54e65f34d2baef2576ae1d4a4d364ab60fabd4767b50115d39263c27461d83dd") format("woff");
+  }
+  
+    @font-face {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-style: normal;
+    src: url("//sections-ai-dev.myshopify.com/cdn/fonts/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?h1=c2VjdGlvbnMtYWktZGV2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=c013dcf7ffd35552eb4a6767c0b81a0a7ee7209fbb4498dbd7e0d44393b70dba") format("woff2"),
+         url("//sections-ai-dev.myshopify.com/cdn/fonts/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?h1=c2VjdGlvbnMtYWktZGV2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=54e65f34d2baef2576ae1d4a4d364ab60fabd4767b50115d39263c27461d83dd") format("woff");
+  }
+  
+  
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae.sections-ai-feature-wrap p,
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae.sections-ai-feature-wrap p a {
+      font-size: 12pt;
+      font-family: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+      font-weight: 400;
+      line-height: 1.15;
+    }
+  
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae.sections-ai-feature-wrap h2 {
+      font-size: 15pt;
+      font-family: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+      font-weight: 400;
+      line-height: 1.15;
+    }
+  
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae.sections-ai-feature-wrap {
+      background-image: linear-gradient(164deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%);
+      width: 100%;
+    }
+  
+  
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae .sections-ai-feature {
+      position: relative;
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 25px 10px 25px 10px;
+    }
+  
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae  .sections-ai-feature .sections-ai-feature-grid {
+      display: grid;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+    }
+  
+    @media only screen and (min-width: 801px) {
+      .sections-ai-feature .sections-ai-feature-grid {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
+        
+      }
+    }
+  
+    @media only screen and (max-width: 800px) {
+      .sections-ai-feature .sections-ai-feature-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+      }
+    }
+  
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae  .sections-ai-feature .sections-ai-feature-cover {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(164deg, rgba(17, 17, 17, 1), rgba(85, 85, 85, 1) 100%);
+      opacity: 25%;
+      transition: all .5s;
+    }
+  
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae  .sections-ai-feature-col:hover .sections-ai-feature-cover {
+      opacity: 40%;
+    }
+  
+    .sections-ai-feature-col {
+      position: relative;
+      padding: 0;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 0 rgba(0,0,0,0.20);
+    }
+  
+    .sections-ai-feature-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      transition: all .4s;
+      z-index: 1;
+    }
+  
+    .sections-ai-feature-swap-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      transition: all .5s;
+      z-index: 2;
+      opacity: 0;
+    }
+  
+    .sections-ai-feature-col:hover .sections-ai-feature-swap-img {
+      opacity: 1;
+    }
+  
+    .sections-ai-feature-col:hover .sections-ai-feature-img {
+      transform: scale(1.2);
+    }
+    
+    .sections-ai-feature-content {
+      z-index: 3;
+      padding: 15px;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae .sections-ai-feature h2 {
+      font-weight: bold;
+      margin: 0 0 5px 0;
+      padding: 0;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+      text-align: left;
+    }
+  
+  
+    .sections-ai-feature p {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+  
+    #sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae .sections-ai-feature a.sections-ai-feature-cta {
+      display: inline-block;
+      padding: 10px 20px;
+      background-image: linear-gradient(164deg, rgba(17, 17, 17, 1), rgba(51, 51, 51, 1) 100%);
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bold;
+      text-shadow: none;
+      transition: .25s all;
+    }
+  
+    @media only screen and (max-width: 800px) {
+  
+    }
+  </style>
+  
+  <div id="sections-ai-feature-template--20256458473787__993946ae-500b-4b8e-ab92-31204be46aae" class="sections-ai-feature-wrap">
+  
+  <div class="sections-ai-feature">
+  
+    <div class="sections-ai-feature-grid">
+  
+      
+        <div class="sections-ai-feature-col">
+          <img class="sections-ai-feature-img" src="//sections-ai-dev.myshopify.com/cdn/shop/files/new-shoes.jpg?v=1690862369&amp;width=1000">
+          <img class="sections-ai-feature-swap-img" src="//sections-ai-dev.myshopify.com/cdn/shop/files/summer-gingham-fashion-flatlay.jpg?v=1690862186&amp;width=1000">
+          <div class="sections-ai-feature-cover"></div>
+          <div class="sections-ai-feature-content">
+            <h2>Feature Headline</h2>
+            <p><a class="sections-ai-feature-cta" href="">Shop Now</a></p>
+          </div>
+        </div>
+        <!-- /.sections-ai-feature-col -->
+  
+        
+        <div class="sections-ai-feature-col">
+          <img class="sections-ai-feature-img" src="//sections-ai-dev.myshopify.com/cdn/shop/files/alyssa-strohmann-TS--uNw-JqE-unsplash.jpg?v=1690862143&amp;width=1000">
+          <img class="sections-ai-feature-swap-img" src="//sections-ai-dev.myshopify.com/cdn/shop/files/womens-fashion-on-hangers.jpg?v=1690862111&amp;width=1000">
+          <div class="sections-ai-feature-cover"></div>
+          <div class="sections-ai-feature-content">
+            <h2>Feature Headline</h2>
+            <p><a class="sections-ai-feature-cta" href="">Shop Now</a></p>
+          </div>
+        </div>
+        <!-- /.sections-ai-feature-col -->
+  
+        
+        <div class="sections-ai-feature-col">
+          <img class="sections-ai-feature-img" src="//sections-ai-dev.myshopify.com/cdn/shop/files/before.jpg?v=1690518014&amp;width=1000">
+          <img class="sections-ai-feature-swap-img" src="//sections-ai-dev.myshopify.com/cdn/shop/files/after.jpg?v=1690518036&amp;width=1000">
+          <div class="sections-ai-feature-cover"></div>
+          <div class="sections-ai-feature-content">
+            <h2>Feature Headline</h2>
+            <p><a class="sections-ai-feature-cta" href="">Shop Now</a></p>
+          </div>
+        </div>
+        <!-- /.sections-ai-feature-col -->
+  
+        
+  
+    </div>
+    <!-- /.sections-ai-feature-grid -->
+    
+  </div>
+  <!-- /.sections-ai-feature -->
+  
+  </div>
+  <!-- /.sections-ai-feature-wrap -->
+  
+  </div>

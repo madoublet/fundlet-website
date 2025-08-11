@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="750px" height="500px" viewBox="0 0 750 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <rect id="path-1" x="31" y="28" width="688" height="437" rx="20"></rect>
+        <filter x="-4.4%" y="-6.9%" width="108.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FAQ" transform="translate(-146, -110)">
+            <g id="icon" transform="translate(146, 110)">
+                <rect id="Rectangle-Copy-2" x="0" y="0" width="750" height="500"></rect>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M61,48 L689,48 C694.522847,48 699,52.4771525 699,58 L699,435 C699,440.522847 694.522847,445 689,445 L61,445 C55.4771525,445 51,440.522847 51,435 L51,58 C51,52.4771525 55.4771525,48 61,48 Z" id="Rectangle" fill="#FFFFFF" transform="translate(375, 246.5) scale(-1, 1) translate(-375, -246.5)"></path>
+                <g id="Group" transform="translate(107, 98)">
+                    <rect id="Rectangle" fill="#3B8B96" x="0" y="0" width="566" height="87" rx="8"></rect>
+                    <rect id="Rectangle" fill="#3B8B96" x="0" y="223" width="566" height="87" rx="8"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#E9AF58" x="0" y="102" width="566" height="106" rx="8"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" transform="translate(519.5, 43.5) rotate(90) translate(-519.5, -43.5)" x="515" y="18" width="9" height="51" rx="4.5"></rect>
+                    <g id="Group-29" transform="translate(496, 241)" fill="#FFFFFF">
+                        <rect id="Rectangle" x="21" y="0" width="9" height="51" rx="4.5"></rect>
+                        <rect id="Rectangle" transform="translate(25.5, 25.5) rotate(90) translate(-25.5, -25.5)" x="21" y="0" width="9" height="51" rx="4.5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

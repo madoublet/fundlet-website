@@ -1,0 +1,169 @@
+<style>
+  body * {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      text-align: left;
+  }
+</style>
+<div id="shopify-section-template--22007975903547__sp_24_hour_count_down_ARWm8f" class="shopify-section">
+  <style>
+  
+    
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f {
+      background-image: linear-gradient(46deg, rgba(242, 255, 237, 1) 24%, rgba(254, 245, 246, 1) 50%, rgba(229, 241, 251, 1) 69%);
+    }
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-headline p {
+      font-size: 15px;
+      
+      color: #111;
+      line-height: 1.15;
+      margin: 0;
+      padding: 0 0 25px 0;
+      text-align: center;
+    }
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-headline h2 {
+      font-size: 25px;
+      
+      color: #111;
+      line-height: 1.15;
+      margin: 0;
+      padding: 0 0 5px 0;
+      text-align: center;
+    }
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-wrapper {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 50px 10px 50px 10px;
+      align-items: center;
+    }
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-grid-item {
+      background-image: linear-gradient(164deg, rgba(17, 17, 17, 1), rgba(85, 85, 85, 1) 100%);
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-timer {
+      
+      font-size: 60px;
+      font-weight: bold;
+      color: #FFF;
+    }
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-label {
+      
+      font-size: 15px;
+      font-weight: bold;
+      color: #FFF;
+      display: block;
+    }
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-section {
+      position: relative;
+      padding: 10px;
+      margin: 0;
+    }
+  
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-section * {
+      box-sizing: border-box;
+    }
+    
+    #sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f .sp-grid {
+      display: grid;
+      margin: 0 auto;
+      grid-auto-columns: 1fr;
+      grid-auto-flow: column;
+      gap: 20px;
+    }
+  </style>
+  
+  <!-- start content -->
+  <section id="sp-countdown-template--22007975903547__sp_24_hour_count_down_ARWm8f" class="sp-section" sp-wrap="">
+  
+      <section class="sp-wrapper" sp-container="">
+  
+        <div class="sp-headline">
+          <h2><strong>Limited Time Offer</strong></h2>
+          <p>Act Now! Time is running out. This is a limited time offer.</p>
+        </div>
+  
+        <div class="sp-grid">
+          <div class="sp-grid-item">
+            <div class="sp-countdown">
+              <span id="hours" class="sp-timer">13</span>
+              <span class="sp-label">hours</span>
+            </div>
+          </div>
+          <div class="sp-grid-item">
+            <div class="sp-countdown">
+              <span id="minutes" class="sp-timer">59</span>
+              <span class="sp-label">minutes</span>
+            </div>
+          </div>
+          <div class="sp-grid-item">
+            <div class="sp-countdown">
+              <span id="seconds" class="sp-timer">50</span>
+              <span class="sp-label">seconds</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    </section>
+    <!-- end Sections.AI content -->
+  
+    <script>
+      function startCountdown() {
+        var hoursElement = document.getElementById('hours');
+        var minutesElement = document.getElementById('minutes');
+        var secondsElement = document.getElementById('seconds');
+  
+        var countdownInterval = setInterval(function () {
+          var hours = parseInt(hoursElement.innerText);
+          var minutes = parseInt(minutesElement.innerText);
+          var seconds = parseInt(secondsElement.innerText);
+  
+          if (hours === 0 && minutes === 0 && seconds === 0) {
+            clearInterval(countdownInterval);
+            return;
+          }
+  
+          if (seconds === 0) {
+            seconds = 59;
+  
+            if (minutes === 0) {
+              minutes = 59;
+              hours--;
+            } else {
+              minutes--;
+            }
+          } else {
+            seconds--;
+          }
+  
+          hoursElement.innerText = hours.toString().padStart(2, '0');
+          minutesElement.innerText = minutes.toString().padStart(2, '0');
+          secondsElement.innerText = seconds.toString().padStart(2, '0');
+        }, 1000);
+      }
+  
+      startCountdown();
+    </script>
+    <!-- end snippet code -->
+  
+    <!-- start schema -->
+    
+    <!-- end schema -->
+    </div>

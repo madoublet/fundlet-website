@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Shopify Multi-Step Form Section - Sections Pro</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Shopify Multi-Step Form Section - Sections Pro">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- set base -->
+    <base href="">
+
+    <link rel="icon" href="/resources/img/favicon.png">
+
+    <!-- css -->
+    <link type="text/css" href="/resources/css/reset.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/brand.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/site.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/page.css" rel="stylesheet">
+</head>
+
+<!-- Preview: 1000 x 1100 -->
+
+<body>
+
+    <div class="container">
+
+        <header>
+    <div style="text-align: left;">
+        <a href="/index.html"><img src="/resources/img/sections-ai-logo.svg"> </a>
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div style="text-align: right;">
+        <a class="header-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</header>
+
+<button id="toggle-mobile-menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12"><path fill="#888" fill-rule="nonzero" d="M0 11a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Z"/></svg></button>
+
+<div id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/about">Why us?</a>
+    <a href="/documentation">Documentation</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/refund-policy">Refund Policy</a>
+    <a href="/contact">Get in Touch</a>
+</div>
+
+<script>
+    var toggle_mobile_menu = document.querySelector('#toggle-mobile-menu');
+    var mobile_menu = document.querySelector('#mobile-menu');
+
+    toggle_mobile_menu.addEventListener(`click`, (e)=> { 
+        mobile_menu.classList.toggle('active');
+    });
+</script>
+
+        <div class="page-pitch">
+            <h1>Shopify Multi-Step Form Section</h1>
+            <p>Learn how to create a Multi-Step Form section with Sections Pro in Shopify</p>
+        </div>
+
+    </div>
+
+    <div class="page-container">
+        <div class="page-content">
+            <h3>Description of the Section</h3>
+<p>The Multi-Step Form section allows you to create a responsive, user-friendly multi-step form for your Shopify store. This section is perfect for collecting detailed customer information or feedback through a series of customizable steps. Users can easily navigate through each step, and you can design each step with various fields, text, images, and buttons. The form is highly customizable, allowing you to adjust fonts, colors, sizes, and more to match your store's brand.</p>
+<h3>Demo of the Section</h3>
+<iframe src="/resources/demos/multi-step-form.html"></iframe>
+<h3>Installation Instructions</h3>
+<ol>
+<li>Download the Sections Pro app on the <a href="https://apps.shopify.com/sections-ai">Shopify App Store</a></li>
+<li>Open the app and navigate to Premium Sections</li>
+<li>Search for &quot;Multi-Step Form&quot;</li>
+<li>Click to Publish or Purchase</li>
+</ol>
+<h3>Sample Use Cases for a Shopify E-commerce Store</h3>
+<ol>
+<li><strong>Customer Feedback Form:</strong> Collect detailed feedback from your customers regarding their shopping experience, product satisfaction, and suggestions.</li>
+<li><strong>Product Customization Form:</strong> Allow customers to input specific details about custom products they want to purchase.</li>
+<li><strong>Newsletter Subscription:</strong> Engage customers by having them sign up for newsletters in a multi-step process that can include demographics to personalize content.</li>
+<li><strong>Event Registration:</strong> Use the form for registering customers for events, collecting detailed information over several steps.</li>
+<li><strong>Multi-part Surveys:</strong> Conduct surveys across multiple steps to understand customer preferences, habits, or opinions about your store and its offerings.</li>
+</ol>
+<h3>Overview of the Configuration Settings</h3>
+<p><strong>Target</strong></p>
+<ul>
+<li><strong>Target:</strong> Add a string (with #) to trigger the modal.</li>
+</ul>
+<p><strong>Font</strong></p>
+<ul>
+<li><strong>Override theme fonts:</strong> Option to override the default theme fonts.</li>
+<li><strong>Headline Font:</strong> Choose the font for headlines.</li>
+<li><strong>Text Font:</strong> Choose the font for regular text.</li>
+</ul>
+<p><strong>Text</strong></p>
+<ul>
+<li><strong>Text Size:</strong> Adjust the size of the text.</li>
+<li><strong>Text Line Height:</strong> Set the line height for text.</li>
+<li><strong>Text Color:</strong> Choose the color for text.</li>
+</ul>
+<p><strong>Headline</strong></p>
+<ul>
+<li><strong>Headline Size:</strong> Adjust the size of the headline.</li>
+<li><strong>Headline Line Height:</strong> Set the line height for headlines.</li>
+<li><strong>Headline Color:</strong> Choose the color for headlines.</li>
+</ul>
+<p><strong>Colors</strong></p>
+<ul>
+<li><strong>Background Color:</strong> Set the background color of the form.</li>
+<li><strong>Textbox Border Color:</strong> Set the border color of text boxes.</li>
+<li><strong>Textbox Highlight Color:</strong> Set the highlight color of text boxes during focus.</li>
+<li><strong>Error Color:</strong> Choose the color for error messages.</li>
+<li><strong>Error Background Color:</strong> Set the background color for error messages.</li>
+</ul>
+<p><strong>Dimensions</strong></p>
+<ul>
+<li><strong>Max Width of Section:</strong> Define the maximum width.</li>
+<li><strong>Padding Top:</strong> Set the padding at the top.</li>
+<li><strong>Padding Bottom:</strong> Set the padding at the bottom.</li>
+<li><strong>Padding Left:</strong> Set the padding on the left side.</li>
+<li><strong>Padding Right:</strong> Set the padding on the right side.</li>
+<li><strong>Gap Between Content Elements:</strong> Define the space between content elements.</li>
+</ul>
+<p><strong>Button Style</strong></p>
+<ul>
+<li><strong>Button Border Color:</strong> Set the border color for buttons.</li>
+<li><strong>Button Background Color:</strong> Set the background color for buttons.</li>
+<li><strong>Button Selected Background Color:</strong> Set the background color when a button is selected.</li>
+<li><strong>Button Text Color:</strong> Set the text color for buttons.</li>
+<li><strong>Button Selected Text Color:</strong> Set the text color for selected buttons.</li>
+<li><strong>Text Size:</strong> Adjust the size of the button text.</li>
+<li><strong>Spacing Between Elements:</strong> Define the spacing between elements within the button.</li>
+<li><strong>Border Radius:</strong> Set the border radius for buttons.</li>
+</ul>
+<p><strong>Content</strong></p>
+<ul>
+<li><strong>Next Text:</strong> Customize the &quot;Next&quot; button text.</li>
+<li><strong>Submit Text:</strong> Customize the &quot;Submit&quot; button text.</li>
+<li><strong>Done Text:</strong> Customize the &quot;Done&quot; button text.</li>
+</ul>
+<p><strong>Blocks</strong></p>
+<ul>
+<li><strong>Step:</strong> Add steps to the form workflow.</li>
+<li><strong>Success:</strong> Customize the message shown on successful submission.</li>
+<li><strong>Error:</strong> Customize the message shown in case of errors.</li>
+<li><strong>Content:</strong> Add text or titles using <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.</li>
+<li><strong>Rich Text:</strong> Insert rich text with HTML elements.</li>
+<li><strong>Image:</strong> Include images with optional links, shadow, rounding, and aspect ratios.</li>
+<li><strong>Email:</strong> Add an email input field.</li>
+<li><strong>Name:</strong> Add a text input for the user's name.</li>
+<li><strong>Text:</strong> Create custom text input fields.</li>
+<li><strong>Single Select:</strong> Provide single-select button options.</li>
+<li><strong>Multiple Select:</strong> Provide multiple-select button options.</li>
+</ul>
+
+        </div>
+    </div>
+    
+    <footer>
+    <nav>
+        <a href="/" active>Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div>
+        <a class="footer-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</footer>
+
+</body>
+
+<script src="/resources/js/app.js""></script>
+
+
+</html>

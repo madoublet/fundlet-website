@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon</title>
+    <defs>
+        <rect id="path-1" x="31" y="28" width="437" height="437" rx="20"></rect>
+        <filter x="-6.9%" y="-6.9%" width="113.7%" height="113.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Countdown" transform="translate(-271, -110)">
+            <g id="icon" transform="translate(271, 110)">
+                <rect id="Rectangle" x="0" y="0" width="500" height="500"></rect>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M135,122 L365,122 C370.522847,122 375,126.477153 375,132 L375,362 C375,367.522847 370.522847,372 365,372 L135,372 C129.477153,372 125,367.522847 125,362 L125,132 C125,126.477153 129.477153,122 135,122 Z" id="Rectangle" fill="#3B8B96"></path>
+                <g id="upgrade_24dp_5F6368_FILL0_wght400_GRAD0_opsz24" transform="translate(209, 182)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M0,127 L0,119 C-2.705415e-16,116.790861 1.790861,115 4,115 L78,115 C80.209139,115 82,116.790861 82,119 L82,127 C82,129.209139 80.209139,131 78,131 L4,131 C1.790861,131 2.705415e-16,129.209139 0,127 Z M32.8,94 L32.8,31.2375 L32.8,31.2375 L14.3025396,49.4826303 C12.7396452,51.0242047 10.2263715,51.0181342 8.67094225,49.4690278 L2.84574988,43.6675151 C1.2804745,42.1086027 1.27531634,39.575948 2.83422882,38.0106726 C2.83806134,38.0068244 2.84190171,38.0029841 2.84574988,37.9991515 L38.1773393,2.8111865 C39.7381081,1.25676222 42.2618919,1.25676222 43.8226607,2.8111865 L79.1542501,37.9991515 C80.7195255,39.558064 80.7246837,42.0907187 79.1657712,43.6559941 C79.1619387,43.6598422 79.1580983,43.6636826 79.1542501,43.6675151 L73.3290578,49.4690278 C71.7736285,51.0181342 69.2603548,51.0242047 67.6974604,49.4826303 L49.2,31.2375 L49.2,31.2375 L49.2,94 C49.2,96.209139 47.409139,98 45.2,98 L36.8,98 C34.590861,98 32.8,96.209139 32.8,94 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Shopify Scrolling Images Section - Sections Pro</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Shopify Scrolling Images Section - Sections Pro">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- set base -->
+    <base href="">
+
+    <link rel="icon" href="/resources/img/favicon.png">
+
+    <!-- css -->
+    <link type="text/css" href="/resources/css/reset.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/brand.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/site.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/page.css" rel="stylesheet">
+</head>
+
+<!-- Preview: 1000 x 1100 -->
+
+<body>
+
+    <div class="container">
+
+        <header>
+    <div style="text-align: left;">
+        <a href="/index.html"><img src="/resources/img/sections-ai-logo.svg"> </a>
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div style="text-align: right;">
+        <a class="header-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</header>
+
+<button id="toggle-mobile-menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12"><path fill="#888" fill-rule="nonzero" d="M0 11a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Z"/></svg></button>
+
+<div id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/about">Why us?</a>
+    <a href="/documentation">Documentation</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/refund-policy">Refund Policy</a>
+    <a href="/contact">Get in Touch</a>
+</div>
+
+<script>
+    var toggle_mobile_menu = document.querySelector('#toggle-mobile-menu');
+    var mobile_menu = document.querySelector('#mobile-menu');
+
+    toggle_mobile_menu.addEventListener(`click`, (e)=> { 
+        mobile_menu.classList.toggle('active');
+    });
+</script>
+
+        <div class="page-pitch">
+            <h1>Shopify Scrolling Images Section</h1>
+            <p>Learn how to create a Scrolling Images section with Sections Pro in Shopify</p>
+        </div>
+
+    </div>
+
+    <div class="page-container">
+        <div class="page-content">
+            <h3>Description of the Section</h3>
+<p>The &quot;Scrolling Images&quot; section transforms your Shopify storefront with a captivating scrolling image carousel. As users scroll, new images appear while accompanying text and headlines gracefully transition in and out. The section is perfect for highlighting multiple products, features, or stories in a dynamic and visually appealing manner.</p>
+<h3>Demo of the Section</h3>
+<iframe src="/resources/demos/scrolling-images.html"></iframe>
+<h3>Installation Instructions</h3>
+<ol>
+<li>Download the Sections Pro app on the <a href="https://apps.shopify.com/sections-ai">Shopify App Store</a></li>
+<li>Open the app and navigate to Premium Sections</li>
+<li>Search for &quot;Scrolling Images&quot;</li>
+<li>Click to Publish or Purchase</li>
+</ol>
+<h3>Sample Use Cases for a Shopify E-commerce Store</h3>
+<ol>
+<li><strong>Product Features Carousel</strong>: Showcase the unique features of a new product. Each scroll reveals a new image with a descriptive text overlay.</li>
+<li><strong>Customer Testimonials</strong>: Display customer reviews and testimonials with their corresponding profile pictures.</li>
+<li><strong>Brand Story</strong>: Tell the brand's story with a series of images and narratives that transition as the user scrolls.</li>
+<li><strong>Seasonal Promotions</strong>: Highlight different aspects of a seasonal promotion or holiday campaign.</li>
+<li><strong>Portfolio Display</strong>: Creative agencies can use this section to showcase a portfolio of completed projects with descriptions.</li>
+</ol>
+<h3>Overview of the Configuration Settings</h3>
+<ul>
+<li>
+<p><strong>Fonts</strong>:</p>
+<ul>
+<li>Override theme fonts</li>
+<li>Headline Font</li>
+<li>Text Font</li>
+</ul>
+</li>
+<li>
+<p><strong>Text</strong>:</p>
+<ul>
+<li>Text Size (10px to 50px)</li>
+<li>Text Line Height (0.75 to 2.0, or inherit)</li>
+<li>Headline Size (10px to 50px)</li>
+<li>Headline Line Height (0.75 to 2.0, or inherit)</li>
+</ul>
+</li>
+<li>
+<p><strong>Colors</strong>:</p>
+<ul>
+<li>Background Color</li>
+<li>Progress Background Color</li>
+<li>Progress Foreground Color</li>
+<li>Indicator Color</li>
+</ul>
+</li>
+<li>
+<p><strong>Dimensions</strong>:</p>
+<ul>
+<li>Max Width of Section (in pixels)</li>
+<li>Height (in pixels)</li>
+<li>Point where text appears on the screen (in pixels)</li>
+<li>Padding Top, Bottom, Left, Right (in pixels)</li>
+<li>Element Spacing (in pixels)</li>
+<li>Gap between Columns (in pixels)</li>
+</ul>
+</li>
+<li>
+<p><strong>Slideshow</strong>:</p>
+<ul>
+<li>Round Borders on Media (0px to 50px)</li>
+<li>Subtle Shadow on Media</li>
+<li>Media Aspect Ratio (21:9, 16:9, 4:3, 1:1)</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    
+    <footer>
+    <nav>
+        <a href="/" active>Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div>
+        <a class="footer-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</footer>
+
+</body>
+
+<script src="/resources/js/app.js""></script>
+
+
+</html>

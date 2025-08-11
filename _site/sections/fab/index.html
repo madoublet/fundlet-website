@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Shopify Action Button Section - Sections Pro</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Shopify Action Button Section - Sections Pro">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- set base -->
+    <base href="">
+
+    <link rel="icon" href="/resources/img/favicon.png">
+
+    <!-- css -->
+    <link type="text/css" href="/resources/css/reset.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/brand.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/site.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/page.css" rel="stylesheet">
+</head>
+
+<!-- Preview: 1000 x 1100 -->
+
+<body>
+
+    <div class="container">
+
+        <header>
+    <div style="text-align: left;">
+        <a href="/index.html"><img src="/resources/img/sections-ai-logo.svg"> </a>
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div style="text-align: right;">
+        <a class="header-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</header>
+
+<button id="toggle-mobile-menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12"><path fill="#888" fill-rule="nonzero" d="M0 11a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Z"/></svg></button>
+
+<div id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/about">Why us?</a>
+    <a href="/documentation">Documentation</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/refund-policy">Refund Policy</a>
+    <a href="/contact">Get in Touch</a>
+</div>
+
+<script>
+    var toggle_mobile_menu = document.querySelector('#toggle-mobile-menu');
+    var mobile_menu = document.querySelector('#mobile-menu');
+
+    toggle_mobile_menu.addEventListener(`click`, (e)=> { 
+        mobile_menu.classList.toggle('active');
+    });
+</script>
+
+        <div class="page-pitch">
+            <h1>Shopify Action Button Section</h1>
+            <p>Learn how to create an Action Button section with Sections Pro in Shopify</p>
+        </div>
+
+    </div>
+
+    <div class="page-container">
+        <div class="page-content">
+            <h2><strong>Description of the Section</strong></h2>
+<p>The Action Button section allows you to create a fixed floating action button (FAB) on your Shopify store. This button can be customized with various icons, images, or videos, and it can be linked to any URL, redirecting customers to a specific page or performing a desired action, enhancing user interaction and conversion rates.</p>
+<h2><strong>Demo of the Section</strong></h2>
+<iframe src="/resources/demos/fab.html"></iframe>
+<h2><strong>Installation Instructions</strong></h2>
+<ol>
+<li>Download the Sections Pro app on the <a href="https://apps.shopify.com/sections-ai">Shopify App Store</a></li>
+<li>Open the app and navigate to Free Sections</li>
+<li>Search for &quot;Action Button&quot;</li>
+<li>Click to Publish or Purchase</li>
+</ol>
+<h2><strong>Sample Use Cases for a Shopify E-commerce Store</strong></h2>
+<ol>
+<li><strong>Contact Us Button</strong>: Add a floating button that directs customers to your contact page or initiates a chat with customer support.</li>
+<li><strong>Promotional Offers</strong>: Highlight ongoing sales or promotions by linking the button to a specific product or collection.</li>
+<li><strong>Cart Reminder</strong>: Use a cart icon that directs customers to their shopping cart, reminding them of pending purchases.</li>
+<li><strong>Feedback Collection</strong>: Collect customer feedback by linking the button to a survey or feedback form.</li>
+<li><strong>Social Media Links</strong>: Direct customers to your brand's social media pages using easily recognizable icons.</li>
+</ol>
+<h2><strong>Overview of the Configuration Settings</strong></h2>
+<p><em>Text Settings</em>:</p>
+<ol>
+<li><strong>Text Font</strong> (<code>text_font</code>): Choose the font family for the button text. Default is <code>sans-serif</code>.</li>
+<li><strong>Text Size</strong> (<code>text_size</code>): Set the text size, ranging from 10px to 50px. Default is 15px.</li>
+<li><strong>Alignment</strong> (<code>alignment</code>): Select the button alignment, either <code>left</code> or <code>right</code>. Default is <code>right</code>.</li>
+</ol>
+<p><em>Color Settings</em>:
+4. <strong>Text Color</strong> (<code>text_color</code>): Choose the color for the button text. Default is <code>#111</code>.</p>
+<p><em>Dimensions Settings</em>:
+5. <strong>Padding Top</strong> (<code>padding_top</code>): Set top padding in pixels. Default is 10px.
+6. <strong>Padding Bottom</strong> (<code>padding_bottom</code>): Set bottom padding in pixels. Default is 10px.
+7. <strong>Padding Left</strong> (<code>padding_left</code>): Set left padding in pixels. Default is 10px.
+8. <strong>Padding Right</strong> (<code>padding_right</code>): Set right padding in pixels. Default is 10px.</p>
+<p><em>Icon Settings</em>:
+9. <strong>Icon Background</strong> (<code>icon_background_color</code>): Set the background color for the icon. Default is a linear gradient.
+10. <strong>Icon Color</strong> (<code>icon_color</code>): Choose the color for the icon. Default is <code>#fff</code>.
+11. <strong>Icon Size</strong> (<code>icon_size</code>): Define the icon size in pixels. Default is 25px.
+12. <strong>Icon Shape</strong> (<code>icon_shape</code>): Choose between <code>square</code>, <code>rounded</code>, or <code>circle</code>. Default is <code>circle</code>.
+13. <strong>Icon Padding</strong> (<code>icon_padding</code>): Set padding around the icon in pixels. Default is 10px.
+14. <strong>Icon Type</strong> (<code>icon</code>): Select from various predefined icons like <code>cart</code>, <code>gift</code>, <code>shipping</code>, etc. Default is <code>tag</code>.</p>
+<p><em>Image Settings</em>:
+15. <strong>Image Picker</strong> (<code>image</code>): Optional image to replace the icon.</p>
+<p><em>Video Settings</em>:
+16. <strong>Video Picker</strong> (<code>video</code>): Optional video to replace the icon.
+17. <strong>Play Inline</strong> (<code>video_inline</code>): Boolean to play video inline. Default is true.
+18. <strong>Autoplay</strong> (<code>video_autoplay</code>): Boolean to autoplay the video. Default is true.
+19. <strong>Loop Video</strong> (<code>video_loop</code>): Boolean to loop the video. Default is true.
+20. <strong>Show Video Controls</strong> (<code>video_controls</code>): Boolean to show video controls. Default is false.
+21. <strong>Mute Video</strong> (<code>video_muted</code>): Boolean to mute the video. Default is true.</p>
+<p><em>Content Settings</em>:
+22. <strong>Action Text</strong> (<code>text</code>): Inline rich text editor for button text.
+23. <strong>Link</strong> (<code>link</code>): URL to redirect when the button is clicked.</p>
+
+        </div>
+    </div>
+    
+    <footer>
+    <nav>
+        <a href="/" active>Home</a>
+        <a href="/about">Why us?</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div>
+        <a class="footer-cta" href="https://apps.shopify.com/sections-ai"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</footer>
+
+</body>
+
+<script src="/resources/js/app.js""></script>
+
+
+</html>
