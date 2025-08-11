@@ -45,9 +45,35 @@ body a, body a:visited{
     background: linear-gradient(135deg, #F4F2EF 0%, #F4F8FC 50%, #F5FAF4 100%);
 }
 
+.index-pitch-cta, .index-pitch-cta:visited {
+    position: relative;
+    display: none;
+    background-color: #111;
+    padding: 12px 30px 12px 50px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.index-pitch-cta img {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    height: 20px;;
+}
+
+@media (max-width: 768px) {
+    .index-pitch-cta, .index-pitch-cta:visited {
+        display: inline-block;
+    }
+}
+
+
 .index-pitch h1 {
     max-width: 1000px;
-    margin: 25px auto;
+    margin: 25px auto 35px auto;
     font-size: 3rem;
     font-weight: 900;
     line-height: 3.2rem;
