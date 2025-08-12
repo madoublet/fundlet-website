@@ -100,7 +100,7 @@ body a, body a:visited{
 
 @media (max-width: 768px) {
     .index-pitch p {
-        padding: 0 10px 0 40px;
+        padding: 0 10px 0 10px;
         text-align: left;
     }
 }
