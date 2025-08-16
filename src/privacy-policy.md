@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-title: Fundlet - Privacy Policy
+title: Privacy Policy
 description: Your privacy and data are important to us. Learn how we protect both.
 ---
 
