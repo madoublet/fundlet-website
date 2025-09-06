@@ -14,6 +14,17 @@ body a, body a:visited{
     color: var(--brand-blue);
 }
 
+body hr {
+    display: block;
+    height: 1px;
+    color: #ddd;
+    background: #ddd;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-size: 0;
+    border: 0;
+}
+
 /* pitch */
 .page-pitch {
     margin-bottom: 65px;
