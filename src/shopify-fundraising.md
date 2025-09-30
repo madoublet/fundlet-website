@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-title: Fundlet - Shopify Fundraising with Fundlet
+title: Shopify Fundraising with Fundlet
 description: Learn how to raise money for your school or build a new marketing channel for your brand with Shopify Fundraising from Fundlet Fundraiser.
 ---
 

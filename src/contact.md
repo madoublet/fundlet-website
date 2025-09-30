@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-title: Fundlet- Contact
+title: Contact
 description: Want to reach out, follow the links below
 ---
 
