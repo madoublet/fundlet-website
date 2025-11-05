@@ -1,0 +1,115 @@
+---
+title: Base
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Fundlet - {{ title }}</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="{{ title }} - Sections Pro">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- set base -->
+    <base href="">
+
+    <link rel="icon" href="{{ '/resources/img/favicon.png' | url }}">
+
+    <!-- css -->
+    <link type="text/css" href="{{ '/resources/css/reset.css' | url }}" rel="stylesheet">
+    <link type="text/css" href="{{ '/resources/css/brand.css' | url }}" rel="stylesheet">
+    <link type="text/css" href="{{ '/resources/css/site.css' | url }}" rel="stylesheet">
+    <link type="text/css" href="{{ '/resources/css/page.css' | url }}" rel="stylesheet">
+</head>
+
+<!-- Preview: 1000 x 1100 -->
+
+<body>
+
+    <div class="container">
+
+        {% include "header.njk" %}
+
+        <div class="page-pitch">
+            <h1>{{ title }}</h1>
+            <p>{{ description }}</p>
+        </div>
+
+    </div>
+
+    <div class="page-roadmap">
+        <div>
+            <div>Friday, 11/7<small>NOT RELEASED</small></div>
+            <div>
+                <p><span>•</span> <b>Feature &ndash;</b> Support for individual products to be added to a campaign. Can be used standalone or with a collection. Enables the use of unlisted products as these don't show in a collection.</p>
+                <p><span>•</span> <b>Improvement &ndash;</b> Display Sold Out tag on Fundlet Collection. Gray out button in modal for Sold Out.</p>
+                <p><span>•</span> <b>Improvement &ndash;</b> Improve display of date on Fundlet Banner. From 2025-12-25 to Dec 25.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-roadmap" style="border-top: 1px solid #ddd; padding-top: 20px;">
+        <div>
+            <div>Friday, 10/31<small>RELEASED</small></div>
+            <div>
+                <p><span>•</span> <b>Improvement &ndash;</b> Moved filter over product list to better align with Shopify standards.</p>
+                <p><span>•</span> <b>Bug Fix &ndash;</b> Replaced Shopify storefront web components with liquid/javascript solution to fix errors shown on page.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-roadmap" style="border-top: 1px solid #ddd; padding-top: 20px;">
+        <div>
+            <div>Friday, 10/24<small>RELEASED</small></div>
+            <div>
+                <p><span>•</span> <b>Feature &ndash;</b> Allow a campaign to be associated with a collection to show campaign banner on collection and automatically associate products with campaign.</p>
+                <p><span>•</span> <b>Improvement &ndash;</b> Organization name setting and display on Fundlet Banner.</p>
+                <p><span>•</span> <b>Feature &ndash;</b> Support for payout tiers.</p>
+                <p><span>•</span> <b>Improvement &ndash;</b> Setting to show participants on top on mobile on Fundlet Collection.</p>
+                <p><span>•</span> <b>Improvement &ndash;</b> Setting to exclude items not directly tagged on the campaign from the payout.</p>
+                <p><span>•</span> <b>Improvement &ndash;</b> Combine create and edit form for a consistent experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-roadmap" style="border-top: 1px solid #ddd; padding-top: 20px;">
+        <div>
+            <div>Friday, 10/17<small>RELEASED</small></div>
+            <div>
+                <p><span>•</span> <b>Feature &ndash;</b> Fundlet Filter widget to filter campaign items by price.</p>
+                <p><span>•</span> <b>Feature &ndash;</b> Branded portal (aka share campagin page) feature</p>
+                <p><span>•</span> <b>Improvement &ndash;</b> Edit discount code if orders are no associated with campaign</p>
+                <p><span>•</span> <b>Improvement &ndash;</b> Countdown on Fundlet Banner</p>
+                <p><span>•</span> <b>Bugfix &ndash;</b> Anti-spam deterrents on external forms</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-roadmap" style="border-top: 1px solid #ddd; padding-top: 20px;">
+        <div>
+            <div>Friday, 10/10<small>RELEASED</small></div>
+            <div>
+                <p><span>•</span> <b>Feature &ndash;</b> CSV upload of participants</p>
+                <p><span>•</span> <b>Feature &ndash;</b> Settings page with branding and default settings</p>
+            </div>
+        </div>
+    </div>
+    
+    {% include "footer.njk" %}
+
+</body>
+
+<script src="{{ '/resources/js/app.js' | url }}""></script>
+
+
+</html>
