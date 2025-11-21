@@ -805,6 +805,12 @@ body hr {
     margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+    .page-two-column {
+        margin: 0 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .page-two-column {
         display: grid;
