@@ -128,21 +128,6 @@ body hr {
     padding: 20px;
 }
 
-.page-feature h2 {
-    max-width: 1000px;
-    margin: 25px auto;
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 3.2rem;
-    text-align: left;
-    color: #55505C;
-}
-
-.page-feature p {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 0 0 10px 0;
-}
 
 .page-feature li {
     font-size: 16px;
@@ -689,7 +674,7 @@ body hr {
     background-color: #F4F8FC;
     border-radius: 10px;
     padding: 0;
-    align-items: center;
+    align-items: start;
     overflow: hidden;
 }
 
@@ -714,9 +699,9 @@ body hr {
 .page-feature h2 {
     max-width: 1000px;
     margin: 25px auto;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
-    line-height: 3.2rem;
+    line-height: 2rem;
     text-align: left;
     color: #111;
 }
@@ -783,4 +768,77 @@ body hr {
     font-size: 12px;
     display: block;
     margin-top: 10px;
+}
+
+.page-content dl {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #F4F8FC;
+    border-left: 4px solid #9CD9DB;
+}
+
+.page-content dl dt {
+    font-weight: bold;
+    font-size: 1.0rem;
+    margin-bottom: 5px;
+    line-height: 1.5rem;
+}
+
+.page-content dl dd {
+    font-size: 1.0rem;
+    margin-bottom: 5px;
+    line-height: 1.5rem;
+    background: url(../img/bullet.svg) no-repeat 0 7px;
+    background-size: 10px;
+    padding-left: 25px;
+}
+
+.page-content dl dd:last-child {
+    margin-bottom: 0;
+}
+
+.page-two-column {
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .page-two-column {
+        display: grid;
+        grid-template-columns: 1fr;;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .page-sidebar {
+        padding: 0 10px;
+    }
+}
+
+.page-sidebar dl {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #F4F8FC;
+    border-left: 4px solid #9CD9DB;
+}
+
+.page-sidebar dl dt {
+    font-weight: bold;
+    font-size: 1.0rem;
+    margin-bottom: 5px;
+    line-height: 1.5rem;
+}
+
+.page-sidebar dl dd {
+    font-size: 1.0rem;
+    margin-bottom: 5px;
+    line-height: 1.5rem;
+}
+
+.page-sidebar dl dd:last-child {
+    margin-bottom: 0;
 }
