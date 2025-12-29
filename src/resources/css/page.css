@@ -98,6 +98,13 @@ body hr {
     font-size: 13px;
 }
 
+.page-callout {
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+}
+
 /* feature */
 .page-feature {
     box-sizing: border-box;

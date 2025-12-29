@@ -98,6 +98,13 @@ body hr {
     font-size: 13px;
 }
 
+.page-callout {
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+}
+
 /* feature */
 .page-feature {
     box-sizing: border-box;
@@ -730,6 +737,12 @@ body hr {
     box-sizing: border-box;
     max-width: 1000px;
     margin: 0 auto 25px auto;
+    border-top: 1px solid #ddd; padding-top: 20px;
+}
+
+.page-roadmap.recent {
+    border: none;
+    padding-top: 0;
 }
 
 .page-roadmap>div {
@@ -805,13 +818,19 @@ body hr {
     margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+    .page-two-column {
+        margin: 0 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .page-two-column {
         display: grid;
         grid-template-columns: 1fr;;
         gap: 20px;
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 0 10px;
     }
 
     .page-sidebar {
