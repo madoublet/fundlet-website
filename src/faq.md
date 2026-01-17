@@ -272,3 +272,20 @@ You can:
 - [Implement Payout Tiers](https://www.youtube.com/watch?v=BrZYgzuOA_k)
 
 </details>
+
+<details class="faq-item">
+<summary>How are payouts handled?</summary>
+
+**Short answer:** Shopify processes the orders, and payouts are handled directly by your shop.
+
+**Details:**
+
+Fundlet does **not** move money or take control of payments.
+
+- Orders are placed and paid for through Shopify as normal
+- Funds are deposited into your existing Shopify payment account
+- You control how and when funds are distributed to organizers or participants
+
+Fundlet focuses on **tracking, reporting, and payout calculations**, while payment distribution remains fully in your control.
+
+</details>
