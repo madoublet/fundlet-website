@@ -1,0 +1,2 @@
+# Goals
+The goal of this project is to develop an app that acts as a bridge from an existing metaobject and the storefront. The app will allow you to select your metaobject to "link" it to the storefront. After selection, you will be able to select which fields will show on the storefront
