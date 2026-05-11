@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Fundlet - How to Group Participants in Fundlet</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="How to Group Participants in Fundlet - Sections Pro">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- set base -->
+    <base href="">
+
+    <link rel="icon" href="/resources/img/favicon.png">
+
+    <!-- css -->
+    <link type="text/css" href="/resources/css/reset.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/brand.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/site.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/page.css" rel="stylesheet">
+</head>
+
+<!-- Preview: 1000 x 1100 -->
+
+<body>
+
+    <div class="container">
+
+        <header>
+    <div style="text-align: left;">
+        <a href="/index.html"><img src="/resources/img/fundlet-wordmark.svg"> </a>
+    </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/learn">Learn</a>
+        <a href="/faq">FAQ</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div style="text-align: right;">
+        <a class="header-cta" href="https://apps.shopify.com/fundlet"><img src="/resources/img/shopify-white.svg"> Add to your Store</a>
+    </div>
+</header>
+
+<button id="toggle-mobile-menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12"><path fill="#888" fill-rule="nonzero" d="M0 11a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Zm0-5a1 1 0 0 1 1-1h16a1 1 0 0 1 0 2H1a1 1 0 0 1-1-1Z"/></svg></button>
+
+<div id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/learn">Learn</a>
+        <a href="/faq">FAQ</a>
+    <a href="/privacy-policy">Privacy Policy</a>
+    <a href="/contact">Get in Touch</a>
+</div>
+
+<script>
+    var toggle_mobile_menu = document.querySelector('#toggle-mobile-menu');
+    var mobile_menu = document.querySelector('#mobile-menu');
+
+    toggle_mobile_menu.addEventListener(`click`, (e)=> { 
+        mobile_menu.classList.toggle('active');
+    });
+</script>
+
+        <div class="page-pitch">
+            <h1>How to Group Participants in Fundlet</h1>
+            <p>Organize your fundraiser participants into groups to make browsing and searching easier for shoppers and self-registering participants.</p>
+        </div>
+
+    </div>
+
+    <div class="page-container">
+        <div class="page-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fWP-Q1FffQA" frameborder="0" allowfullscreen></iframe>
+<hr>
+<h2>Overview</h2>
+<p>Participant groups let you organize participants into categories — like classrooms or grade levels — so shoppers can narrow down the list before selecting a participant. Groups also appear in the searchable dropdown as designators alongside each participant's name.</p>
+<hr>
+<h2>Step 1: Enable Groups in Edit Campaign</h2>
+<ol>
+<li>In the Fundlet app, open your campaign and click <strong>Edit Campaign</strong>.</li>
+<li>Scroll to the <strong>Participants</strong> section and look for the <strong>Groups</strong> setting.</li>
+<li>Give your group a label (e.g. &quot;classroom&quot;) and enter the group values as a comma-separated list (e.g. <code>PreK, K, 1, 2, 3, 4, 5</code>).</li>
+<li>Hit <strong>Save</strong>. The groups are now created and ready to use.</li>
+</ol>
+<hr>
+<h2>Step 2: Assign Participants to Groups</h2>
+<p>When adding a new participant in Edit Campaign, you can assign them to a group at the same time. You can also go back and assign groups to existing participants.</p>
+<p>If you're uploading participants via CSV, include a <code>group</code> column — participants will be assigned automatically during the import. See <a href="/learn/upload-participant-csv">Upload Participant CSV</a> for the format.</p>
+<hr>
+<h2>Step 3: How Groups Appear on the Storefront</h2>
+<p>In the theme customizer, the <strong>Welcome</strong> block has an option to show participants in a <strong>searchable dropdown</strong>. When groups are enabled, each participant appears with their group as a designator — for example, &quot;Liam - PreK&quot; or &quot;Liam - First Grade&quot; — making it easy for shoppers to find the right person.</p>
+<hr>
+<h2>Groups and Self-Registration</h2>
+<p>If self-registration is enabled for your campaign, participants signing themselves up will also be prompted to select their group during registration. This keeps the list organized without requiring manual sorting afterward.</p>
+
+        </div>
+    </div>
+    
+    <footer>
+    <nav>
+        <a href="/" active>Home</a>
+        <a href="/learn">Learn</a>
+        <a href="/faq">FAQ</a>
+        <a href="/roadmap">Roadmap</a>
+        <a href="/shopify-fundraising">Shopify Fundraising</a>
+        <a href="/fundraising-for-small-businesses">Fundraising for Shops</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/contact">Get in Touch</a>
+    </nav>
+    <div>
+        <a class="footer-cta" href="https://apps.shopify.com/fundlet"><img src="/resources/img/shopify-white.svg"> Add to your Shopify shop</a>
+    </div>
+</footer>
+
+</body>
+
+<script src="/resources/js/app.js""></script>
+
+
+</html>
