@@ -1,23 +1,36 @@
 :root {
-    --brand-pink: #0D8BF4;
-    --brand-teal: #35CBDD;
-    --brand-green: #8CCF05;
-    --brand-yellow: #F3CC40;
-    --brand-orange: #F77806;
-    --brand-blue: #4C90C8;
-    --brand-primary: var(--brand-teal);
-    --brand-secondary: var(--brand-pink);
-    --ui-dark: #111;
-    --ui-menu-dark: #111;
-    --ui-button-dark: #111;
-    --ui-sidebar-header: #111;
-    --ui-sidebar-primary-button: #111;
-    --ui-toast-success: var(--brand-green);
-    --ui-toast-failure: var(--brand-pink);
-    --ui-toast-loading: var(--brand-teal);
-    --ui-tabs: var(--ui-dark);
-    --ui-tabs-selected: var(--brand-teal);
-    --ui-tabs-unselected: #888;
-    --ui-tabs-border: #f0f0f0;
-    --ui-divider-border: #cccccc;
-  }
+  /* Fundlet green */
+  --green-strong: #36C61B;
+  --accent: #36C61B;
+  --accent-deep: oklch(0.47 0.12 150);
+  --accent-soft: oklch(0.93 0.06 145);
+
+  /* Green panels (CTA, feature-review, footer) */
+  --panel: oklch(0.48 0.15 150);
+  --on-panel: #ffffff;
+  --on-panel-2: rgba(255,255,255,0.82);
+  --on-panel-line: rgba(255,255,255,0.24);
+
+  /* Backgrounds */
+  --bg: oklch(0.988 0.004 95);
+  --bg-2: oklch(0.972 0.006 95);
+  --paper: oklch(1 0 0);
+
+  /* Text */
+  --ink: oklch(0.24 0.008 80);
+  --ink-2: oklch(0.42 0.01 80);
+  --muted: oklch(0.56 0.01 80);
+
+  /* Borders */
+  --line: oklch(0.9 0.005 90);
+  --line-2: oklch(0.84 0.006 90);
+
+  /* Eyebrow typography */
+  --eyebrow-family: "Geist Mono", ui-monospace, monospace;
+  --eyebrow-spacing: 0.12em;
+  --eyebrow-transform: uppercase;
+
+  /* Layout */
+  --maxw: 1200px;
+  --r: 14px;
+}

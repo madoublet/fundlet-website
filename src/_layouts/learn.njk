@@ -3,45 +3,38 @@ title: Base
 ---
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
     <head>
-        <title>Fundlet - {{ title }}</title>
-        <!-- meta -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="{{ title }} - Sections Pro">
-        <meta name="keywords" content="">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta
-        name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> <!-- prevent caching -->
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-        <meta http-equiv="Pragma" content="no-cache">
-        <meta
-        http-equiv="Expires" content="0"> <!-- set base -->
-        <base href="">
-        <link
-        rel="icon" href="{{ '/resources/img/favicon.png' | url }}"> <!-- css -->
-        <link type="text/css" href="{{ '/resources/css/reset.css' | url }}" rel="stylesheet">
-        <link type="text/css" href="{{ '/resources/css/brand.css' | url }}" rel="stylesheet">
-        <link type="text/css" href="{{ '/resources/css/site.css' | url }}" rel="stylesheet">
-        <link type="text/css" href="{{ '/resources/css/page.css' | url }}" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Fundlet — {{ title }}</title>
+        <meta name="description" content="{{ description }}" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+        <link rel="icon" href="{{ '/resources/img/favicon.png' | url }}" />
+        <link rel="stylesheet" href="{{ '/resources/css/reset.css' | url }}" />
+        <link rel="stylesheet" href="{{ '/resources/css/brand.css' | url }}" />
+        <link rel="stylesheet" href="{{ '/resources/css/site.css' | url }}" />
+        <link rel="stylesheet" href="{{ '/resources/css/page.css' | url }}" />
     </head>
-    <!-- Preview: 1000 x 1100 -->
     <body>
-        <div class="container">
-            {% include "header.njk" %}
-            <div class="page-pitch">
-                <h1>{{ title }}</h1>
-                <p>{{ description }}</p>
+        {% include "header.njk" %}
+        <section class="page-intro">
+            <div class="wrap">
+                <div class="sec-head">
+                    <span class="eyebrow">Tutorials</span>
+                    <h1>{{ title }}</h1>
+                    {% if description %}<p class="lede">{{ description }}</p>{% endif %}
+                </div>
             </div>
-        </div>
+        </section>
         <div class="page-one-column">
 
-            <div class="page-callout">
-                <p>🚀 Getting ready to launch? Check out our <a href="/launch">Launch Checkpoints</a></p>
-            </div>
 
-            <div class="page-feature" style="background-color: #F4F2EF;">
+            <div class="page-feature">
                 <div>
                     <h2>Part 1: Create your First Campaign</h2>
                     <p>Learn how to get started creating Fundraisers on Shopoify by creating your first campaign in Fundlet.</p>
@@ -72,7 +65,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F8FC;">
+            <div class="page-feature">
                 <div>
                     <h2>Part 2: Setup your Storefront</h2>
                     <p>Every Fundlet campaign comes with a unique storefront to showcase the campaign and its products.</p>
@@ -103,7 +96,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F5FAF4;">
+            <div class="page-feature">
                 <div>
                     <h2>Part 3: Sales Walkthrough</h2>
                     <p>See how Fundlet tracks and reports on sales from the point of purchase to reporting in the app.</p>
@@ -134,7 +127,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F2EF;">
+            <div class="page-feature">
                 <div>
                     <h2>Onboard Participants</h2>
                     <p>Learn how to quickly onboard participants from your campaign page.</p>
@@ -165,7 +158,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F8FC;">
+            <div class="page-feature">
                 <div>
                     <h2>Onboard Campaigns</h2>
                     <p>Learn how to quickly onboard campains from your shop.</p>
@@ -196,7 +189,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F5FAF4;">
+            <div class="page-feature">
                 <div>
                     <h2>Use Discount Codes</h2>
                     <p>Fundlet uses Shopify's built-in discount codes. So you can use them to expand your fundraiser past your campaign page.</p>
@@ -227,7 +220,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F2EF;">
+            <div class="page-feature">
                 <div>
                     <h2>Setup Custom Fields</h2>
                     <p>Collect custom data (think location, team name, personalization, etc.) to Fundraiser products.</p>
@@ -258,7 +251,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F8FC;">
+            <div class="page-feature">
                 <div>
                     <h2>Display Countdown</h2>
                     <p>Learn how to show a countdown to drive urgency and boost sales.</p>
@@ -289,7 +282,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F5FAF4;">
+            <div class="page-feature">
                 <div>
                     <h2>Use Existing Product Page</h2>
                     <p>Learn how to use your existing product page with Fundlet</p>
@@ -320,7 +313,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F2EF;">
+            <div class="page-feature">
                 <div>
                     <h2>End-to-End Walkthrough</h2>
                     <p>See how to setup a fundraiser from start-to-finish with Fundlet.</p>
@@ -351,7 +344,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F8FC;">
+            <div class="page-feature">
                 <div>
                     <h2>Single Product Fundraiser</h2>
                     <p>Learn how to create a stunning single product fundraiser.</p>
@@ -382,7 +375,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F5FAF4;">
+            <div class="page-feature">
                 <div>
                     <h2>Create Custom Theme Templates</h2>
                     <p>Learn how to create a custom theme template for your campaign.</p>
@@ -413,7 +406,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F2EF;">
+            <div class="page-feature">
                 <div>
                     <h2>Create Custom Payouts</h2>
                     <p>Assign specific dollar amounts for each product in your campaign.</p>
@@ -444,7 +437,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F8FC;">
+            <div class="page-feature">
                 <div>
                     <h2>Share Campaign Dashboard</h2>
                     <p>Securely give campaign organizers access to campaign details and reports</p>
@@ -475,7 +468,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F5FAF4;">
+            <div class="page-feature">
                 <div>
                     <h2>Display Fundraiser on Collection Page</h2>
                     <p>Learn how to use your Shopify Collection page for your Fundraiser Landing Page</p>
@@ -506,7 +499,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F2EF;">
+            <div class="page-feature">
                 <div>
                     <h2>Implement Payout Tiers to Boost Participation</h2>
                     <p>Learn how to use payout tiers to adjust payouts based on revenue</p>
@@ -537,7 +530,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F8FC;">
+            <div class="page-feature">
                 <div>
                     <h2>Create Isolated Fundraisers</h2>
                     <p>Learn how to use Fundlet to create isolated campaigns that do not share your shop's header and/or footer.</p>
@@ -568,7 +561,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F5FAF4;">
+            <div class="page-feature">
                 <div>
                     <h2>Add an Existing Order to a Campaign</h2>
                     <p>Learn how to add an order that was not properly tagged into a campaign</p>
@@ -599,7 +592,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F2EF;">
+            <div class="page-feature">
                 <div>
                     <h2>Use Unlisted Shopify Products in your Fundraiser</h2>
                     <p>Learn how to use Shopify's unlisted product status to create unique products for your fundraiser</p>
@@ -630,7 +623,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F8FC;">
+            <div class="page-feature">
                 <div>
                     <h2>Duplicate Campaign</h2>
                     <p>Learn how to quickly duplicate a campaign in Fundlet.</p>
@@ -661,7 +654,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F5FAF4;">
+            <div class="page-feature">
                 <div>
                     <h2>Password Protected Fundraisers</h2>
                     <p>Learn how to make a password protected fundraiser.</p>
@@ -692,7 +685,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F2EF;">
+            <div class="page-feature">
                 <div>
                     <h2>Upload Participant CSV</h2>
                     <p>Our upload participants CSV feature makes adding participants to your Shopify Fundraiser easy</p>
@@ -723,7 +716,7 @@ title: Base
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="page-feature" style="background-color: #F4F8FC;">
+            <div class="page-feature">
                 <div>
                     <h2>Group Participants</h2>
                     <p>Group participants to make organization and discovery easier.</p>
@@ -755,7 +748,7 @@ title: Base
                 </div>
             </div>
 
-            <div class="page-feature" style="background-color: #F4F2EF;">
+            <div class="page-feature">
                 <div>
                     <h2>Require and Search Participants</h2>
                     <p>Learn how to require the selection of participants for your fundraiser.</p>
@@ -787,7 +780,7 @@ title: Base
                 </div>
             </div>
 
-            <div class="page-feature" style="background-color: #F4F8FC;">
+            <div class="page-feature">
                 <div>
                     <h2>Participants as Metaobjects</h2>
                     <p>Learn how to scale participants in Fundlet using our new Metaobject feature</p>
@@ -819,19 +812,10 @@ title: Base
                 </div>
             </div>
 
-            <div class="page-callout">
-                <p>🚀 Want to see what's next? Check out our <a href="/roadmap">Roadmap</a></p>
-            </div>
         </div>
         <!-- /page-one-column -->
-            
-            {% include "footer.njk" %}
-        
-        </body>
-        
-        <script src="{{ '/resources/js/app.js' | url }}""></script>
-        
-        
-        </html> 
+
+        {% include "footer.njk" %}
+
     </body>
 </html>

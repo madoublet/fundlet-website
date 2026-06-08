@@ -1,10 +1,12 @@
 ---
 layout: page.njk
-title: Contact
-description: Want to reach out, follow the links below
+title: Free 30-Minute Consultation
+description: Not sure if Fundlet is right for your store? Book a free 30-minute call and we'll walk through it together.
 ---
 
-Reach out to Matt to get support for Fundlet. All emails are replied in a few hours during normal business hours (and often after). I am in St. Louis, MO. So keep in mind timezones. You can get in touch with me via email or Twitter.
+Whether you're ready to launch your first fundraiser or just exploring your options, I'm happy to jump on a quick call. We can cover how Fundlet works, whether it's a good fit for your store, and answer any questions you have.
+
+Reach out via email or Twitter and we'll find a time that works.
 
 - <matt@matthewsmith.com>
 - [@matthewsmith](https://twitter.com/matthewsmith)

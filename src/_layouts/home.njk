@@ -2,170 +2,266 @@
 title: Base
 ---
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <title>Fundlet - {{ title }}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fundlet — Beautiful Shopify Fundraisers</title>
+  <meta name="description" content="Run fundraisers for schools, sports teams, and churches right from your Shopify store. Organizations sell your products, you gain new customers, and every sale is tracked automatically." />
 
-    <!-- meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Sections Pro - Elevate your Theme Design">
-    <meta name="keywords" content="">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-    <!-- prevent caching -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-
-    <!-- set base -->
-    <base href="">
-
-    <link rel="icon" href="{{ '/resources/img/favicon.png' | url }}">
-
-    <!-- css -->
-    <link type="text/css" href="{{ '/resources/css/reset.css' | url }}" rel="stylesheet">
-    <link type="text/css" href="{{ '/resources/css/brand.css' | url }}" rel="stylesheet">
-    <link type="text/css" href="{{ '/resources/css/site.css' | url }}" rel="stylesheet">
-    <link type="text/css" href="{{ '/resources/css/index.css' | url }}" rel="stylesheet">
+  <link rel="icon" href="{{ '/resources/img/favicon.png' | url }}" />
+  <link rel="stylesheet" href="{{ '/resources/css/reset.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/resources/css/brand.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/resources/css/site.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/resources/css/index.css' | url }}" />
 </head>
-
-<!-- Preview: 1000 x 1100 -->
 
 <body>
 
-    <div class="container">
+{% include "header.njk" %}
 
-        {% include "header.njk" %}
+<a id="top"></a>
 
-        <div class="index-pitch">
-            <h1>Grow your Sales with Fundraisers!</h1>
-
-            <p><span>•</span> Reach new customers through referral marketing</p> 
-            <p><span>•</span> Setup in minutes with zero code</p>
-            <p><span>•</span> Promote your products in your community</p>
-            <p><span>•</span> Track sales by campaign and participant</p>
-
-            <p style="padding: 20px 10px 0 10px; text-align: center;"><a class="index-pitch-cta" href="https://apps.shopify.com/fundlet"><img src="{{ '/resources/img/shopify-white.svg' | url }}"> Add to your Store</a></p>
-        </div>
-
-        <div class="index-quote">
-            <p class="index-quote-star">
-                <svg width="101px" height="20px" viewBox="0 0 101 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title>5 Stars</title>
-                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Group-5">
-                            <polygon points="10 15 4.12214748 18.0901699 5.24471742 11.545085 0.489434837 6.90983006 7.06107374 5.95491503 10 0 12.9389263 5.95491503 19.5105652 6.90983006 14.7552826 11.545085 15.8778525 18.0901699"></polygon>
-                            <polygon points="30.5 15 24.6221475 18.0901699 25.7447174 11.545085 20.9894348 6.90983006 27.5610737 5.95491503 30.5 0 33.4389263 5.95491503 40.0105652 6.90983006 35.2552826 11.545085 36.3778525 18.0901699"></polygon>
-                            <polygon points="50 15 44.1221475 18.0901699 45.2447174 11.545085 40.4894348 6.90983006 47.0610737 5.95491503 50 0 52.9389263 5.95491503 59.5105652 6.90983006 54.7552826 11.545085 55.8778525 18.0901699"></polygon>
-                            <polygon points="70.5 15 64.6221475 18.0901699 65.7447174 11.545085 60.9894348 6.90983006 67.5610737 5.95491503 70.5 0 73.4389263 5.95491503 80.0105652 6.90983006 75.2552826 11.545085 76.3778525 18.0901699"></polygon>
-                            <polygon points="90.5 15 84.6221475 18.0901699 85.7447174 11.545085 80.9894348 6.90983006 87.5610737 5.95491503 90.5 0 93.4389263 5.95491503 100.010565 6.90983006 95.2552826 11.545085 96.3778525 18.0901699"></polygon>
-                        </g>
-                    </g>
-                </svg></p>
-            <p>Matthew has designed EXACTLY what I have been looking for. I offer my products for fundraising and in the past I've had to keep it small and do a lot of manual labor intensive work to run them because there was just nothing on the market to do what I wanted to. Until Fundlet. I have had questions and needed support setting up my campaigns and Matthew has been very responsive and helpful. He has video tutorials to show every step of the process to help you get started. The pages look professional and they're easy to set up. He has thought of everything you need to run successful fundraisers right from your current website.</p>
-            <p><cite>&ndash; Bouncing Off The Walls</cite></p>
-        </div>
-
-        <div class="index-feature" style="background-color: #F4F2EF;">
-            <div>
-                <h2>Amazing Landing Pages</h2>
-                <p>The key to a great fundraiser is building excitement with an amazing landing page. Fundlet offers a complete fundraising solution and it is beautiful out-of-the-box.</p>
-                <p>
-                    <ul>
-                        <li><span>•</span> Upload campaign photos</li>
-                        <li><span>•</span> Track sales toward a goal</li>
-                        <li><span>•</span> Customize with unique collections</li>
-                    </ul>
-                </p>
-            </div>
-            <div><img class="img-pull-up sp-animate-slidein" src="resources/img/fundlet-landing-page.webp"></div>
-        </div>
-
-        <div class="index-quote">
-            <p class="index-quote-star">
-                <svg width="101px" height="20px" viewBox="0 0 101 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title>5 Stars</title>
-                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Group-5">
-                            <polygon points="10 15 4.12214748 18.0901699 5.24471742 11.545085 0.489434837 6.90983006 7.06107374 5.95491503 10 0 12.9389263 5.95491503 19.5105652 6.90983006 14.7552826 11.545085 15.8778525 18.0901699"></polygon>
-                            <polygon points="30.5 15 24.6221475 18.0901699 25.7447174 11.545085 20.9894348 6.90983006 27.5610737 5.95491503 30.5 0 33.4389263 5.95491503 40.0105652 6.90983006 35.2552826 11.545085 36.3778525 18.0901699"></polygon>
-                            <polygon points="50 15 44.1221475 18.0901699 45.2447174 11.545085 40.4894348 6.90983006 47.0610737 5.95491503 50 0 52.9389263 5.95491503 59.5105652 6.90983006 54.7552826 11.545085 55.8778525 18.0901699"></polygon>
-                            <polygon points="70.5 15 64.6221475 18.0901699 65.7447174 11.545085 60.9894348 6.90983006 67.5610737 5.95491503 70.5 0 73.4389263 5.95491503 80.0105652 6.90983006 75.2552826 11.545085 76.3778525 18.0901699"></polygon>
-                            <polygon points="90.5 15 84.6221475 18.0901699 85.7447174 11.545085 80.9894348 6.90983006 87.5610737 5.95491503 90.5 0 93.4389263 5.95491503 100.010565 6.90983006 95.2552826 11.545085 96.3778525 18.0901699"></polygon>
-                        </g>
-                    </g>
-                </svg></p>
-            <p>I searched high and low for an app to allow fundraising for my candy site, and this was exactly what I was looking for! Matthew (the developer) answered all my questions right away, and even did some custom dev work to get it to work how I was wanting. Highly recommend this app!</p>
-            <p><cite>&ndash; UpTop Treats</cite></p>
-        </div>
-
-        <div class="index-feature">
-            <div>
-                <h2>Built-in Onboarding</h2>
-                <p>Get started fast with our built-in forms to onboard new campaigns and participants.</p>
-                <p>
-                    <ul>
-                        <li><span>•</span> Add campaigns directly from your homepage!</li>
-                        <li><span>•</span> Share a single link to onboard participants</li>
-                        <li><span>•</span> Works on any device</li>
-                        <li><span>•</span> Fast and efficient!</li>
-                    </ul>
-                </p>
-            </div>
-            <div><img class="img-pull-up sp-animate-slidein" src="resources/img/fundlet-onboarding.webp"></div>
-        </div>
-
-        <div class="index-quote">
-            <p class="index-quote-star">
-                <svg width="101px" height="20px" viewBox="0 0 101 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title>5 Stars</title>
-                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Group-5">
-                            <polygon points="10 15 4.12214748 18.0901699 5.24471742 11.545085 0.489434837 6.90983006 7.06107374 5.95491503 10 0 12.9389263 5.95491503 19.5105652 6.90983006 14.7552826 11.545085 15.8778525 18.0901699"></polygon>
-                            <polygon points="30.5 15 24.6221475 18.0901699 25.7447174 11.545085 20.9894348 6.90983006 27.5610737 5.95491503 30.5 0 33.4389263 5.95491503 40.0105652 6.90983006 35.2552826 11.545085 36.3778525 18.0901699"></polygon>
-                            <polygon points="50 15 44.1221475 18.0901699 45.2447174 11.545085 40.4894348 6.90983006 47.0610737 5.95491503 50 0 52.9389263 5.95491503 59.5105652 6.90983006 54.7552826 11.545085 55.8778525 18.0901699"></polygon>
-                            <polygon points="70.5 15 64.6221475 18.0901699 65.7447174 11.545085 60.9894348 6.90983006 67.5610737 5.95491503 70.5 0 73.4389263 5.95491503 80.0105652 6.90983006 75.2552826 11.545085 76.3778525 18.0901699"></polygon>
-                            <polygon points="90.5 15 84.6221475 18.0901699 85.7447174 11.545085 80.9894348 6.90983006 87.5610737 5.95491503 90.5 0 93.4389263 5.95491503 100.010565 6.90983006 95.2552826 11.545085 96.3778525 18.0901699"></polygon>
-                        </g>
-                    </g>
-                </svg></p>
-            <p>THIS IS THE BEST!!! Mathew is SUPER responsive! We launched our initiative and raised over $11,000 in less than a week! It works great, highly customizable. Self contained in house fundraising has never been easier. Especially if you are a shop and need to host multiple fundraisers. The Payouts are customizable, the storefronts, the themes, and it's super cost effective. Once again Mathew is highly responsive to all changes, this is the best investment my client has made for their business, ever!</p>
-            <p><cite>&ndash; Popus Gourmet Popcorn</cite></p>
-        </div>
-
-        <div class="index-feature" style="background-color: #F5FAF4;">
-            <div>
-                <h2>Simple Tracking</h2>
-                <p>Fundlet allows you to tag and track sales for campaigns and participants</p>
-                <p>
-                    <ul>
-                        <li><span>•</span> Track down to the participant sales</li>
-                        <li><span>•</span> Dashboard to keep track of progress</li>
-                        <li><span>•</span> Exportable reports</li>
-                        <li><span>•</span> Uses tags to integrate with built-in reporting</li>
-                    </ul>
-                </p>
-            </div>
-            <div><img class="sp-animate-slidein" src="resources/img/fundlet-tracking.webp"></div>
-        </div>
-
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="ambient"></div>
+    <div class="silo"></div>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">Shopify Fundraising · Built for Shopify</span>
+      <h1>Turn fundraisers into your best acquisition channel.</h1>
+      <p class="lede">Run fundraisers for schools, sports teams, and churches — right from your Shopify store. Organizations sell your products to their community, you gain new customers, and every sale is tracked automatically. Set up in minutes, no code.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://apps.shopify.com/fundlet">
+          <svg class="sh" viewBox="0 0 109.5 124.5" fill="currentColor" aria-hidden="true">
+            <path d="M74.7,14.8c0,0-1.4,0.4-3.7,1.1c-0.4-1.3-1-2.8-1.8-4.4c-2.6-5-6.5-7.7-11.1-7.7c-0.3,0-0.6,0-1,0.1c-0.1-0.2-0.3-0.3-0.4-0.5c-2-2.2-4.6-3.2-7.7-3.1c-6,0.2-12,4.5-16.8,12.2c-3.4,5.4-6,12.2-6.7,17.5c-6.9,2.1-11.7,3.6-11.8,3.7c-3.5,1.1-3.6,1.2-4,4.5C9.1,40.7,0,111.2,0,111.2l75.6,13.1V14.6C75.2,14.7,74.9,14.7,74.7,14.8z M57.2,20.2c-4,1.2-8.4,2.6-12.7,3.9c1.2-4.7,3.6-9.4,6.4-12.5c1.1-1.1,2.6-2.4,4.3-3.2C56.9,12,57.3,16.9,57.2,20.2z M49.1,4.3c1.4,0,2.6,0.3,3.6,0.9c-1.6,0.8-3.2,2.1-4.7,3.6c-3.8,4.1-6.7,10.5-7.9,16.6c-3.6,1.1-7.2,2.2-10.5,3.2C31.7,19.1,39.8,4.6,49.1,4.3z M37.4,59.3c0.4,6.4,17.3,7.8,18.3,22.9c0.7,11.9-6.3,20-16.4,20.6c-12.2,0.8-18.9-6.4-18.9-6.4l2.6-11c0,0,6.7,5.1,12.1,4.7c3.5-0.2,4.8-3.1,4.7-5.1c-0.5-8.4-14.3-7.9-15.2-21.7C23.8,51.8,31.4,40.1,48.2,39c6.5-0.4,9.8,1.2,9.8,1.2l-3.8,14.4c0,0-4.3-2-9.4-1.6C37.4,53.5,37.3,58.2,37.4,59.3z M61.2,19c0-3-0.4-7.3-1.8-10.9c4.6,0.9,6.8,6,7.8,9.1C65.4,17.7,63.4,18.3,61.2,19z"/>
+            <path d="M78.1,123.9l31.4-7.8c0,0-13.5-91.3-13.6-91.9c-0.1-0.6-0.6-1-1.1-1c-0.5,0-9.3-0.2-9.3-0.2s-5.4-5.2-7.4-7.2V123.9z"/>
+          </svg>
+          Add to your store
+        </a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+      <div class="hero-meta">
+        <div class="m"><b>Minutes</b><span>Setup time</span></div>
+        <div class="m"><b>4.8 ★</b><span>App store</span></div>
+        <div class="m"><b>Unlimited</b><span>Fundraisers at once</span></div>
+        <div class="m"><b>1 link</b><span>Per fundraiser</span></div>
+        <div class="m"><b>Any org</b><span>Schools, teams &amp; churches</span></div>
+      </div>
     </div>
 
-    <div class="index-highlight">
-        <h3><b>🌱 Get the App!</b>&mdash;Amazing support and videos available in the app!</h3>
+    <div class="hero-visual">
+      <div class="device">
+        <div class="device-bar">
+          <i></i><i></i><i></i>
+          <span class="url">store.myshopify.com/pages/fundlet/fundraiser</span>
+        </div>
+        <img src="{{ '/resources/img/popup-shop.png' | url }}" alt="Fundlet popup shop landing page" style="aspect-ratio:4/3.1;width:100%;object-fit:cover;object-position:top center;" />
+      </div>
+      <div class="float-card float-goal">
+        <div class="row"><span class="pct">74%</span><span class="cap">to goal</span></div>
+        <div class="bar"><i></i></div>
+        <div class="sub">$7,420 raised of $10,000</div>
+      </div>
+      <div class="float-card float-rating">
+        <span class="num">4.8</span>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="meta">Shopify reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUSTED ===== -->
+<div class="trusted">
+  <div class="wrap trusted-in">
+    <span class="lab">Trusted by fundraisers at</span>
+    <div class="names">
+      <span>Bouncing Off The Walls</span>
+      <span>Popus Gourmet Popcorn</span>
+      <span>UpTop Treats</span>
+      <span>Vīdl Life</span>
+      <span>Peleman Industries</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FEATURES ===== -->
+<section class="block" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What's inside</span>
+      <h2>A complete fundraising shop, beautiful out of the box.</h2>
+      <p>Everything you need to launch, run, and track a fundraiser — built right into the store you already have.</p>
     </div>
 
-    {{ content | safe }}
+    <div class="feature">
+      <div class="feature-text">
+        <span class="feature-num">01 — Landing pages</span>
+        <h3>Amazing landing pages</h3>
+        <p>The key to a great fundraiser is building excitement. Fundlet pages look professional the moment you publish — no designer required.</p>
+        <ul>
+          <li>Upload campaign photos and your story</li>
+          <li>Live progress bar tracking sales toward a goal</li>
+          <li>Customize with your own product collections</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img src="{{ '/resources/img/popup-shop.png' | url }}" alt="Campaign landing page" style="aspect-ratio:4/3;width:100%;object-fit:cover;object-position:top center;" />
+      </div>
+    </div>
 
-    
-    {% include "footer.njk" %}
+    <div class="feature">
+      <div class="feature-text">
+        <span class="feature-num">02 — Onboarding</span>
+        <h3>Built-in onboarding</h3>
+        <p>Get started fast with built-in forms to bring on new campaigns and participants — no spreadsheets, no manual labor.</p>
+        <ul>
+          <li>Add campaigns directly from your homepage</li>
+          <li>Share one link to onboard participants</li>
+          <li>Works on any device, fast and efficient</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img src="{{ '/resources/img/onboarding.png' | url }}" alt="Fundlet onboarding form" style="aspect-ratio:4/3;width:100%;object-fit:cover;object-position:top center;" />
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <span class="feature-num">03 — Tracking</span>
+        <h3>Simple tracking</h3>
+        <p>Tag and track every sale by campaign and participant, then pay out with confidence. The numbers are always at your fingertips.</p>
+        <ul>
+          <li>Track sales down to the individual participant</li>
+          <li>A dashboard that keeps progress in view</li>
+          <li>Exportable reports, powered by order tags</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img src="{{ '/resources/img/tracking-dashboard.png' | url }}" alt="Fundlet tracking dashboard" style="aspect-ratio:4/3;width:100%;object-fit:cover;object-position:top center;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="block tint">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:54px">
+      <span class="eyebrow">Why merchants stay</span>
+      <h2>Self-contained fundraising, in-house and effortless.</h2>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>Unlimited</b><span>Fundraisers at once</span></div>
+      <div class="stat"><b>1 link</b><span>Per fundraiser</span></div>
+      <div class="stat"><b>Any org</b><span>Schools, teams &amp; churches</span></div>
+      <div class="stat"><b>4.8 ★</b><span>Average app rating</span></div>
+      <div class="stat"><b>Minutes</b><span>From install to live</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="block" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>A new sales channel for your store, built on community.</h2>
+      <p>Fundlet lets organizations — sports teams, schools, churches — sell your products to raise money. You fulfill the orders; everyone wins.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <h4>Create a fundraiser for an organization</h4>
+        <p>Install Fundlet and set up a campaign in minutes — pick a product, set a goal, and brand it for your fundraising partner.</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h4>They sell, you fulfill</h4>
+        <p>The organization shares their unique link. Their community shops directly from your store, and you handle orders just like any other sale.</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h4>Pay out with confidence</h4>
+        <p>Orders are automatically tagged by fundraiser. Export a clean report and cut a check — no spreadsheets, no guesswork.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="block tint" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">From the App Store</span>
+      <h2>Merchants raise more with less work.</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review feature-review">
+        <span class="tag">Popus Gourmet Popcorn</span>
+        <div class="stars">★★★★★</div>
+        <p>"We launched our initiative and raised over $11,000 in less than a week. Self-contained, in-house fundraising has never been easier — the best investment my client has made for their business, ever."</p>
+        <div class="who"><b>Popus Gourmet Popcorn</b>Shopify App Store · United States</div>
+      </div>
+      <div class="review">
+        <span class="tag">Bouncing Off The Walls</span>
+        <div class="stars">★★★★★</div>
+        <p>"EXACTLY what I've been looking for. The pages look professional and they're easy to set up. He's thought of everything you need to run successful fundraisers."</p>
+        <div class="who"><b>Bouncing Off The Walls</b>Shopify App Store · United States</div>
+      </div>
+      <div class="review">
+        <span class="tag">Peleman Industries</span>
+        <div class="stars">★★★★★</div>
+        <p>"It's elegantly simple which I appreciate — nothing added that doesn't need to be there. I tried other apps and solutions; this is the best."</p>
+        <div class="who"><b>Peleman Industries</b>Shopify App Store · United States</div>
+      </div>
+      <div class="review">
+        <span class="tag">UpTop Treats</span>
+        <div class="stars">★★★★★</div>
+        <p>"I searched high and low for an app to allow fundraising for my candy site — this was exactly what I was looking for. Highly recommend."</p>
+        <div class="who"><b>UpTop Treats</b>Shopify App Store · United States</div>
+      </div>
+      <div class="review">
+        <span class="tag">A3 Beauty by Arhi</span>
+        <div class="stars">★★★★★</div>
+        <p>"From day one, Matt has been flexible, patient, and incredibly thorough. At no point did I feel rushed or dismissed. It's a partnership."</p>
+        <div class="who"><b>A3 Beauty by Arhi</b>Shopify App Store · United States</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="cta-band">
+  <div class="wrap">
+    <div class="cta-inner">
+      <span class="eyebrow plain" style="color:var(--on-panel-2)">Get started</span>
+      <h2>Launch your first fundraiser this afternoon.</h2>
+      <p>Add Fundlet to your Shopify store and turn your community into your next great sales channel. Friendly support and step-by-step videos included.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://apps.shopify.com/fundlet">
+          <svg class="sh" viewBox="0 0 109.5 124.5" fill="currentColor" aria-hidden="true">
+            <path d="M74.7,14.8c0,0-1.4,0.4-3.7,1.1c-0.4-1.3-1-2.8-1.8-4.4c-2.6-5-6.5-7.7-11.1-7.7c-0.3,0-0.6,0-1,0.1c-0.1-0.2-0.3-0.3-0.4-0.5c-2-2.2-4.6-3.2-7.7-3.1c-6,0.2-12,4.5-16.8,12.2c-3.4,5.4-6,12.2-6.7,17.5c-6.9,2.1-11.7,3.6-11.8,3.7c-3.5,1.1-3.6,1.2-4,4.5C9.1,40.7,0,111.2,0,111.2l75.6,13.1V14.6C75.2,14.7,74.9,14.7,74.7,14.8z M57.2,20.2c-4,1.2-8.4,2.6-12.7,3.9c1.2-4.7,3.6-9.4,6.4-12.5c1.1-1.1,2.6-2.4,4.3-3.2C56.9,12,57.3,16.9,57.2,20.2z M49.1,4.3c1.4,0,2.6,0.3,3.6,0.9c-1.6,0.8-3.2,2.1-4.7,3.6c-3.8,4.1-6.7,10.5-7.9,16.6c-3.6,1.1-7.2,2.2-10.5,3.2C31.7,19.1,39.8,4.6,49.1,4.3z M37.4,59.3c0.4,6.4,17.3,7.8,18.3,22.9c0.7,11.9-6.3,20-16.4,20.6c-12.2,0.8-18.9-6.4-18.9-6.4l2.6-11c0,0,6.7,5.1,12.1,4.7c3.5-0.2,4.8-3.1,4.7-5.1c-0.5-8.4-14.3-7.9-15.2-21.7C23.8,51.8,31.4,40.1,48.2,39c6.5-0.4,9.8,1.2,9.8,1.2l-3.8,14.4c0,0-4.3-2-9.4-1.6C37.4,53.5,37.3,58.2,37.4,59.3z M61.2,19c0-3-0.4-7.3-1.8-10.9c4.6,0.9,6.8,6,7.8,9.1C65.4,17.7,63.4,18.3,61.2,19z"/>
+            <path d="M78.1,123.9l31.4-7.8c0,0-13.5-91.3-13.6-91.9c-0.1-0.6-0.6-1-1.1-1c-0.5,0-9.3-0.2-9.3-0.2s-5.4-5.2-7.4-7.2V123.9z"/>
+          </svg>
+          Add to your store
+        </a>
+        <a class="btn btn-ghost" href="{{ '/contact' | url }}">Free 30-min consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "footer.njk" %}
 
 </body>
-
-<script src="{{ '/resources/js/app.js' | url }}"></script>
-
-
 </html>

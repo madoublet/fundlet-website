@@ -1,15 +1,39 @@
 <footer>
-    <nav>
-        <a href="{{ '/' | url }}" active>Home</a>
-        <a href="{{ '/learn' | url }}">Learn</a>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="{{ '/' | url }}">
+          <img class="mark" src="{{ '/resources/img/fundlet-mark.png' | url }}" alt="Fundlet" />
+          Fundlet
+        </a>
+        <p>Beautiful branded fundraisers for Shopify stores. Built and supported by Matthew Smith.</p>
+        <div style="margin-top:18px"><span class="bfs">Built for Shopify</span></div>
+      </div>
+      <div class="foot-col">
+        <h5>Product</h5>
+        <a href="{{ '/#features' | url }}">Features</a>
+        <a href="{{ '/#how' | url }}">How it works</a>
+        <a href="{{ '/#reviews' | url }}">Reviews</a>
+        <a href="https://apps.shopify.com/fundlet">App Store</a>
+      </div>
+      <div class="foot-col">
+        <h5>Learn</h5>
+        <a href="{{ '/learn' | url }}">Tutorials</a>
         <a href="{{ '/faq' | url }}">FAQ</a>
+        <a href="{{ '/launch' | url }}">Launch Checkpoints</a>
         <a href="{{ '/roadmap' | url }}">Roadmap</a>
         <a href="{{ '/shopify-fundraising' | url }}">Shopify Fundraising</a>
-        <a href="{{ '/fundraising-for-small-businesses' | url }}">Fundraising for Shops</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="{{ '/contact' | url }}">Free consultation</a>
         <a href="{{ '/privacy-policy' | url }}">Privacy Policy</a>
-        <a href="{{ '/contact' | url }}">Get in Touch</a>
-    </nav>
-    <div>
-        <a class="footer-cta" href="https://apps.shopify.com/fundlet"><img src="{{ '/resources/img/shopify-white.svg' | url }}"> Add to your Shopify shop</a>
+        <a href="https://matthewsmith.com">Matthew Smith</a>
+      </div>
     </div>
+    <div class="foot-bottom">
+      <span>© 2026 Matthew Smith LLC · All rights reserved</span>
+      <span>Made in Manchester, MO</span>
+    </div>
+  </div>
 </footer>
