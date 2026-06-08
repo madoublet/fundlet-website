@@ -88,10 +88,18 @@
 <ul>
 <li>Go to <strong>Campaign List</strong></li>
 <li>Click <strong>Add a Campaign</strong></li>
-<li>Configure campaign details (name, description, images, goals, payouts)</li>
+<li>Configure campaign details:
+<ul>
+<li>Name, description, and branding (hero image, logo, primary color)</li>
+<li>Fundraising goal and payout settings</li>
+<li>Linked Shopify collection(s) or hand-picked products</li>
+<li>Optional start and end dates</li>
+<li>Contact email for notifications</li>
+</ul>
+</li>
 <li>Click <strong>Activate</strong></li>
 </ul>
-<p>Once activated, the campaign is immediately live and ready to accept orders.</p>
+<p>Once activated, Fundlet automatically creates a discount code for order tracking and the campaign is immediately live.</p>
 <p>📺 <strong>Watch:</strong></p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=P-39Nd9xclA">Create Your First Campaign (Part 1)</a></li>
@@ -164,6 +172,41 @@
 </ul>
 </details>
 <details class="faq-item">
+<summary>I'm getting a 404 error when trying to view my fundraiser page. How do I fix this?</summary>
+<p><strong>Short answer:</strong> A 404 error is typically caused by a theme change or update that removes the campaign template setup.</p>
+<p><strong>Details:</strong></p>
+<p>When a theme is changed or updated, the campaign template configuration is lost. Set up the template again in the Shopify Theme Editor and the page should display correctly.</p>
+</details>
+<details class="faq-item">
+<summary>How do I hide my store's header and footer to keep the fundraiser page simpler?</summary>
+<p><strong>Short answer:</strong> Only modify the <strong>Template</strong> portion of the theme editor—not the Header section.</p>
+<p><strong>Details:</strong></p>
+<p>Changes made to the Header section are applied across your entire website. To hide the header and footer only on the fundraiser page, limit your edits to the Template section of the Shopify Theme Editor.</p>
+</details>
+<details class="faq-item">
+<summary>How do I add my products to the campaign pages?</summary>
+<p><strong>Short answer:</strong> Add your products to the specific collection the campaign page is configured to pull from.</p>
+<p><strong>Details:</strong></p>
+<p>Campaign pages are typically set to display products from a specific collection (for example, a “Fuel Your Season” collection). To make products appear on the campaign page, add them to that collection.</p>
+</details>
+<details class="faq-item">
+<summary>Can I use older Shopify themes with all Fundlet features, like the Product block?</summary>
+<p><strong>Short answer:</strong> No—the Fundlet Product block is not compatible with older Shopify themes.</p>
+<p><strong>Details:</strong></p>
+<p>The Fundlet Product block feature requires a modern Shopify theme. If you are using an older theme, you will need to upgrade to a supported theme to use this feature.</p>
+</details>
+<details class="faq-item">
+<summary>Can I set a start and end date for my campaign?</summary>
+<p><strong>Short answer:</strong> Yes—campaigns support optional date ranges with a live countdown timer on the storefront.</p>
+<p><strong>Details:</strong></p>
+<p>Enable the <strong>Set Date Range</strong> option on a campaign to configure start and end dates. When active:</p>
+<ul>
+<li>The storefront blocks can display a live countdown timer (days, hours, minutes, seconds)</li>
+<li>The countdown label and end message text are fully customizable in the theme editor</li>
+</ul>
+<p>If no date range is set, the campaign runs indefinitely until you manually deactivate it.</p>
+</details>
+<details class="faq-item">
 <summary>Where can I find a full start-to-finish walkthrough?</summary>
 <p><strong>Short answer:</strong> The End-to-End Walkthrough covers everything from setup to reporting.</p>
 <p><strong>Details:</strong></p>
@@ -182,14 +225,16 @@
 <h2>Order Tracking and Discounts</h2>
 <details class="faq-item">
 <summary>How does Fundlet track orders?</summary>
-<p><strong>Short answer:</strong> Fundlet uses Shopify discount codes to track sales.</p>
+<p><strong>Short answer:</strong> Fundlet supports multiple order tracking methods—discount codes are the default, but cart attributes and line item properties are also supported.</p>
 <p><strong>Details:</strong></p>
-<p>This approach allows:</p>
+<p>Fundlet tracks orders through one or more of these mechanisms:</p>
 <ul>
-<li>Tracking across your entire store</li>
-<li>Compatibility with Shopify reporting</li>
-<li>Use on product pages, collections, and carts</li>
+<li><strong>Discount codes</strong> (default) – A unique code like <code>FUNDLET_ABCD1234</code> is applied at checkout. This is visible to the customer as a line item but requires no additional setup.</li>
+<li><strong>Cart attributes</strong> – A hidden cart attribute tags the session without displaying a discount code at checkout. Useful when you want invisible tracking or have discount conflicts.</li>
+<li><strong>Line item properties</strong> – Individual line items are tagged with the campaign code at the time they are added to the cart.</li>
+<li><strong>Product metafield</strong> – Products can be permanently linked to a campaign via the <code>fundlet.campaign</code> metafield, automatically attributing all sales of that product.</li>
 </ul>
+<p>When an order comes in, Fundlet also applies Shopify order tags (e.g., <code>FUNDLET_ABCD1234</code>) for easy filtering in Shopify's native order views.</p>
 <p>📺 <strong>Watch:</strong></p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=KUwFt9E6PRI">Sales Walkthrough (Part 3)</a></li>
@@ -273,15 +318,66 @@
 </ul>
 </details>
 <details class="faq-item">
-<summary>Are there tools to help participants onboard themselves?</summary>
-<p><strong>Short answer:</strong> Yes, Fundlet includes participant self-onboarding tools.</p>
+<summary>How many participants can Fundlet handle in a single campaign?</summary>
+<p><strong>Short answer:</strong> Up to about 250 participants; for 500 or more, enable the participant Metaobject option.</p>
 <p><strong>Details:</strong></p>
-<p>Participants can:</p>
 <ul>
-<li>Add their name, photo, and email</li>
-<li>Receive a shareable referral link</li>
-<li>Be automatically tracked in reports</li>
+<li><strong>Up to ~250 participants:</strong> Works with the standard setup</li>
+<li><strong>500+ participants:</strong> Enable the participant <strong>Metaobject</strong> option, which provides a dedicated management UI and is designed to scale to larger groups</li>
 </ul>
+</details>
+<details class="faq-item">
+<summary>How does Fundlet attribute a sale when a supporter clicks around the site and purchases a non-campaign item?</summary>
+<p><strong>Short answer:</strong> Fundlet tracks sales using line item properties and a discount code applied when the supporter lands on the fundraiser page.</p>
+<p><strong>Details:</strong></p>
+<p>When a supporter visits a participant's link, a discount code is applied that tags the session. You can configure a setting to either <strong>include or exclude</strong> items purchased off the campaign page when calculating attribution.</p>
+</details>
+<details class="faq-item">
+<summary>How can I ensure a customer selects a participant when using a single QR code or group link?</summary>
+<p><strong>Short answer:</strong> Use the Fundlet Message Block with the <strong>Require Selection</strong> option enabled.</p>
+<p><strong>Details:</strong></p>
+<ul>
+<li>Add the <strong>Fundlet Message Block</strong> to the campaign page</li>
+<li>This allows supporters to select a participant before continuing</li>
+<li>Enable the <strong>Require Selection</strong> option to hide the rest of the campaign page until a participant is chosen</li>
+</ul>
+</details>
+<details class="faq-item">
+<summary>If I manually add a participant to an order, will the leaderboard update?</summary>
+<p><strong>Short answer:</strong> Yes—a fix was pushed to automatically recalculate participant values when added to an order.</p>
+<p><strong>Details:</strong></p>
+<p>This was previously a bug where the leaderboard would not recalculate automatically. After the fix, adding a participant to an order will update their totals. You can also use the <strong>Recalculate Participant</strong> option in the <strong>More Actions</strong> menu to fix totals that have gotten out of sync.</p>
+</details>
+<details class="faq-item">
+<summary>How do I give an organizer access to manage their campaign?</summary>
+<p><strong>Short answer:</strong> Use the Share Dashboard feature to generate a PIN-protected organizer dashboard.</p>
+<p><strong>Details:</strong></p>
+<p>The <strong>Share Dashboard</strong> feature creates a dedicated organizer view that doesn't require Shopify admin access. The organizer receives a URL and PIN to log in. From their dashboard they can:</p>
+<ul>
+<li>View campaign totals (orders, items, sales, payout)</li>
+<li>Browse and manage the participant list</li>
+<li>See their current payout tier level</li>
+</ul>
+<p>This is ideal for coaches, team managers, or external organizers who need visibility into campaign performance without access to your Shopify admin.</p>
+<p>📺 <strong>Watch:</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=vscI5EP2dKk">Share Campaign Dashboard</a></li>
+</ul>
+</details>
+<details class="faq-item">
+<summary>Are there tools to help participants onboard themselves?</summary>
+<p><strong>Short answer:</strong> Yes—Fundlet includes a self-registration form that participants fill out directly on the campaign page.</p>
+<p><strong>Details:</strong></p>
+<p>Add the <strong>Fundlet Participant Form</strong> block to your campaign page template to enable self-registration. Participants visit the campaign page and complete the form, which can collect:</p>
+<ul>
+<li>Name (required) and email (required)</li>
+<li>Profile photo (optional)</li>
+<li>Group or team (optional, if participant groups are configured)</li>
+<li>A consent checkbox (optional, with customizable label)</li>
+<li>A bio or notes field (optional)</li>
+</ul>
+<p>After submitting, the participant immediately receives an email with their unique referral link. Their totals are tracked automatically from that point forward.</p>
+<p>You can also password-protect registration if you only want authorized participants to sign up.</p>
 <p>📺 <strong>Watch:</strong></p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=qyF5mhqtfOc">Onboard Participants</a></li>
@@ -289,20 +385,67 @@
 </ul>
 </details>
 <details class="faq-item">
-<summary>Can payouts vary by product or performance?</summary>
-<p><strong>Short answer:</strong> Yes, payouts can be customized per product and scaled using tiers.</p>
+<summary>Can I organize participants into groups or teams?</summary>
+<p><strong>Short answer:</strong> Yes—campaigns support configurable participant groups.</p>
 <p><strong>Details:</strong></p>
-<p>You can:</p>
+<p>Enable <strong>Participant Groups</strong> in campaign settings and define your group options (for example: &quot;Varsity&quot;, &quot;JV&quot;, &quot;Alumni&quot;). You can also customize the label for the group field.</p>
+<p>Once enabled:</p>
 <ul>
-<li>Assign different payouts per product</li>
-<li>Increase payouts as revenue grows</li>
-<li>Reward high-performing fundraisers</li>
+<li>Admins can assign participants to groups when adding them manually</li>
+<li>The self-registration form includes a group dropdown for participants to select their own team</li>
+<li>Groups can be used to filter and organize participant reporting</li>
 </ul>
+</details>
+<details class="faq-item">
+<summary>Can payouts vary by product or performance?</summary>
+<p><strong>Short answer:</strong> Yes—payouts can be customized per product or variant, and scaled automatically using revenue tiers.</p>
+<p><strong>Details:</strong></p>
+<p><strong>Per-product and per-variant exceptions:</strong> Override the base payout rate for specific products or individual variants. For example, a base rate of 10% but a specific product pays a flat $5 per item, and a specific variant of another product pays 20%.</p>
+<p><strong>Tiered payouts:</strong> Define up to three revenue thresholds that unlock higher payout rates as a participant's sales grow. For example:</p>
+<ul>
+<li>Tier 1: Reach $1,000 in sales → 10% payout</li>
+<li>Tier 2: Reach $5,000 in sales → 15% payout</li>
+<li>Tier 3: Reach $10,000 in sales → 20% payout</li>
+</ul>
+<p>Tiers are calculated per participant, so high performers are automatically rewarded with better rates.</p>
 <p>📺 <strong>Watch:</strong></p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=JPphNtHhzHM">Create Custom Payouts</a></li>
 <li><a href="https://www.youtube.com/watch?v=BrZYgzuOA_k">Implement Payout Tiers</a></li>
 </ul>
+</details>
+<details class="faq-item">
+<summary>Can I set different payout exceptions for different product variants?</summary>
+<p><strong>Short answer:</strong> Yes, variant-level payout exceptions are supported.</p>
+<p><strong>Details:</strong></p>
+<p>You can configure payout exceptions at the <strong>variant level</strong> (for example, a $5 variant pays out $5 and a $100 variant pays out $100). Previously this feature only supported exceptions at the product level.</p>
+</details>
+<details class="faq-item">
+<summary>If I update my payout settings, will the change apply to historical, fulfilled orders?</summary>
+<p><strong>Short answer:</strong> Yes, updating campaign settings recalculates payouts for historical orders in real time.</p>
+<p><strong>Details:</strong></p>
+<ul>
+<li>Updating payout settings recalculates historical order payouts automatically</li>
+<li>Recalculating <strong>participant sales</strong> is a separate manual process, accessible via the <strong>More Actions</strong> menu</li>
+</ul>
+</details>
+<details class="faq-item">
+<summary>Does Fundlet's payout calculation include shipping or tax?</summary>
+<p><strong>Short answer:</strong> No—payouts are based strictly on the line item price.</p>
+<p><strong>Details:</strong></p>
+<p>Shipping and tax are excluded from payout calculations. Only the line item price is used.</p>
+</details>
+<details class="faq-item">
+<summary>Can I set different payout rates for different phases of a campaign (e.g., 25% for the first two weeks, then 10%)?</summary>
+<p><strong>Short answer:</strong> No—Fundlet supports only one payout rate per campaign.</p>
+<p><strong>Details:</strong></p>
+<p>Fundlet calculates payouts on the fly based on the line items in the campaign. You cannot configure two different rates within a single campaign.</p>
+</details>
+<details class="faq-item">
+<summary>A product has over 250 variants and some options are disabled or unclickable on the fundraiser page.</summary>
+<p><strong>Short answer:</strong> This is a Shopify API limitation—the API used by Fundlet has a 250-variant limit.</p>
+<p><strong>Details:</strong></p>
+<p>A potential workaround is to use <strong>custom fields</strong> for product options (such as flavors) and apply them to the product using a tag, reducing the number of variants needed.</p>
 </details>
 <details class="faq-item">
 <summary>How are payouts handled?</summary>
@@ -315,6 +458,90 @@
 <li>You control how and when funds are distributed to organizers or participants</li>
 </ul>
 <p>Fundlet focuses on <strong>tracking, reporting, and payout calculations</strong>, while payment distribution remains fully in your control.</p>
+</details>
+<h2>Leaderboard and Reporting</h2>
+<details class="faq-item">
+<summary>My sales are not showing on the leaderboard.</summary>
+<p><strong>Short answer:</strong> The leaderboard only tracks sales by participant—not sales tracked via custom fields.</p>
+<p><strong>Details:</strong></p>
+<ul>
+<li>Sales tracked using custom fields instead of actual participants will not appear on the leaderboard</li>
+<li>If you are using your own product page, you must also have the <strong>Fundlet Product block</strong> installed for sales to be attributed correctly</li>
+</ul>
+</details>
+<details class="faq-item">
+<summary>The leaderboard disappears when a user visits an individual participant's link.</summary>
+<p><strong>Short answer:</strong> Enable the leaderboard display setting on the Fundlet Collection block.</p>
+<p><strong>Details:</strong></p>
+<p>There is a setting on the <strong>Fundlet Collection block</strong> that controls whether the leaderboard is shown on individual participant pages. Enable this setting to keep the leaderboard visible.</p>
+</details>
+<details class="faq-item">
+<summary>Can I limit the leaderboard to display only the top 10 or 20 sellers?</summary>
+<p><strong>Short answer:</strong> Not yet—but limiting the leaderboard display is a planned feature.</p>
+<p><strong>Details:</strong></p>
+<p>Currently all participants appear on the scrolling leaderboard. An option to limit the display to a set number of top sellers is on the roadmap.</p>
+</details>
+<details class="faq-item">
+<summary>What CSV reports can I export from Fundlet?</summary>
+<p><strong>Short answer:</strong> Fundlet provides four CSV exports from the campaign dashboard.</p>
+<p><strong>Details:</strong></p>
+<ul>
+<li><strong>Orders CSV</strong> – Full order-level detail including order number, financial and fulfillment status, participant, line items, quantities, unit prices, totals, payouts, and any custom fields.</li>
+<li><strong>Participants CSV</strong> – One row per participant with their name, email, campaign code, total orders, total items, total sales, payout amount, and their unique referral URL. Recalculated at export time from paid orders.</li>
+<li><strong>Pick List CSV</strong> – Organized by participant, this report groups all ordered items under each participant's name (with an &quot;Unassigned&quot; section for orders not linked to a participant). Useful for fulfillment and packing.</li>
+<li><strong>Thank You CSV</strong> – A deduplicated list of customer names and emails across all orders. Useful for post-campaign follow-up or thank-you messages.</li>
+</ul>
+</details>
+<details class="faq-item">
+<summary>I'm having trouble downloading a CSV export.</summary>
+<p><strong>Short answer:</strong> Try using a different browser—the download should appear automatically.</p>
+<p><strong>Details:</strong></p>
+<p>If a CSV export is not downloading, switching to a different browser typically resolves the issue.</p>
+</details>
+<h2>Features and Updates</h2>
+<details class="faq-item">
+<summary>Can I add custom fields to track additional information on orders?</summary>
+<p><strong>Short answer:</strong> Yes—campaigns support up to two custom fields that appear in your order exports.</p>
+<p><strong>Details:</strong></p>
+<p>In campaign settings you can define <strong>Custom Field 1</strong> and <strong>Custom Field 2</strong> keys. These map to line item properties or cart attributes on the order, and are pulled through into all CSV exports (Orders CSV and Pick List CSV) as dedicated columns.</p>
+<p>This is useful for tracking things like team names, event codes, or any other custom data you collect at checkout.</p>
+</details>
+<details class="faq-item">
+<summary>Can I use Fundlet to set up minimum donation amounts or round-up donations at checkout?</summary>
+<p><strong>Short answer:</strong> No—these features are not currently supported.</p>
+<p><strong>Details:</strong></p>
+<p>Fundlet does not currently support round-up donations or a minimum donation amount where customers can pay more than a fixed price. A common workaround is to create product variants at different price points (for example, $10, $20, and $30 donation options).</p>
+</details>
+<details class="faq-item">
+<summary>Can I hide the Fundlet tracking code that shows up as a "discount" at checkout?</summary>
+<p><strong>Short answer:</strong> Yes—switch to Cart Attributes tracking to remove the visible discount code from checkout.</p>
+<p><strong>Details:</strong></p>
+<p>By default, Fundlet applies a discount code (e.g., <code>FUNDLET_ABCD1234</code>) that appears as a line item at checkout. If you don't want this visible to customers:</p>
+<ul>
+<li>Disable the discount code option in your campaign settings</li>
+<li>Enable <strong>Cart Attributes</strong> tracking instead</li>
+</ul>
+<p>Cart attributes tag the order session invisibly without displaying anything at checkout, while still fully attributing orders to the correct campaign and participant.</p>
+</details>
+<details class="faq-item">
+<summary>What emails does Fundlet send automatically?</summary>
+<p><strong>Short answer:</strong> Fundlet sends two automatic emails: one when a campaign is activated, and one when a participant registers.</p>
+<p><strong>Details:</strong></p>
+<ul>
+<li><strong>Campaign created email</strong> – Sent to the campaign contact email when a campaign is first activated. Includes the campaign name and shop details.</li>
+<li><strong>New participant email</strong> – Sent to the participant immediately after they register (via the self-onboarding form or when added manually by an admin). Includes their unique referral link.</li>
+</ul>
+<p>Both email templates are fully customizable in <strong>Settings</strong>. You can edit the subject line and the full HTML body, and use placeholders like <code>{campaign_name}</code>, <code>{link}</code>, and <code>{shop_name}</code> to personalize the content. Email notifications can also be disabled globally in Settings if you prefer to handle communications yourself.</p>
+</details>
+<details class="faq-item">
+<summary>I am missing email notifications for campaign sign-ups.</summary>
+<p><strong>Short answer:</strong> Check that a contact email is set on the campaign and that notifications are enabled in Settings.</p>
+<p><strong>Details:</strong></p>
+<ul>
+<li>Confirm that <strong>Send Notifications</strong> is enabled in <strong>Settings</strong></li>
+<li>Check that your campaign has a <strong>Contact Email</strong> configured—this is where campaign-level notifications are sent</li>
+<li>If emails were previously routing to your store's default email instead of your contact email, this was a known bug that has since been fixed</li>
+</ul>
 </details>
         </div>
     </div>
