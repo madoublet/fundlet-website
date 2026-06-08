@@ -189,7 +189,8 @@
   .stats{grid-template-columns:1fr 1fr}
   .hero-meta{flex-wrap:wrap;gap:14px 20px}
   .hero-meta .m + .m{padding-left:0;border-left:none}
-  .float-goal{right:-6px;width:170px}
-  .float-rating{left:-6px}
+  .hero-visual{overflow:hidden;padding:0 8px}
+  .float-goal{right:8px;bottom:32px;width:160px}
+  .float-rating{left:8px;top:20px}
   .cta-inner{padding:44px 28px}
 }
