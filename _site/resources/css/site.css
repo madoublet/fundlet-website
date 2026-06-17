@@ -109,6 +109,12 @@ header.nav{
   transition:color .15s;
 }
 #mobile-menu a:hover{color:var(--ink)}
+#mobile-menu a.mobile-cta{
+  margin:8px 18px 4px;padding:10px 16px;
+  background:var(--ink);color:var(--paper);
+  border-radius:var(--r);text-align:center;font-weight:500;
+}
+#mobile-menu a.mobile-cta:hover{color:var(--paper);opacity:.9}
 
 /* ---- Footer ---- */
 footer{background:var(--panel);color:var(--on-panel);padding:66px 0 40px}
@@ -154,6 +160,7 @@ section.block{padding:96px 0}
 /* ---- Responsive ---- */
 @media (max-width:940px){
   .nav-links{display:none}
+  .nav-right{display:none}
   #toggle-mobile-menu{display:flex;align-items:center;justify-content:center}
   .foot-grid{grid-template-columns:1fr 1fr}
 }
