@@ -48,7 +48,7 @@
             </svg>
             <span>Add to Shopify Store</span>
           </a>
-          <a class="add-menu-item" role="menuitem" href="https://raise.fundlet.app/">
+          <a class="add-menu-item" role="menuitem" href="#" data-square-cta>
             <img class="sq-mark" src="/resources/img/square-logo-black.svg" alt="" />
             <span>Add to Square Store</span>
           </a>
@@ -73,7 +73,7 @@
   <a href="/faq">FAQ</a>
   <a href="/learn">Learn</a>
   <a class="mobile-cta" href="https://apps.shopify.com/fundlet">Add to Shopify Store</a>
-  <a class="mobile-cta" href="https://raise.fundlet.app/">Add to Square Store</a>
+  <a class="mobile-cta" href="#" data-square-cta>Add to Square Store</a>
 </div>
 
 <script>
@@ -170,7 +170,7 @@
         <a href="/#how">How it works</a>
         <a href="/#reviews">Reviews</a>
         <a href="https://apps.shopify.com/fundlet">Shopify App Store</a>
-        <a href="https://raise.fundlet.app/">Square App</a>
+        <a href="#" data-square-cta>Square App</a>
       </div>
       <div class="foot-col">
         <h5>Learn</h5>
@@ -193,6 +193,50 @@
     </div>
   </div>
 </footer>
+
+<dialog id="square-cta-dialog" class="square-dialog" aria-labelledby="square-cta-title">
+  <div class="square-dialog-inner">
+    <button type="button" class="square-dialog-close" aria-label="Close" data-square-close>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M2 2 L12 12 M12 2 L2 12"/>
+      </svg>
+    </button>
+    <div class="square-dialog-mark">
+      <img src="/resources/img/square-logo-black.svg" alt="Square" />
+    </div>
+    <h2 id="square-cta-title">Fundlet for Square</h2>
+    <p class="square-dialog-eta">Coming July 2026</p>
+    <p>Want early access? Drop Matt a note and we'll get you set up.</p>
+    <a class="btn btn-primary" href="mailto:matt@matthewsmith.com">Email matt@matthewsmith.com</a>
+  </div>
+</dialog>
+
+<script>
+  (function(){
+    var dialog = document.getElementById('square-cta-dialog');
+    if(!dialog || typeof dialog.showModal !== 'function') return;
+    document.addEventListener('click', function(e){
+      var trigger = e.target.closest('[data-square-cta]');
+      if(trigger){
+        e.preventDefault();
+        var ad = document.getElementById('add-dropdown');
+        if(ad){
+          ad.classList.remove('open');
+          var trg = document.getElementById('add-trigger');
+          if(trg) trg.setAttribute('aria-expanded','false');
+        }
+        var mm = document.getElementById('mobile-menu');
+        if(mm) mm.classList.remove('active');
+        dialog.showModal();
+        return;
+      }
+      if(e.target.closest('[data-square-close]')) dialog.close();
+    });
+    dialog.addEventListener('click', function(e){
+      if(e.target === dialog) dialog.close();
+    });
+  })();
+</script>
 
 
 </body>

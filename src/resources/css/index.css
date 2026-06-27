@@ -3,7 +3,10 @@
    ============================================= */
 
 /* ---- Hero ---- */
-.hero{padding:84px 0 26px;position:relative;isolation:isolate}
+.hero{
+  padding:84px 0 26px;position:relative;isolation:isolate;
+  background:color-mix(in oklab, var(--accent) 10%, white);
+}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .hero h1{font-size:clamp(40px,5.2vw,64px);font-weight:800;margin:22px 0 0;letter-spacing:-0.036em}
 .hero h1 em{font-style:normal;color:var(--accent-deep)}
@@ -20,14 +23,9 @@
 }
 .hero-meta .m + .m{padding-left:18px;border-left:1px solid var(--line)}
 
-/* Hero ambient background */
+/* Hero ambient background (silo only — flat green lives on .hero) */
 .hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
-.hero-bg .ambient{
-  position:absolute;inset:-50% -12% auto -12%;height:240%;
-  background:
-    radial-gradient(44% 40% at 33% 14%,color-mix(in oklab,var(--accent) 32%,transparent),transparent 64%),
-    linear-gradient(180deg,color-mix(in oklab,var(--accent) 14%,transparent),transparent 72%);
-}
+.hero-bg .ambient{display:none}
 .hero-bg .silo{
   position:absolute;right:-3%;top:-16%;width:min(500px,44%);aspect-ratio:653/1082;
   -webkit-mask:url("/resources/img/fundlet-mark.png") center/contain no-repeat;
@@ -119,11 +117,34 @@
 }
 
 /* ---- Trusted strip ---- */
-.trusted{padding:40px 0 8px}
-.trusted-in{display:flex;align-items:center;gap:34px;flex-wrap:wrap;padding-top:30px;border-top:1px solid var(--line)}
+.trusted{
+  padding:40px 0;
+  background:color-mix(in oklab, var(--accent) 10%, white);
+}
+.trusted-in{display:flex;align-items:center;gap:34px;flex-wrap:wrap;padding-top:30px;border-top:1px solid color-mix(in oklab, var(--accent) 22%, white)}
 .trusted .lab{font-family:var(--eyebrow-family);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .trusted .names{display:flex;gap:30px;flex-wrap:wrap;align-items:center}
 .trusted .names span{font-size:16px;font-weight:500;color:var(--ink-2);letter-spacing:-.01em}
+
+/* ---- Stats band ---- */
+.stats-band{
+  padding:72px 0;
+  background:var(--panel);color:var(--on-panel);
+}
+.stats-band-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:32px;
+  text-align:center;
+}
+.stats-band-item b{
+  display:block;
+  font-size:clamp(54px,7vw,92px);font-weight:800;
+  color:#fff;letter-spacing:-0.04em;line-height:1;
+}
+.stats-band-item span{
+  display:block;margin-top:14px;
+  font-family:var(--eyebrow-family);font-size:12px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--on-panel-2);
+}
 
 /* ---- Feature rows ---- */
 .feature{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:62px}
@@ -162,9 +183,24 @@
 
 /* ---- Steps ---- */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:58px}
-.step .n{font-family:var(--eyebrow-family);font-size:13px;color:var(--accent-deep);letter-spacing:.06em}
-.step h4{font-size:20px;margin-top:14px;padding-top:18px;border-top:1px solid var(--line-2);letter-spacing:-.02em}
+.step .n{
+  font-size:clamp(56px,5.5vw,76px);
+  font-weight:800;line-height:1;
+  color:var(--accent-deep);letter-spacing:-0.04em;
+  display:block;
+}
+.step h4{font-size:20px;margin-top:20px;letter-spacing:-.02em}
 .step p{color:var(--ink-2);margin-top:10px;font-size:15.5px}
+
+/* ---- Dark green section variant (How it works, etc.) ---- */
+.section-dark{background:var(--panel);color:var(--on-panel)}
+.section-dark .sec-head h2{color:var(--on-panel)}
+.section-dark .sec-head p{color:var(--on-panel-2)}
+.section-dark .eyebrow{color:var(--accent-soft)}
+.section-dark .eyebrow::before{background:var(--accent)}
+.section-dark .step .n{color:#fff}
+.section-dark .step h4{color:var(--on-panel)}
+.section-dark .step p{color:var(--on-panel-2)}
 
 /* ---- Reviews ---- */
 .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:54px}
@@ -218,7 +254,9 @@
   .feature{grid-template-columns:1fr;gap:32px}
   .feature:nth-child(even) .feature-text{order:0}
   .stats{grid-template-columns:repeat(3,1fr);gap:34px 24px}
-  .steps{grid-template-columns:1fr}
+  .stats-band{padding:52px 0}
+  .stats-band-grid{grid-template-columns:1fr;gap:36px}
+  .steps{grid-template-columns:1fr;gap:40px}
   .reviews-grid{grid-template-columns:1fr}
   .review.feature-review{grid-column:span 1}
 }

@@ -58,6 +58,7 @@ ul{list-style:none;padding:0;margin:0}
 /* CTA band inverts btn-primary to white bg — Shopify SVG uses currentColor; Square button there uses the green logo asset directly */
 .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
 .btn-ghost:hover{border-color:var(--ink)}
+.hero .btn-ghost{background:#fff}
 
 /* ---- Header / Nav ---- */
 header.nav{
@@ -170,6 +171,52 @@ footer .brand .mark{filter:brightness(0) invert(1)}
 }
 .bfs::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--on-panel)}
 .foot-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+
+/* ---- Square "coming soon" dialog ---- */
+.square-dialog{
+  border:none;padding:0;
+  border-radius:16px;
+  max-width:440px;width:calc(100% - 32px);
+  background:transparent;color:var(--ink);
+  box-shadow:0 30px 80px -20px oklch(0.2 0.01 80 / .35);
+}
+.square-dialog::backdrop{
+  background:oklch(0.2 0.02 150 / .55);
+  backdrop-filter:blur(2px);
+}
+.square-dialog-inner{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:38px 32px 30px;
+  text-align:center;
+}
+.square-dialog-close{
+  position:absolute;top:14px;right:14px;
+  width:32px;height:32px;
+  display:flex;align-items:center;justify-content:center;
+  background:transparent;border:none;border-radius:50%;
+  color:var(--ink-2);cursor:pointer;
+  transition:background .15s ease,color .15s ease;
+}
+.square-dialog-close:hover{background:rgba(0,0,0,.06);color:var(--ink)}
+.square-dialog-mark{display:flex;justify-content:center;margin-bottom:18px}
+.square-dialog-mark img{height:34px;width:auto}
+.square-dialog h2{
+  font-size:24px;font-weight:800;letter-spacing:-0.02em;
+  color:var(--ink);margin:0 0 10px;
+}
+.square-dialog-eta{
+  font-family:var(--eyebrow-family);font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent-deep);
+  margin:0 auto 18px !important;max-width:none !important;
+}
+.square-dialog p{
+  font-size:15.5px;line-height:1.55;color:var(--ink-2);
+  margin:0 auto 22px;max-width:34ch;
+}
+.square-dialog .btn{display:inline-flex}
 
 /* ---- Landing page dual-platform CTA row ---- */
 .index-pitch-cta-row{
