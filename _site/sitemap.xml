@@ -17,11 +17,6 @@
         </url>
     
         <url>
-            <loc>/learn/</loc>
-            <lastmod>2025-08-16T13:31:09.039Z</lastmod>
-        </url>
-    
-        <url>
             <loc>/roadmap/</loc>
             <lastmod>2025-09-30T16:00:45.125Z</lastmod>
         </url>
@@ -214,6 +209,36 @@
         <url>
             <loc>/contact/</loc>
             <lastmod>2026-06-08T16:47:37.151Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/</loc>
+            <lastmod>2026-06-27T14:28:27.517Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/shopify/</loc>
+            <lastmod>2026-06-27T14:28:30.958Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/square/</loc>
+            <lastmod>2026-06-27T14:28:34.806Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/square/create-your-first-campaign/</loc>
+            <lastmod>2026-06-27T14:30:26.483Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/square/setup-your-storefront/</loc>
+            <lastmod>2026-06-27T14:30:34.408Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/square/sales-walkthrough/</loc>
+            <lastmod>2026-06-27T14:30:41.674Z</lastmod>
         </url>
     
 </urlset>

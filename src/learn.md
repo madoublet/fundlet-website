@@ -1,5 +1,5 @@
 ---
-layout: learn.njk
-title: Learn how to build amazing Shopify Fundraisers
-description: Watch our videos to learn how to build amazing Fundraisers using Fundlet for Shopify.
+layout: learn-index.njk
+title: Learn Fundlet
+description: Step-by-step videos and guides for running fundraisers on Shopify or Square with Fundlet.
 ---

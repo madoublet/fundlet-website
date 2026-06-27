@@ -1,0 +1,104 @@
+---
+title: Base
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Fundlet — {{ title }}</title>
+        <meta name="description" content="{{ description }}" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+        <link rel="icon" href="{{ '/resources/img/favicon.png' | url }}" />
+        <link rel="stylesheet" href="{{ '/resources/css/reset.css' | url }}" />
+        <link rel="stylesheet" href="{{ '/resources/css/brand.css' | url }}" />
+        <link rel="stylesheet" href="{{ '/resources/css/site.css' | url }}" />
+        <link rel="stylesheet" href="{{ '/resources/css/page.css' | url }}" />
+    </head>
+    <body>
+        {% include "header.njk" %}
+        <section class="page-intro">
+            <div class="wrap">
+                <div class="sec-head">
+                    <span class="eyebrow">Tutorials</span>
+                    <h1>{{ title }}</h1>
+                    {% if description %}<p class="lede">{{ description }}</p>{% endif %}
+                </div>
+            </div>
+        </section>
+        <div class="page-one-column">
+
+            <div class="page-feature">
+                <div>
+                    <h2>Part 1: Create your First Campaign</h2>
+                    <p>Learn how to get started creating Fundraisers on Square by creating your first campaign in Fundlet.</p>
+                    <p>
+                        <ul>
+                            <li><span>•</span> Add name and description</li>
+                            <li><span>•</span> Upload campaign photos</li>
+                            <li><span>•</span> Set the payout and goals</li>
+                        </ul>
+                    </p>
+                    <p><a href="/learn/square/create-your-first-campaign">Read the guide &rarr;</a></p>
+                </div>
+                <div>
+                    <div class="video-placeholder">
+                        <img src="{{ '/resources/img/square-logo-black.svg' | url }}" alt="Square" />
+                        <p>Video coming soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-feature">
+                <div>
+                    <h2>Part 2: Setup your Storefront</h2>
+                    <p>Every Fundlet campaign comes with a unique storefront to showcase the campaign and its products.</p>
+                    <p>
+                        <ul>
+                            <li><span>•</span> Built directly into Square</li>
+                            <li><span>•</span> Showcase a collection of products</li>
+                            <li><span>•</span> Customize without writing code</li>
+                        </ul>
+                    </p>
+                    <p><a href="/learn/square/setup-your-storefront">Read the guide &rarr;</a></p>
+                </div>
+                <div>
+                    <div class="video-placeholder">
+                        <img src="{{ '/resources/img/square-logo-black.svg' | url }}" alt="Square" />
+                        <p>Video coming soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-feature">
+                <div>
+                    <h2>Part 3: Sales Walkthrough</h2>
+                    <p>See what the sales process looks like end-to-end — from a supporter adding to cart through to the order appearing in your Fundlet campaign dashboard.</p>
+                    <p>
+                        <ul>
+                            <li><span>•</span> Track every sale by campaign</li>
+                            <li><span>•</span> Per-participant attribution</li>
+                            <li><span>•</span> Built into your Square admin</li>
+                        </ul>
+                    </p>
+                    <p><a href="/learn/square/sales-walkthrough">Read the guide &rarr;</a></p>
+                </div>
+                <div>
+                    <div class="video-placeholder">
+                        <img src="{{ '/resources/img/square-logo-black.svg' | url }}" alt="Square" />
+                        <p>Video coming soon</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /page-one-column -->
+
+        {% include "footer.njk" %}
+    </body>
+</html>

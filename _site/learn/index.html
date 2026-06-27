@@ -4,12 +4,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Fundlet — Learn how to build amazing Shopify Fundraisers</title>
-        <meta name="description" content="Watch our videos to learn how to build amazing Fundraisers using Fundlet for Shopify." />
+        <title>Fundlet — Learn Fundlet</title>
+        <meta name="description" content="Step-by-step videos and guides for running fundraisers on Shopify or Square with Fundlet." />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
         <link rel="icon" href="/resources/img/favicon.png" />
         <link rel="stylesheet" href="/resources/css/reset.css" />
@@ -32,13 +32,27 @@
       <a href="/learn">Learn</a>
     </nav>
     <div class="nav-right">
-      <a class="btn btn-primary" href="https://apps.shopify.com/fundlet">
-        <svg class="sh" viewBox="0 0 109.5 124.5" fill="currentColor" aria-hidden="true">
-          <path d="M74.7,14.8c0,0-1.4,0.4-3.7,1.1c-0.4-1.3-1-2.8-1.8-4.4c-2.6-5-6.5-7.7-11.1-7.7c-0.3,0-0.6,0-1,0.1c-0.1-0.2-0.3-0.3-0.4-0.5c-2-2.2-4.6-3.2-7.7-3.1c-6,0.2-12,4.5-16.8,12.2c-3.4,5.4-6,12.2-6.7,17.5c-6.9,2.1-11.7,3.6-11.8,3.7c-3.5,1.1-3.6,1.2-4,4.5C9.1,40.7,0,111.2,0,111.2l75.6,13.1V14.6C75.2,14.7,74.9,14.7,74.7,14.8z M57.2,20.2c-4,1.2-8.4,2.6-12.7,3.9c1.2-4.7,3.6-9.4,6.4-12.5c1.1-1.1,2.6-2.4,4.3-3.2C56.9,12,57.3,16.9,57.2,20.2z M49.1,4.3c1.4,0,2.6,0.3,3.6,0.9c-1.6,0.8-3.2,2.1-4.7,3.6c-3.8,4.1-6.7,10.5-7.9,16.6c-3.6,1.1-7.2,2.2-10.5,3.2C31.7,19.1,39.8,4.6,49.1,4.3z M37.4,59.3c0.4,6.4,17.3,7.8,18.3,22.9c0.7,11.9-6.3,20-16.4,20.6c-12.2,0.8-18.9-6.4-18.9-6.4l2.6-11c0,0,6.7,5.1,12.1,4.7c3.5-0.2,4.8-3.1,4.7-5.1c-0.5-8.4-14.3-7.9-15.2-21.7C23.8,51.8,31.4,40.1,48.2,39c6.5-0.4,9.8,1.2,9.8,1.2l-3.8,14.4c0,0-4.3-2-9.4-1.6C37.4,53.5,37.3,58.2,37.4,59.3z M61.2,19c0-3-0.4-7.3-1.8-10.9c4.6,0.9,6.8,6,7.8,9.1C65.4,17.7,63.4,18.3,61.2,19z"/>
-          <path d="M78.1,123.9l31.4-7.8c0,0-13.5-91.3-13.6-91.9c-0.1-0.6-0.6-1-1.1-1c-0.5,0-9.3-0.2-9.3-0.2s-5.4-5.2-7.4-7.2V123.9z"/>
-        </svg>
-        Add to your store
-      </a>
+      <div class="add-dropdown" id="add-dropdown">
+        <button type="button" class="btn btn-primary add-trigger" id="add-trigger" aria-haspopup="true" aria-expanded="false">
+          Add to your store
+          <svg class="chev" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="1 1 5 5 9 1"></polyline>
+          </svg>
+        </button>
+        <div class="add-menu" role="menu" aria-labelledby="add-trigger">
+          <a class="add-menu-item" role="menuitem" href="https://apps.shopify.com/fundlet">
+            <svg class="sh-mark" viewBox="0 0 109.5 124.5" fill="currentColor" aria-hidden="true">
+              <path d="M74.7,14.8c0,0-1.4,0.4-3.7,1.1c-0.4-1.3-1-2.8-1.8-4.4c-2.6-5-6.5-7.7-11.1-7.7c-0.3,0-0.6,0-1,0.1c-0.1-0.2-0.3-0.3-0.4-0.5c-2-2.2-4.6-3.2-7.7-3.1c-6,0.2-12,4.5-16.8,12.2c-3.4,5.4-6,12.2-6.7,17.5c-6.9,2.1-11.7,3.6-11.8,3.7c-3.5,1.1-3.6,1.2-4,4.5C9.1,40.7,0,111.2,0,111.2l75.6,13.1V14.6C75.2,14.7,74.9,14.7,74.7,14.8z M57.2,20.2c-4,1.2-8.4,2.6-12.7,3.9c1.2-4.7,3.6-9.4,6.4-12.5c1.1-1.1,2.6-2.4,4.3-3.2C56.9,12,57.3,16.9,57.2,20.2z M49.1,4.3c1.4,0,2.6,0.3,3.6,0.9c-1.6,0.8-3.2,2.1-4.7,3.6c-3.8,4.1-6.7,10.5-7.9,16.6c-3.6,1.1-7.2,2.2-10.5,3.2C31.7,19.1,39.8,4.6,49.1,4.3z M37.4,59.3c0.4,6.4,17.3,7.8,18.3,22.9c0.7,11.9-6.3,20-16.4,20.6c-12.2,0.8-18.9-6.4-18.9-6.4l2.6-11c0,0,6.7,5.1,12.1,4.7c3.5-0.2,4.8-3.1,4.7-5.1c-0.5-8.4-14.3-7.9-15.2-21.7C23.8,51.8,31.4,40.1,48.2,39c6.5-0.4,9.8,1.2,9.8,1.2l-3.8,14.4c0,0-4.3-2-9.4-1.6C37.4,53.5,37.3,58.2,37.4,59.3z M61.2,19c0-3-0.4-7.3-1.8-10.9c4.6,0.9,6.8,6,7.8,9.1C65.4,17.7,63.4,18.3,61.2,19z"/>
+              <path d="M78.1,123.9l31.4-7.8c0,0-13.5-91.3-13.6-91.9c-0.1-0.6-0.6-1-1.1-1c-0.5,0-9.3-0.2-9.3-0.2s-5.4-5.2-7.4-7.2V123.9z"/>
+            </svg>
+            <span>Add to Shopify Store</span>
+          </a>
+          <a class="add-menu-item" role="menuitem" href="https://raise.fundlet.app/">
+            <img class="sq-mark" src="/resources/img/square-logo-black.svg" alt="" />
+            <span>Add to Square Store</span>
+          </a>
+        </div>
+      </div>
     </div>
     <button id="toggle-mobile-menu" aria-label="Open menu">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -57,7 +71,8 @@
   <a href="/#reviews">Reviews</a>
   <a href="/faq">FAQ</a>
   <a href="/learn">Learn</a>
-  <a class="mobile-cta" href="https://apps.shopify.com/fundlet">Add to your store</a>
+  <a class="mobile-cta" href="https://apps.shopify.com/fundlet">Add to Shopify Store</a>
+  <a class="mobile-cta" href="https://raise.fundlet.app/">Add to Square Store</a>
 </div>
 
 <script>
@@ -68,6 +83,29 @@
     document.addEventListener('click', function(e){
       if(!btn.contains(e.target) && !menu.contains(e.target)) menu.classList.remove('active');
     });
+
+    var add = document.getElementById('add-dropdown');
+    var addBtn = document.getElementById('add-trigger');
+    if(add && addBtn){
+      addBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        var open = add.classList.toggle('open');
+        addBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function(e){
+        if(!add.contains(e.target)){
+          add.classList.remove('open');
+          addBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' && add.classList.contains('open')){
+          add.classList.remove('open');
+          addBtn.setAttribute('aria-expanded', 'false');
+          addBtn.focus();
+        }
+      });
+    }
   })();
 </script>
 
@@ -75,794 +113,37 @@
             <div class="wrap">
                 <div class="sec-head">
                     <span class="eyebrow">Tutorials</span>
-                    <h1>Learn how to build amazing Shopify Fundraisers</h1>
-                    <p class="lede">Watch our videos to learn how to build amazing Fundraisers using Fundlet for Shopify.</p>
+                    <h1>Learn Fundlet</h1>
+                    <p class="lede">Step-by-step videos and guides for running fundraisers on Shopify or Square with Fundlet.</p>
                 </div>
             </div>
         </section>
-        <div class="page-one-column">
 
-
-            <div class="page-feature">
-                <div>
-                    <h2>Part 1: Create your First Campaign</h2>
-                    <p>Learn how to get started creating Fundraisers on Shopoify by creating your first campaign in Fundlet.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Add name and description</li>
-                            <li>
-                                <span>•</span>
-                                Upload campaign photos</li>
-                            <li>
-                                <span>•</span>
-                                Set the payout and goals</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/create-your-first-campaign">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/P-39Nd9xclA"
-                        title="🚀 Create a Shopify Fundraiser in Minutes with Fundlet (Part 1 of 3)"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
+        <section class="block" style="padding-top:0">
+            <div class="wrap">
+                <div class="learn-platforms">
+                    <a class="learn-platform-card" href="/learn/shopify">
+                        <div class="learn-platform-mark">
+                            <svg viewBox="0 0 109.5 124.5" fill="currentColor" aria-hidden="true">
+                                <path d="M74.7,14.8c0,0-1.4,0.4-3.7,1.1c-0.4-1.3-1-2.8-1.8-4.4c-2.6-5-6.5-7.7-11.1-7.7c-0.3,0-0.6,0-1,0.1c-0.1-0.2-0.3-0.3-0.4-0.5c-2-2.2-4.6-3.2-7.7-3.1c-6,0.2-12,4.5-16.8,12.2c-3.4,5.4-6,12.2-6.7,17.5c-6.9,2.1-11.7,3.6-11.8,3.7c-3.5,1.1-3.6,1.2-4,4.5C9.1,40.7,0,111.2,0,111.2l75.6,13.1V14.6C75.2,14.7,74.9,14.7,74.7,14.8z M57.2,20.2c-4,1.2-8.4,2.6-12.7,3.9c1.2-4.7,3.6-9.4,6.4-12.5c1.1-1.1,2.6-2.4,4.3-3.2C56.9,12,57.3,16.9,57.2,20.2z M49.1,4.3c1.4,0,2.6,0.3,3.6,0.9c-1.6,0.8-3.2,2.1-4.7,3.6c-3.8,4.1-6.7,10.5-7.9,16.6c-3.6,1.1-7.2,2.2-10.5,3.2C31.7,19.1,39.8,4.6,49.1,4.3z M37.4,59.3c0.4,6.4,17.3,7.8,18.3,22.9c0.7,11.9-6.3,20-16.4,20.6c-12.2,0.8-18.9-6.4-18.9-6.4l2.6-11c0,0,6.7,5.1,12.1,4.7c3.5-0.2,4.8-3.1,4.7-5.1c-0.5-8.4-14.3-7.9-15.2-21.7C23.8,51.8,31.4,40.1,48.2,39c6.5-0.4,9.8,1.2,9.8,1.2l-3.8,14.4c0,0-4.3-2-9.4-1.6C37.4,53.5,37.3,58.2,37.4,59.3z M61.2,19c0-3-0.4-7.3-1.8-10.9c4.6,0.9,6.8,6,7.8,9.1C65.4,17.7,63.4,18.3,61.2,19z"/>
+                                <path d="M78.1,123.9l31.4-7.8c0,0-13.5-91.3-13.6-91.9c-0.1-0.6-0.6-1-1.1-1c-0.5,0-9.3-0.2-9.3-0.2s-5.4-5.2-7.4-7.2V123.9z"/>
+                            </svg>
+                        </div>
+                        <h2>Fundlet for Shopify</h2>
+                        <p>Step-by-step videos covering campaigns, storefronts, payouts, participants, and more for Shopify merchants.</p>
+                        <span class="learn-platform-cta">View Shopify tutorials &rarr;</span>
+                    </a>
+                    <a class="learn-platform-card" href="/learn/square">
+                        <div class="learn-platform-mark">
+                            <img src="/resources/img/square-logo-black.svg" alt="Square" />
+                        </div>
+                        <h2>Fundlet for Square</h2>
+                        <p>Get started on Square with our growing library of tutorials — campaigns, storefronts, and the sales walkthrough.</p>
+                        <span class="learn-platform-cta">View Square tutorials &rarr;</span>
+                    </a>
                 </div>
             </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Part 2: Setup your Storefront</h2>
-                    <p>Every Fundlet campaign comes with a unique storefront to showcase the campaign and its products.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Built directly into Shopify</li>
-                            <li>
-                                <span>•</span>
-                                Showcase a collections</li>
-                            <li>
-                                <span>•</span>
-                                Increase conversions with our product modal</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/setup-your-storefront">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/KLyatXgPyac"
-                        title="🚀 Create a Shopify Fundraiser in Minutes with Fundlet (Part 2 of 3)"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Part 3: Sales Walkthrough</h2>
-                    <p>See how Fundlet tracks and reports on sales from the point of purchase to reporting in the app.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Uses Shopify discount codes</li>
-                            <li>
-                                <span>•</span>
-                                Slick UI to showcase results</li>
-                            <li>
-                                <span>•</span>
-                                Exportable reports</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/sales-walkthrough">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/KUwFt9E6PRI"
-                        title="🚀 Create a Shopify Fundraiser in Minutes with Fundlet (Part 3 of 3)"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Onboard Participants</h2>
-                    <p>Learn how to quickly onboard participants from your campaign page.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Easy to use form</li>
-                            <li>
-                                <span>•</span>
-                                Upload photo, name and email</li>
-                            <li>
-                                <span>•</span>
-                                Shareable link</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/onboard-participants">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/qyF5mhqtfOc"
-                        title="Fundlet  - Onboard Participants"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Onboard Campaigns</h2>
-                    <p>Learn how to quickly onboard campains from your shop.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Easy to use form</li>
-                            <li>
-                                <span>•</span>
-                                Upload photo, content and more</li>
-                            <li>
-                                <span>•</span>
-                                Embed onto any page on your site</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/onboard-campaigns">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/7dc8UgCgMfA"
-                        title="Fundlet - Create Onboarding Form"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Use Discount Codes</h2>
-                    <p>Fundlet uses Shopify's built-in discount codes. So you can use them to expand your fundraiser past your campaign page.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Shop entire site</li>
-                            <li>
-                                <span>•</span>
-                                Limit use with Shopify coupon UI</li>
-                            <li>
-                                <span>•</span>
-                                Apply discounts if desired</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/use-discount-codes">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/sNinQc-WOGQ"
-                        title="🎟 Fundlet + Coupon Codes – Run Shopify Fundraisers Across Your Entire Store"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Setup Custom Fields</h2>
-                    <p>Collect custom data (think location, team name, personalization, etc.) to Fundraiser products.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Add up to 2 custom fields</li>
-                            <li>
-                                <span>•</span>
-                                Open text fields and selectable options</li>
-                            <li>
-                                <span>•</span>
-                                Responses flow to exportable reports</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/setup-custom-fields">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/dKLdRiTWAqQ"
-                        title="Fundlet Custom Fields – Collect Team Names, Engravings &amp; More for your Shopify Fundraiser"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Display Countdown</h2>
-                    <p>Learn how to show a countdown to drive urgency and boost sales.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Beautifully designed countdown</li>
-                            <li>
-                                <span>•</span>
-                                Easy to setup</li>
-                            <li>
-                                <span>•</span>
-                                Drives urgency, creates excitement</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/display-countdown">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/Yg8IIRvmnls"
-                        title="Fundlet Countdown Timer – Drive Urgency in Your Shopify Fundraiser ⏳"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Use Existing Product Page</h2>
-                    <p>Learn how to use your existing product page with Fundlet</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Seamless integration</li>
-                            <li>
-                                <span>•</span>
-                                Use existing product customizations</li>
-                            <li>
-                                <span>•</span>
-                                Setup in under a minute</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/use-existing-product-page">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/A71g8bMGS9M"
-                        title="Fundlet Custom Fields – Collect Team Names, Engravings &amp; More for your Shopify Fundraiser"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>End-to-End Walkthrough</h2>
-                    <p>See how to setup a fundraiser from start-to-finish with Fundlet.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Full setup</li>
-                            <li>
-                                <span>•</span>
-                                Great for a refresher</li>
-                            <li>
-                                <span>•</span>
-                                See how fast it is to get started!</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/end-to-end-walkthrough">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/RNY4Yh6id4w"
-                        title="Fundlet - End to End Walkthrough"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Single Product Fundraiser</h2>
-                    <p>Learn how to create a stunning single product fundraiser.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Turn any product into a fundraiser</li>
-                            <li>
-                                <span>•</span>
-                                Display campaign branding</li>
-                            <li>
-                                <span>•</span>
-                                Highlight campaign progress</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/single-product-fundraiser">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/gxltMxD-oWM"
-                        title="Fundlet - Single Product"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Create Custom Theme Templates</h2>
-                    <p>Learn how to create a custom theme template for your campaign.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Unique designs per product</li>
-                            <li>
-                                <span>•</span>
-                                Re-use existing designs</li>
-                            <li>
-                                <span>•</span>
-                                No code needed</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/create-custom-theme-templates">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/FGiM4CfIa4I"
-                        title="Fundlet - Custom Theme Template"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Create Custom Payouts</h2>
-                    <p>Assign specific dollar amounts for each product in your campaign.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Per product payouts</li>
-                            <li>
-                                <span>•</span>
-                                Flexible setup with higher and lower payouts in same campaign</li>
-                            <li>
-                                <span>•</span>
-                                Automatic tracking</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/create-custom-payouts">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/JPphNtHhzHM"
-                        title="Fundlet - Create Custom Payouts"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Share Campaign Dashboard</h2>
-                    <p>Securely give campaign organizers access to campaign details and reports</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Quickly share key campaign metrics</li>
-                            <li>
-                                <span>•</span>
-                                Allow organizers to export reports and add participants</li>
-                            <li>
-                                <span>•</span>
-                                Real-time tracking to keep everyone up-to-date</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/share-campaign-dashboard">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/vscI5EP2dKk"
-                        title="Fundlet - Share Campaign Dashboard"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Display Fundraiser on Collection Page</h2>
-                    <p>Learn how to use your Shopify Collection page for your Fundraiser Landing Page</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Use your existing collection page</li>
-                            <li>
-                                <span>•</span>
-                                Show Fundraiser information and progress</li>
-                            <li>
-                                <span>•</span>
-                                Track within your existing product flow</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/fundraiser-on-collection-page">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/Scj78tjU200"
-                        title="Fundlet - Use your Shopify Collection page for your Fundraiser Landing Page"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Implement Payout Tiers to Boost Participation</h2>
-                    <p>Learn how to use payout tiers to adjust payouts based on revenue</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Adjust payouts based on revenue</li>
-                            <li>
-                                <span>•</span>
-                                Set increases to boost participation</li>
-                            <li>
-                                <span>•</span>
-                                Award high performing fundraisers</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/payout-tiers">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/BrZYgzuOA_k"
-                        title="Fundlet - Payout Tiers boost Participation on your Shopify Fundraiser"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Create Isolated Fundraisers</h2>
-                    <p>Learn how to use Fundlet to create isolated campaigns that do not share your shop's header and/or footer.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Easily Remove Header and Footer</li>
-                            <li>
-                                <span>•</span>
-                                Includes a custom cart</li>
-                            <li>
-                                <span>•</span>
-                                Return dialog keeps visitors on your campaign</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/isolated-fundraisers">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/rEmRrOvSD3w"
-                        title="Fundlet - Create Isolated Fundraising Campaign"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Add an Existing Order to a Campaign</h2>
-                    <p>Learn how to add an order that was not properly tagged into a campaign</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Quickly fix ordering errors</li>
-                            <li>
-                                <span>•</span>
-                                Add order and participant tags</li>
-                            <li>
-                                <span>•</span>
-                                Works on fundraisers with the exclude filter</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/add-existing-order-to-campaign">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/E6uxXRt4REo"
-                        title="Fundlet - Retroactively Including an Order in Campaign"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Use Unlisted Shopify Products in your Fundraiser</h2>
-                    <p>Learn how to use Shopify's unlisted product status to create unique products for your fundraiser</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Use existing products</li>
-                            <li>
-                                <span>•</span>
-                                Adjust price for fundraiser items</li>
-                            <li>
-                                <span>•</span>
-                                Create items that are unique to a campaign</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/unlisted-shopify-products">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/le_kiVkm7c8"
-                        title="Fundlet - Use Unlisted Shopify Products in your Fundraiser"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Duplicate Campaign</h2>
-                    <p>Learn how to quickly duplicate a campaign in Fundlet.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Bring over settings with a single click</li>
-                            <li>
-                                <span>•</span>
-                                Make changes easily</li>
-                            <li>
-                                <span>•</span>
-                                Makes starting a new campaign fast and accurate</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/duplicate-campaign">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/FtKWeqEfT3Y"
-                        title="Fundlet - Duplicate Campaign"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Password Protected Fundraisers</h2>
-                    <p>Learn how to make a password protected fundraiser.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Make any fundraiser more private</li>
-                            <li>
-                                <span>•</span>
-                                Unique passwords for each fundraiser</li>
-                            <li>
-                                <span>•</span>
-                                Setup in under a minute</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/password-protected-fundraisers">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/3CuWCzNOgFE"
-                        title="Fundlet - Password Protected Fundraisers"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Upload Participant CSV</h2>
-                    <p>Our upload participants CSV feature makes adding participants to your Shopify Fundraiser easy</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Upload quickly</li>
-                            <li>
-                                <span>•</span>
-                                Works with standard CSV</li>
-                            <li>
-                                <span>•</span>
-                                Add multiple participants fast</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/upload-participant-csv">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/jLN3QxupJEM"
-                        title="Fundlet - Upload Participant CSV"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="page-feature">
-                <div>
-                    <h2>Group Participants</h2>
-                    <p>Group participants to make organization and discovery easier.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Organize your participants</li>
-                            <li>
-                                <span>•</span>
-                                Make search easier</li>
-                            <li>
-                                <span>•</span>
-                                Works for self registration</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/group-participants">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/fWP-Q1FffQA"
-                        title="Fundlet - Group Participants"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="page-feature">
-                <div>
-                    <h2>Require and Search Participants</h2>
-                    <p>Learn how to require the selection of participants for your fundraiser.</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Easy to enable</li>
-                            <li>
-                                <span>•</span>
-                                Enable a simple search</li>
-                            <li>
-                                <span>•</span>
-                                Require the selection of participants</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/require-and-search-participants">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/6jlmMgXu42s"
-                        title="Fundlet - Require Participants"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="page-feature">
-                <div>
-                    <h2>Participants as Metaobjects</h2>
-                    <p>Learn how to scale participants in Fundlet using our new Metaobject feature</p>
-                    <p>
-                        <ul>
-                            <li>
-                                <span>•</span>
-                                Scales to over 200 participants</li>
-                            <li>
-                                <span>•</span>
-                                More useful management UI</li>
-                            <li>
-                                <span>•</span>
-                                Same great participants</li>
-                        </ul>
-                    </p>
-                    <p><a href="/learn/participants-as-metaobjects">Read the guide &rarr;</a></p>
-                </div>
-                <div>
-                    <iframe
-                        width="940"
-                        height="600"
-                        src="https://www.youtube.com/embed/RUhUWt_BwS0"
-                        title="Fundlet - Participants as Metaobjects"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-
-        </div>
-        <!-- /page-one-column -->
+        </section>
 
         <footer>
   <div class="wrap">
@@ -872,15 +153,19 @@
           <img class="mark" src="/resources/img/fundlet-mark.png" alt="Fundlet" />
           Fundlet
         </a>
-        <p>Beautiful branded fundraisers for Shopify stores. Built and supported by Matthew Smith.</p>
-        <div style="margin-top:18px"><span class="bfs">Built for Shopify</span></div>
+        <p>Beautiful branded fundraisers for Shopify and Square stores. Built and supported by Matthew Smith.</p>
+        <div class="foot-badges">
+          <span class="bfs">Built for Shopify</span>
+          <span class="bfs bfs-sq">Available on Square</span>
+        </div>
       </div>
       <div class="foot-col">
         <h5>Product</h5>
         <a href="/#features">Features</a>
         <a href="/#how">How it works</a>
         <a href="/#reviews">Reviews</a>
-        <a href="https://apps.shopify.com/fundlet">App Store</a>
+        <a href="https://apps.shopify.com/fundlet">Shopify App Store</a>
+        <a href="https://raise.fundlet.app/">Square App</a>
       </div>
       <div class="foot-col">
         <h5>Learn</h5>
@@ -903,7 +188,6 @@
     </div>
   </div>
 </footer>
-
 
     </body>
 </html>
