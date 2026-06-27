@@ -266,9 +266,10 @@
   .hero-meta{flex-wrap:wrap;gap:14px 20px}
   .hero-meta .m + .m{padding-left:0;border-left:none}
   .hero-visual .device img{aspect-ratio:4/3 !important;max-height:380px}
-  .float-goal{right:6px;bottom:22px;width:148px;padding:11px 13px}
-  .float-goal .pct{font-size:19px}
-  .float-rating{left:6px;top:14px;padding:10px 12px}
+  .float-goal{right:4px;bottom:18px;width:138px;padding:10px 12px;max-width:calc(100% - 8px)}
+  .float-goal .pct{font-size:18px}
+  .float-goal .sub{font-size:11px}
+  .float-rating{left:4px;top:12px;padding:9px 11px;max-width:calc(100% - 8px)}
   .float-rating .num{font-size:20px}
   .cta-inner{padding:44px 28px}
 }
