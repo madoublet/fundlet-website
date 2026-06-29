@@ -81,8 +81,8 @@
 }
 .faq-item > p,
 .faq-item > ul{margin-bottom:12px}
-.faq-item > ul{padding-left:20px}
-.faq-item > ul li{list-style:disc;margin-bottom:6px;font-size:15.5px;color:var(--ink-2)}
+.faq-item > ul{padding-left:0;list-style:none}
+.faq-item ul li{margin-bottom:6px;font-size:15.5px;color:var(--ink-2)}
 
 .faq-item summary:hover{color:var(--accent-deep)}
 
