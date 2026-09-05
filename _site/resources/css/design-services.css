@@ -1,0 +1,201 @@
+/* Design Services page */
+
+.ds-intro {
+  padding: 72px 0 56px;
+}
+.ds-intro .sec-head h1 {
+  font-size: clamp(28px, 3.4vw, 42px);
+  font-weight: 800;
+  margin-top: 16px;
+  letter-spacing: -.034em;
+}
+.ds-intro .lede {
+  font-size: 18.5px;
+  color: var(--ink-2);
+  margin-top: 16px;
+  max-width: 54ch;
+}
+
+.ds-section {
+  padding: 0 0 80px;
+}
+
+.ds-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.ds-card {
+  background: var(--paper);
+  border: 1px solid var(--line-2);
+  border-radius: 16px;
+  padding: 32px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.ds-card-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.ds-plan-name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.ds-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.ds-amount {
+  font-size: clamp(38px, 4.5vw, 52px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.ds-one-time {
+  font-size: 15px;
+  color: var(--ink-2);
+  font-weight: 400;
+}
+
+.ds-tagline {
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.45;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+
+.ds-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.ds-features li {
+  font-size: 14.5px;
+  color: var(--ink);
+  line-height: 1.35;
+  padding-left: 24px;
+  position: relative;
+}
+
+.ds-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%2336C61B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='2 7 5.5 10.5 12 3.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ds-cta {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 16px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.ds-footer-note {
+  margin-top: 32px;
+  font-size: 14px;
+  color: var(--ink-2);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ds-footer-note a {
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line-2);
+  text-underline-offset: 2px;
+}
+
+.ds-footer-note a:hover {
+  color: var(--accent-deep);
+  text-decoration-color: var(--accent-deep);
+}
+
+/* Pricing page callout */
+.ds-callout {
+  padding: 0 0 80px;
+}
+
+.ds-callout-inner {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 36px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.ds-callout-text h2 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.ds-callout-text p {
+  font-size: 15px;
+  color: var(--ink-2);
+  line-height: 1.5;
+  max-width: 52ch;
+}
+
+.ds-callout-cta {
+  flex: none;
+}
+
+@media (max-width: 900px) {
+  .ds-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .ds-grid {
+    grid-template-columns: 1fr;
+  }
+  .ds-intro {
+    padding: 48px 0 36px;
+  }
+}
+
+@media (max-width: 700px) {
+  .ds-callout-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 24px;
+  }
+}

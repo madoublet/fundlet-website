@@ -1,0 +1,112 @@
+---
+title: Base
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fundlet — {{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="{{ '/resources/img/favicon.png' | url }}" />
+  <link rel="stylesheet" href="{{ '/resources/css/reset.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/resources/css/brand.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/resources/css/site.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/resources/css/design-services.css' | url }}" />
+</head>
+
+<body>
+
+{% include "header.njk" %}
+
+<section class="ds-intro">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Fundlet</span>
+      <h1>{{ title }}</h1>
+      <p class="lede">{{ description }}</p>
+    </div>
+  </div>
+</section>
+
+<div class="ds-section">
+  <div class="wrap">
+
+    <div class="ds-grid">
+
+      <!-- Basic Setup -->
+      <div class="ds-card">
+        <div class="ds-card-top">
+          <div class="ds-plan-name">Basic Setup</div>
+          <div class="ds-price">
+            <span class="ds-amount">$199</span>
+            <span class="ds-one-time">one-time</span>
+          </div>
+          <p class="ds-tagline">Get your first fundraiser configured and ready to go.</p>
+          <ul class="ds-features">
+            <li>Complete fundraising setup via the Fundlet app</li>
+            <li>Campaign configuration</li>
+            <li>1 hour of live training</li>
+          </ul>
+        </div>
+        <!-- Replace href with your Stripe payment link -->
+        <a class="ds-cta btn btn-primary" href="mailto:matt@matthewsmith.com">Email to Get Started — $199</a>
+      </div>
+
+      <!-- Advanced Setup -->
+      <div class="ds-card">
+        <div class="ds-card-top">
+          <div class="ds-plan-name">Advanced Setup</div>
+          <div class="ds-price">
+            <span class="ds-amount">$299</span>
+            <span class="ds-one-time">one-time</span>
+          </div>
+          <p class="ds-tagline">Full setup with email automation to keep your supporters engaged.</p>
+          <ul class="ds-features">
+            <li>Complete fundraising setup via the Fundlet app</li>
+            <li>Email setup and configuration</li>
+            <li>Campaign configuration</li>
+            <li>1 hour of live training</li>
+            <li>Requires $50/month email automation plan</li>
+          </ul>
+        </div>
+        <!-- Replace href with your Stripe payment link -->
+        <a class="ds-cta btn btn-primary" href="mailto:matt@matthewsmith.com">Email to Get Started — $299</a>
+      </div>
+
+      <!-- Complete Site -->
+      <div class="ds-card">
+        <div class="ds-card-top">
+          <div class="ds-plan-name">Complete Site</div>
+          <div class="ds-price">
+            <span class="ds-amount">$699</span>
+            <span class="ds-one-time">one-time</span>
+          </div>
+          <p class="ds-tagline">A complete website transformation built around your fundraising goals.</p>
+          <ul class="ds-features">
+            <li>Complete website overhaul focused on fundraising</li>
+            <li>AI-driven mockups before any work begins</li>
+            <li>Full implementation included</li>
+            <li>1 hour of live training</li>
+          </ul>
+        </div>
+        <!-- Replace href with your Stripe payment link -->
+        <a class="ds-cta btn btn-primary" href="mailto:matt@matthewsmith.com">Email to Get Started — $699</a>
+      </div>
+
+    </div>
+
+    <p class="ds-footer-note">Questions? Email <a href="mailto:matt@matthewsmith.com">matt@matthewsmith.com</a> and we'll help you choose the right option.</p>
+
+  </div>
+</div>
+
+{% include "footer.njk" %}
+
+</body>
+</html>
