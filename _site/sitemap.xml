@@ -227,21 +227,6 @@
         </url>
     
         <url>
-            <loc>/learn/square/create-your-first-campaign/</loc>
-            <lastmod>2026-06-27T14:30:26.483Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>/learn/square/setup-your-storefront/</loc>
-            <lastmod>2026-06-27T14:30:34.408Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>/learn/square/sales-walkthrough/</loc>
-            <lastmod>2026-06-27T14:30:41.674Z</lastmod>
-        </url>
-    
-        <url>
             <loc>/pricing/</loc>
             <lastmod>2026-07-24T12:40:11.124Z</lastmod>
         </url>
@@ -274,6 +259,21 @@
         <url>
             <loc>/learn/whitelabel-fundraisers/</loc>
             <lastmod>2026-09-20T16:51:07.743Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/automated-emails/</loc>
+            <lastmod>2026-09-21T02:11:14.466Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/square/create-your-first-campaign/</loc>
+            <lastmod>2026-09-21T02:15:31.300Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/custom-pricing-and-shipping/</loc>
+            <lastmod>2026-09-21T02:31:43.234Z</lastmod>
         </url>
     
 </urlset>
