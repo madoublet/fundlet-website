@@ -207,11 +207,6 @@
         </url>
     
         <url>
-            <loc>/contact/</loc>
-            <lastmod>2026-06-08T16:47:37.151Z</lastmod>
-        </url>
-    
-        <url>
             <loc>/learn/</loc>
             <lastmod>2026-06-27T14:28:27.517Z</lastmod>
         </url>
@@ -289,6 +284,11 @@
         <url>
             <loc>/learn/square/share-dashboard/</loc>
             <lastmod>2026-09-24T03:10:25.181Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/contact/</loc>
+            <lastmod>2026-09-26T01:08:16.547Z</lastmod>
         </url>
     
 </urlset>

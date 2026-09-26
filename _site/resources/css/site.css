@@ -163,6 +163,8 @@ footer{background:var(--panel);color:var(--on-panel);padding:66px 0 40px}
 footer .brand .mark{filter:brightness(0) invert(1)}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
 .foot-brand p{color:var(--on-panel-2);font-size:14.5px;margin-top:14px;max-width:30ch}
+.foot-brand p a{text-decoration:underline;text-underline-offset:2px;transition:color .15s}
+.foot-brand p a:hover{color:var(--on-panel)}
 .foot-col h5{
   font-family:var(--eyebrow-family);font-size:11px;letter-spacing:.1em;
   text-transform:uppercase;color:var(--on-panel-2);font-weight:500;margin:0 0 16px
