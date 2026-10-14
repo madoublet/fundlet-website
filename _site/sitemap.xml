@@ -207,11 +207,6 @@
         </url>
     
         <url>
-            <loc>/learn/</loc>
-            <lastmod>2026-06-27T14:28:27.517Z</lastmod>
-        </url>
-    
-        <url>
             <loc>/learn/shopify/</loc>
             <lastmod>2026-06-27T14:28:30.958Z</lastmod>
         </url>
@@ -299,6 +294,16 @@
         <url>
             <loc>/learn/progress-tracking/</loc>
             <lastmod>2026-10-05T02:00:16.686Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/learn/</loc>
+            <lastmod>2026-10-14T17:32:03.122Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/square/</loc>
+            <lastmod>2026-10-14T17:33:02.985Z</lastmod>
         </url>
     
 </urlset>
