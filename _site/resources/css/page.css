@@ -56,6 +56,16 @@
 .page-content a:visited{color:var(--accent-deep);text-decoration:underline;text-decoration-color:color-mix(in oklab,var(--accent-deep) 40%,transparent)}
 .page-content a:hover{color:var(--ink)}
 
+/* Buttons inside page content keep their own colours, not the link styles */
+.page-content a.btn,
+.page-content a.btn:visited{text-decoration:none}
+.page-content a.btn-primary,
+.page-content a.btn-primary:visited,
+.page-content a.btn-primary:hover{color:var(--bg)}
+.page-content a.btn-ghost,
+.page-content a.btn-ghost:visited,
+.page-content a.btn-ghost:hover{color:var(--ink)}
+
 .page-content img{
   width:100%;max-width:100%;
   border-radius:var(--r);

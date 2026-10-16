@@ -1,12 +1,12 @@
 ---
 layout: page.njk
-title: Fundlet for Square — Support
-description: Fundlet for Square is still fully supported for existing merchants. Everything you need — the app, the tutorial library, and setup guides — is collected here.
+title: Fundlet for Square
+description: Fundlet for Square turns your Square online store into a fundraising platform — campaigns, participant tracking, and payouts, all in one place. Open the app or browse the tutorial library.
 ---
 
-Fundlet for Square is still running and still supported. We're focusing new development on Shopify, so Square is no longer featured across the site — but existing Square merchants keep full access to the app, the tutorials, and our support team.
+Fundlet for Square turns your Square online store into a fundraising platform. Run a campaign, track who's selling what, and get paid through the Square account you already use.
 
-Everything related to Square lives on this page.
+The app, the tutorial library, and the setup guides all live on this page.
 
 ---
 
@@ -22,7 +22,7 @@ You'll be asked to log in to Square and approve access the first time you connec
 
 ## Tutorials
 
-The full Square video library is still online:
+The full Square video library:
 
 - [All Square tutorials](/learn/square) — the complete video library
 - [Create your first campaign](/learn/square/create-your-first-campaign) — log in, connect Square, and launch a fundraiser
@@ -42,10 +42,10 @@ The full Square video library is still online:
 
 ## Pricing
 
-Square plans match the [standard Fundlet pricing](/pricing). Existing Square subscriptions continue unchanged.
+Square plans match the [standard Fundlet pricing](/pricing).
 
 ---
 
 ## Need help?
 
-Email [matt@matthewsmith.com](mailto:matt@matthewsmith.com) or [book a free 30-minute consultation](/contact). Square merchants get the same support as everyone else — including help migrating to Shopify if that's where you're headed.
+Email [matt@matthewsmith.com](mailto:matt@matthewsmith.com) or [book a free 30-minute consultation](/contact).
