@@ -4,6 +4,8 @@ title: Fundraising for Cookie Shops
 metaDescription: Run cookie fundraisers from your Shopify store. Fundlet lets cookie shops and bakeries offer school and community fundraisers — no paper order forms, automated tracking, built into Shopify.
 ---
 
+**Short answer:** Yes — a cookie shop can run cookie dough and cookie fundraisers from its own Shopify store. Fundlet adds campaigns, per-participant tracking, and payout calculation to your existing store, replacing paper order forms and end-of-drive manual tallying entirely.
+
 Cookies are one of the most beloved fundraising products there is — easy to sell, hard to say no to, and a natural fit for schools, sports teams, and community events. With Fundlet, your cookie shop can run professional fundraising campaigns directly through your Shopify store without any paper forms or manual tracking.
 
 ---

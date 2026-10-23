@@ -1,0 +1,102 @@
+# Fundlet
+
+> Fundlet is an app for Shopify and Square that lets merchants run branded fundraisers for schools, sports teams, and churches directly from their own store. Organizations sell the merchant's products to their community, every sale is tracked to a participant automatically, and payouts are calculated for you.
+
+Fundlet is built and supported by Next Half (https://nexthalf.app/).
+It installs into an existing Shopify or Square store — merchants keep their own
+storefront, branding, products, and checkout. It is not a separate donation
+platform and does not host campaigns on a third-party domain.
+
+## How it works
+
+1. A merchant creates a campaign in the Fundlet app and links Shopify collections
+   or hand-picked products to it.
+2. Fundlet generates a branded campaign storefront and a discount code used to
+   attribute orders.
+3. The organization (school, sports team, church, nonprofit) shares the campaign
+   link; participants each get their own trackable link.
+4. Every order is attributed to a participant automatically — no paper order
+   forms and no manual reconciliation.
+5. Fundlet calculates payouts and tracks progress toward the fundraising goal.
+
+## Pricing
+
+Free trial, no credit card required to start.
+- Grow: $19/month — For growing fundraisers.
+- Pro: $49/month — For larger fundraisers with sustained volume.
+- Premium: $99/month — For established fundraisers with high volume.
+- Unlimited: $299/month — For teams running at scale.
+
+Full detail: https://www.fundlet.app/pricing/
+
+## Key pages
+
+- [Home](https://www.fundlet.app/): what Fundlet does and who it is for
+- [Pricing](https://www.fundlet.app/pricing/): plans and limits
+- [FAQ](https://www.fundlet.app/faq/): 49 answered questions on campaigns, participants, payouts, and billing
+- [Fundlet vs. other fundraising options](https://www.fundlet.app/compare/): how Fundlet differs from fundraising companies, donation platforms, and generic Shopify apps
+- [Shopify Fundraising](https://www.fundlet.app/shopify-fundraising/): overview for Shopify merchants
+- [Square Online Fundraising](https://www.fundlet.app/square-fundraising/): overview for Square merchants
+- [Learn](https://www.fundlet.app/learn/): full tutorial library
+- [Roadmap](https://www.fundlet.app/roadmap/): what is being built now
+- [Free consultation](https://www.fundlet.app/contact/): 30-minute setup call
+
+## Tutorials
+
+- [Fundlet End-to-End Walkthrough](https://www.fundlet.app/learn/end-to-end-walkthrough/): A complete walkthrough of setting up a Shopify fundraiser with Fundlet — from creating a campaign to tracking sales and closing out.
+- [How to Create your First Campaign in Fundlet](https://www.fundlet.app/learn/create-your-first-campaign/): Learn how to set up a Fundlet fundraising campaign from scratch, including adding a name and description, uploading photos, and configuring payouts and goals.
+- [How to Use Your Existing Product Page with Fundlet](https://www.fundlet.app/learn/use-existing-product-page/): By default Fundlet uses a product popup on your campaign landing page, but you can switch to your existing product page in two quick steps.
+- [How to Set Up your Fundlet Storefront](https://www.fundlet.app/learn/setup-your-storefront/): Set up a campaign landing page in minutes using Shopify's built-in theme customizer — no code required.
+- [Sales Walkthrough — How Fundlet Tracks Sales](https://www.fundlet.app/learn/sales-walkthrough/): See what the sales process looks like end-to-end — from a supporter adding to cart through to the order appearing in your Fundlet campaign dashboard.
+- [How to Onboard Participants into a Fundlet Campaign](https://www.fundlet.app/learn/onboard-participants/): Create a participant registration form and share a single link so participants can add themselves to your campaign — no manual entry required.
+- [How to Create a Campaign Onboarding Form](https://www.fundlet.app/learn/onboard-campaigns/): Add a Fundlet onboarding form to your Shopify store so anyone can submit a new fundraiser campaign directly from your site.
+- [How to Use Discount Codes to Run Fundraisers Across Your Entire Store](https://www.fundlet.app/learn/use-discount-codes/): Fundlet ties every campaign to a Shopify discount code, so you can track fundraiser sales even when shoppers aren't using the campaign landing page.
+- [How to Set Up Custom Fields in Fundlet](https://www.fundlet.app/learn/setup-custom-fields/): Collect additional information alongside purchases — like team names, engravings, or locations — using custom fields on your campaign.
+- [How to Display a Countdown Timer on Your Fundlet Campaign](https://www.fundlet.app/learn/display-countdown/): Add a countdown widget to your campaign banner to drive urgency and show supporters exactly how much time is left.
+- [How to Create a Single Product Fundraiser with Fundlet](https://www.fundlet.app/learn/single-product-fundraiser/): Link a Fundlet campaign directly to a single product page using a Shopify metafield — no collection required.
+- [How to Use Custom Theme Templates for Fundlet Campaigns](https://www.fundlet.app/learn/create-custom-theme-templates/): Assign different Shopify page templates to different campaigns so each fundraiser can have its own unique layout, images, and content.
+- [How to Create Custom Payouts with Payout Exceptions](https://www.fundlet.app/learn/create-custom-payouts/): Set a default payout amount for all products in a campaign, then override it for specific products using payout exceptions.
+- [How to Share the Campaign Dashboard with Organizers](https://www.fundlet.app/learn/share-campaign-dashboard/): Give campaign organizers their own secure login to view orders, export reports, and add participants — without access to your Shopify admin.
+- [How to Use a Shopify Collection Page as Your Fundraiser Landing Page](https://www.fundlet.app/learn/fundraiser-on-collection-page/): Link a Fundlet campaign to an existing Shopify collection so the collection page doubles as your fundraiser storefront.
+- [How to Use Payout Tiers to Boost Participation](https://www.fundlet.app/learn/payout-tiers/): Set increasing payout percentages at different revenue thresholds to encourage more sales and higher participation in your fundraiser.
+- [How to Create an Isolated Fundraising Campaign](https://www.fundlet.app/learn/isolated-fundraisers/): Hide your store's header and footer and replace them with a Fundlet header so the fundraiser feels completely detached from your shop.
+- [How to Add an Existing Order to a Fundlet Campaign](https://www.fundlet.app/learn/add-existing-order-to-campaign/): Retroactively tag any Shopify order so it appears as part of a campaign — useful when a supporter bought directly from your store instead of through the campaign page.
+- [How to Use Unlisted Shopify Products in a Fundraiser](https://www.fundlet.app/learn/unlisted-shopify-products/): Create fundraiser-specific products that don't appear in your storefront, search, or collections — only accessible through your campaign.
+- [How to Duplicate a Campaign in Fundlet](https://www.fundlet.app/learn/duplicate-campaign/): Duplicate an existing campaign to carry over all settings — participants, payout tiers, contact info, and more — as the starting point for a new season or campaign.
+- [How to Password Protect a Fundraiser in Fundlet](https://www.fundlet.app/learn/password-protected-fundraisers/): Add a password to any campaign so only people with the password can access the fundraiser landing page.
+- [How to Upload Participants via CSV](https://www.fundlet.app/learn/upload-participant-csv/): Quickly add multiple participants to a campaign at once by uploading a CSV file with a name and email column.
+- [How to Group Participants in Fundlet](https://www.fundlet.app/learn/group-participants/): Organize your fundraiser participants into groups to make browsing and searching easier for shoppers and self-registering participants.
+- [How to Require and Search Participants](https://www.fundlet.app/learn/require-and-search-participants/): Enable participant selection on your fundraiser so shoppers must choose a participant at checkout, with a search field to find them quickly.
+- [How to Use Participants as Metaobjects](https://www.fundlet.app/learn/participants-as-metaobjects/): Scale your Fundlet fundraiser to 50–250+ participants using Shopify metaobjects, which store participant data in a more flexible and integration-friendly format.
+- [Learn how to build amazing Shopify Fundraisers](https://www.fundlet.app/learn/shopify/): Watch our videos to learn how to build amazing Fundraisers using Fundlet for Shopify.
+- [Learn how to build amazing Square Fundraisers](https://www.fundlet.app/learn/square/): Watch our videos to learn how to build amazing Fundraisers using Fundlet for Square.
+- [How to Customize Campaign Colors in Fundlet](https://www.fundlet.app/learn/customize-campaign-colors/): Personalize your campaign's colors to match the branding of the school, team, or organization you're fundraising for — no new theme template required.
+- [How to Create a Secondary Description for Products in Fundlet](https://www.fundlet.app/learn/create-secondary-description/): Add callout text beneath a product name to highlight discounts, dietary info, or anything else worth calling out — then style it to match your campaign.
+- [How to Run White Label Fundraisers with Fundlet](https://www.fundlet.app/learn/whitelabel-fundraisers/): Remove all Fundlet branding from your Shopify fundraisers — custom URLs, branded emails, and no discount codes — so campaigns run entirely on your own store, domain, and brand.
+- [How to Automate Fundraiser Emails with Fundlet](https://www.fundlet.app/learn/automated-emails/): Set up email automations once and let Fundlet send timely emails to your campaign organizers and participants automatically — at campaign start, the halfway point, and the final day.
+- [Fundlet for Square Walkthrough — Create Your First Fundraiser](https://www.fundlet.app/learn/square/create-your-first-campaign/): A step-by-step walkthrough of Fundlet for Square — from logging in and connecting your Square account to setting up a campaign and touring the fundraiser page your supporters see.
+- [How to Set Custom Pricing and Shipping for Fundraiser Products](https://www.fundlet.app/learn/custom-pricing-and-shipping/): Set unique pricing and shipping rules for your fundraiser products — separate from your regular B2C and B2B catalog — using unlisted products and Shopify shipping profiles.
+- [Manage Participants in Fundlet for Square](https://www.fundlet.app/learn/square/manage-participants/): Participants are the people selling on behalf of your fundraiser — students, team members, volunteers. Learn what participants are, how to add and manage them, and how their sales are tracked from your Square-connected dashboard.
+- [Shipping Options in Fundlet for Square](https://www.fundlet.app/learn/square/shipping-options/): Decide how supporters get their orders. Learn how to set up flat rate shipping or fundraiser pickup for your Fundlet campaign, and which option fits your fundraiser best.
+- [Share Dashboard in Fundlet for Square](https://www.fundlet.app/learn/square/share-dashboard/): Keep your fundraiser organizer in the loop without giving them access to your Square account. Learn how to share your Fundlet campaign dashboard so organizers can see sales and reports in real time.
+- [How to Set Up Participant Milestones in Fundlet](https://www.fundlet.app/learn/participant-milestones/): Add medals and custom prize tiers to your fundraiser leaderboard to drive friendly competition and incentivize early sales.
+- [How to Choose What Your Progress Bar Tracks](https://www.fundlet.app/learn/progress-tracking/): Track your fundraiser's progress by payout, total revenue, or units sold — and have it update everywhere from the app to the storefront leaderboard.
+- [Learn Fundlet](https://www.fundlet.app/learn/): Step-by-step videos and guides for running fundraisers on Shopify or Square with Fundlet.
+
+## Industry guides
+
+- [Fundraising for Popcorn Shops](https://www.fundlet.app/fundraising-for-popcorn-shops/): Run school and community popcorn fundraisers directly from your Shopify store. Fundlet replaces paper order forms with a fully automated fundraising experience — built into Shopify.
+- [Fundraising for Coffee Shops](https://www.fundlet.app/fundraising-for-coffee-shops/): Offer coffee fundraisers through your Shopify store. Fundlet lets coffee shops and roasters run school and community fundraisers — built directly into Shopify with no extra tools.
+- [Fundraising for Candy Shops](https://www.fundlet.app/fundraising-for-candy-shops/): Run candy and confectionery fundraisers from your Shopify store. Fundlet lets candy shops offer school and community fundraisers — no paper forms, no manual tracking, built into Shopify.
+- [Fundraising for Bakeries](https://www.fundlet.app/fundraising-for-bakeries/): Run baked goods fundraisers from your Shopify store. Fundlet lets bakeries offer school and community fundraisers — automated participant tracking, no paper forms, built into Shopify.
+- [Fundraising for Chocolate Shops](https://www.fundlet.app/fundraising-for-chocolate-shops/): Run chocolate fundraisers directly from your Shopify store. Fundlet lets chocolate shops and confectioners offer school and community fundraisers — no paper forms, built into Shopify.
+- [Fundraising for Candle Shops](https://www.fundlet.app/fundraising-for-candle-shops/): Run candle fundraisers directly from your Shopify store. Fundlet lets candle makers and shops offer school and community fundraisers — automated tracking, no paper forms, built into Shopify.
+- [Fundraising for Nut and Snack Shops](https://www.fundlet.app/fundraising-for-nut-and-snack-shops/): Run nut and snack fundraisers from your Shopify store. Fundlet lets specialty food shops offer school and community fundraisers — automated participant tracking, built into Shopify.
+- [Fundraising for Cookie Shops](https://www.fundlet.app/fundraising-for-cookie-shops/): Run cookie fundraisers from your Shopify store. Fundlet lets cookie shops and bakeries offer school and community fundraisers — no paper order forms, automated tracking, built into Shopify.
+- [Fundraising for Flower Shops](https://www.fundlet.app/fundraising-for-flower-shops/): Run flower and floral fundraisers from your Shopify store. Fundlet lets florists offer school and community fundraisers — perfect for Mother's Day and spring campaigns, built into Shopify.
+- [Fundraising for Small Businesses](https://www.fundlet.app/fundraising-for-small-businesses/): Run fundraisers directly from your small business Shopify store. Reach new customers, build community loyalty, and grow revenue with Fundlet — built into Shopify.
+
+## Install
+
+- Shopify App Store: https://apps.shopify.com/fundlet
+- Square: https://raise.fundlet.app

@@ -1,0 +1,43 @@
+{#
+  Shared <head> for every layout.
+
+  Layouts set these before including:
+    pageCss     — filename in /resources/css/ for the page-specific stylesheet
+    seoTitle    — optional full <title> override (defaults to "Fundlet — {{ title }}")
+    schemaType  — optional: "faq" | "howto" | "pricing" (adds page-level JSON-LD)
+#}
+{%- set metaDesc = description or metaDescription or site.description -%}
+{%- set canonical = site.url + (page.url | url) -%}
+{%- set socialImage = (ogImage or site.ogImage) | absoluteUrl -%}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{% if seoTitle %}{{ seoTitle }}{% else %}Fundlet — {{ title }}{% endif %}</title>
+<meta name="description" content="{{ metaDesc }}" />
+<link rel="canonical" href="{{ canonical }}" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:title" content="{% if seoTitle %}{{ seoTitle }}{% else %}Fundlet — {{ title }}{% endif %}" />
+<meta property="og:description" content="{{ metaDesc }}" />
+<meta property="og:url" content="{{ canonical }}" />
+<meta property="og:image" content="{{ socialImage }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{% if seoTitle %}{{ seoTitle }}{% else %}Fundlet — {{ title }}{% endif %}" />
+<meta name="twitter:description" content="{{ metaDesc }}" />
+<meta name="twitter:image" content="{{ socialImage }}" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="{{ '/resources/img/favicon.png' | url }}" />
+<link rel="stylesheet" href="{{ '/resources/css/reset.css' | url }}" />
+<link rel="stylesheet" href="{{ '/resources/css/brand.css' | url }}" />
+<link rel="stylesheet" href="{{ '/resources/css/site.css' | url }}" />
+{%- if pageCss %}
+{%- for css in (pageCss if pageCss is iterable and pageCss is not string else [pageCss]) %}
+<link rel="stylesheet" href="{{ ('/resources/css/' + css) | url }}" />
+{%- endfor %}
+{%- endif %}
+
+{% include "schema.njk" %}

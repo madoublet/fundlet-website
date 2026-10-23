@@ -7,6 +7,46 @@ description: Read our FAQ to learn more about Fundlet.
 ## Campaigns and Setup
 
 <details class="faq-item">
+<summary>How does the fundraising process work?</summary>
+
+**Short answer:** Create a campaign, choose how you want sales tracked, then share a link or QR code — supporters shop and pay online, and you distribute the consolidated orders at the end.
+
+**Details:**
+
+Fundlet replaces paper order forms with an entirely digital process:
+
+1. **Create a campaign** in the Fundlet app and link the products or collection you want to offer.
+2. **Choose a tracking method** — overall campaign totals, group tracking (teams, classrooms), or individual participant tracking.
+3. **Share the fundraiser link or QR code** with supporters.
+4. **Supporters shop and pay online** through your store's normal checkout.
+5. **Distribute at the end** — orders are consolidated into a pick list for sorting and handoff.
+
+Participants are optional. Use them when you want a competition or per-seller credit; skip them when you only need a campaign total.
+
+📺 **Watch:**
+- [End-to-End Walkthrough](https://www.youtube.com/watch?v=RNY4Yh6id4w)
+
+</details>
+
+<details class="faq-item">
+<summary>Do we have to collect cash or paper orders?</summary>
+
+**Short answer:** No. Fundlet is entirely digital — no cash, no checks, no paper order forms.
+
+**Details:**
+
+Every sale is processed online through your store's normal checkout, which removes the parts of a traditional fundraiser that create the most work and the most risk:
+
+- No participants carrying order forms door to door
+- No cash or checks to collect, count, or reconcile
+- No manual tallying at the end of the drive
+- No lost, illegible, or duplicated paper orders
+
+Orders are attributed as they come in, so campaign and participant totals are always current.
+
+</details>
+
+<details class="faq-item">
 <summary>How do I create and activate a new campaign?</summary>
 
 **Short answer:** Campaigns are created and activated directly inside the Fundlet app.
@@ -50,10 +90,12 @@ Inactive campaigns do not count toward your plan limits.
 <details class="faq-item">
 <summary>What happens if a campaign exceeds its plan’s order limit?</summary>
 
-**Short answer:** Your campaign continues running and you’ll be prompted to upgrade.
+**Short answer:** Your campaign continues running and you’ll be prompted to upgrade. Limits are based on average yearly volume, so a single busy month does not count against you.
 
 **Details:**
 
+- Usage limits are measured against **average yearly volume**, not a hard monthly cap
+- Temporarily exceeding a limit shows a notification — it does not interrupt service or force an immediate upgrade
 - No active campaigns are paused
 - No orders are lost
 - You can upgrade at any time to continue tracking new orders
@@ -146,6 +188,22 @@ Changes made to the Header section are applied across your entire website. To hi
 **Details:**
 
 Campaign pages are typically set to display products from a specific collection (for example, a “Fuel Your Season” collection). To make products appear on the campaign page, add them to that collection.
+
+</details>
+
+<details class="faq-item">
+<summary>Why are products not appearing on the campaign page?</summary>
+
+**Short answer:** Usually the products are not published to the Online Store sales channel, or they are unlisted and need to be added to the campaign directly.
+
+**Details:**
+
+Two things to check:
+
+- **Sales channel** — Confirm each product is published to the **Online Store** channel. Products that are not published there will not render on the campaign page.
+- **Unlisted products** — Unlisted products do not appear in standard collections by design. Add them to the campaign directly in the campaign editor rather than relying on a collection to pull them in.
+
+If products are published and still missing, confirm the campaign is pointed at the collection the products actually belong to.
 
 </details>
 
@@ -586,6 +644,32 @@ This is useful for tracking things like team names, event codes, or any other cu
 </details>
 
 <details class="faq-item">
+<summary>How do we handle products with complex options or personalization?</summary>
+
+**Short answer:** Use custom fields to capture personalization details like names or engraving text, configured at the cart level so the information is collected before checkout.
+
+**Details:**
+
+For products that need buyer-supplied detail — an engraved name, a jersey number, a specific line of text — custom fields collect that information as part of the purchase.
+
+Configuring the fields at the **cart level** ensures the detail is captured before the order is placed, so you are never chasing a buyer afterward to find out what to engrave.
+
+Collected values flow through to your order exports alongside the rest of the order data.
+
+</details>
+
+<details class="faq-item">
+<summary>Are the fundraiser pages translatable?</summary>
+
+**Short answer:** Yes. Fundlet is compatible with standard website translation tools, so campaign landing pages can be offered in multiple languages.
+
+**Details:**
+
+Fundraiser landing pages work with the translation tooling you already use on your store, which lets you run a single campaign for a multilingual community without building separate campaigns per language.
+
+</details>
+
+<details class="faq-item">
 <summary>Can I use Fundlet to set up minimum donation amounts or round-up donations at checkout?</summary>
 
 **Short answer:** No—these features are not currently supported.
@@ -636,5 +720,33 @@ Both email templates are fully customizable in **Settings**. You can edit the su
 - Confirm that **Send Notifications** is enabled in **Settings**
 - Check that your campaign has a **Contact Email** configured—this is where campaign-level notifications are sent
 - If emails were previously routing to your store's default email instead of your contact email, this was a known bug that has since been fixed
+
+</details>
+
+<details class="faq-item">
+<summary>Can I email past buyers with specific team or participant links?</summary>
+
+**Short answer:** Duplicate the campaign to restart payout tracking, then use Fundlet's email automation to send out the updated participant links.
+
+**Details:**
+
+For a re-engagement campaign — a new season, a repeat annual drive — the cleanest approach is:
+
+1. **Duplicate the existing campaign.** This carries over participants, payout tiers, and settings while restarting payout tracking, so new sales do not get mixed into last season's totals.
+2. **Send the updated links** using the email automation tools. Each participant gets their new referral link for the duplicated campaign.
+
+📺 **Watch:**
+- [Duplicate a Campaign](https://www.youtube.com/watch?v=FtKWeqEfT3Y)
+
+</details>
+
+<details class="faq-item">
+<summary>How can I make sure I am receiving email replies from participants?</summary>
+
+**Short answer:** Fundlet supports a Reply-to header, which routes replies to automated campaign emails to your specified contact email address.
+
+**Details:**
+
+When a participant replies to an automated campaign email, the Reply-to header directs that message to the contact email you configured rather than to an unmonitored address. Confirm your campaign has a **Contact Email** set so replies have somewhere to land.
 
 </details>

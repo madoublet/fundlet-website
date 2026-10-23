@@ -4,6 +4,8 @@ title: Fundraising for Candy Shops
 metaDescription: Run candy and confectionery fundraisers from your Shopify store. Fundlet lets candy shops offer school and community fundraisers — no paper forms, no manual tracking, built into Shopify.
 ---
 
+**Short answer:** Yes — a candy shop can run fundraisers from its own Shopify store. Fundlet adds campaigns, per-participant tracking, and payout calculation on top of your existing store, so schools and teams sell your candy to their community and every order is tallied for you.
+
 Candy and confectionery products are fundraising staples — easy to sell, easy to ship, and always popular. With Fundlet, your candy shop can run professional fundraising campaigns for schools, youth sports leagues, church groups, and community organizations, all through your existing Shopify store.
 
 ---

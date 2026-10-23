@@ -1,0 +1,172 @@
+{#
+  JSON-LD graph. Always emits Organization + WebSite; layouts opt into
+  page-level types by setting `schemaType`.
+#}
+{%- set orgId = site.url + "/#organization" -%}
+{%- set appId = site.url + "/#app" -%}
+
+{%- set graph = [
+  {
+    "@type": "Organization",
+    "@id": orgId,
+    "name": site.name,
+    "url": site.url,
+    "logo": ("/resources/img/fundlet-logo-color.png" | absoluteUrl),
+    "description": site.description,
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": site.publisher.name,
+      "url": site.publisher.url
+    }
+  },
+  {
+    "@type": "WebSite",
+    "@id": site.url + "/#website",
+    "name": site.name,
+    "url": site.url,
+    "publisher": { "@id": orgId }
+  }
+] -%}
+
+{#- SoftwareApplication, with offers, on the homepage and the pricing page. -#}
+{%- if page.url == "/" or schemaType == "pricing" -%}
+  {%- set offers = [] -%}
+  {%- for plan in site.plans -%}
+    {%- set offers = (offers.push({
+      "@type": "Offer",
+      "name": plan.name,
+      "price": plan.price,
+      "priceCurrency": "USD",
+      "description": plan.tagline,
+      "url": site.url + "/pricing/",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": plan.price,
+        "priceCurrency": "USD",
+        "billingDuration": 1,
+        "billingIncrement": 1,
+        "unitText": "MONTH"
+      }
+    }), offers) -%}
+  {%- endfor -%}
+
+  {%- set appEntity = {
+    "@type": "SoftwareApplication",
+    "@id": appId,
+    "name": site.name,
+    "url": site.url,
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "Fundraising",
+    "operatingSystem": "Web",
+    "description": site.description,
+    "image": (site.ogImage | absoluteUrl),
+    "publisher": { "@id": orgId },
+    "installUrl": site.shopifyAppUrl,
+    "softwareHelp": site.url + "/learn/",
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "19",
+      "highPrice": "299",
+      "offerCount": site.plans.length,
+      "offers": offers
+    }
+  } -%}
+
+  {#- Reviews are real, attributed App Store quotes. aggregateRating is only
+      emitted when site.rating.ratingCount is set, because a rating value
+      without a count is invalid markup. -#}
+  {%- if page.url == "/" -%}
+    {%- set reviewEntities = [] -%}
+    {%- for r in site.reviews -%}
+      {%- set reviewEntities = (reviewEntities.push({
+        "@type": "Review",
+        "author": { "@type": "Organization", "name": r.author },
+        "reviewBody": r.body,
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      }), reviewEntities) -%}
+    {%- endfor -%}
+    {%- set appEntity = (appEntity | merge({ "review": reviewEntities })) -%}
+    {%- if site.rating.ratingCount -%}
+      {%- set appEntity = (appEntity | merge({
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": site.rating.value,
+          "ratingCount": site.rating.ratingCount,
+          "bestRating": site.rating.best
+        }
+      })) -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- set graph = (graph.push(appEntity), graph) -%}
+{%- endif -%}
+
+{#- FAQPage, built from the <details class="faq-item"> blocks in the content. -#}
+{%- if schemaType == "faq" -%}
+  {%- set faqs = content | faqEntities -%}
+  {%- if faqs.length -%}
+    {%- set graph = (graph.push({
+      "@type": "FAQPage",
+      "@id": site.url + (page.url | url) + "#faq",
+      "name": title,
+      "url": site.url + (page.url | url),
+      "isPartOf": { "@id": site.url + "/#website" },
+      "about": { "@id": appId },
+      "mainEntity": faqs
+    }), graph) -%}
+  {%- endif -%}
+{%- endif -%}
+
+{#- Tutorials: HowTo when the page is step-structured, Article otherwise. -#}
+{%- if schemaType == "howto" -%}
+  {%- set steps = content | howToSteps -%}
+  {%- set videoId = content | youtubeId -%}
+  {%- set pageUrl = site.url + (page.url | url) -%}
+
+  {%- set tutorial = {
+    "@id": pageUrl + "#tutorial",
+    "name": title,
+    "description": description or site.description,
+    "url": pageUrl,
+    "datePublished": (page.date | isoDate),
+    "dateModified": (dateModified | isoDate) if dateModified else (page.date | isoDate),
+    "publisher": { "@id": orgId },
+    "about": { "@id": appId }
+  } -%}
+
+  {%- if steps.length >= 2 -%}
+    {%- set tutorial = (tutorial | merge({ "@type": "HowTo", "step": steps, "totalTime": "PT10M" })) -%}
+  {%- else -%}
+    {%- set tutorial = (tutorial | merge({ "@type": "Article", "headline": title, "author": { "@id": orgId } })) -%}
+  {%- endif -%}
+
+  {%- if videoId -%}
+    {%- set tutorial = (tutorial | merge({
+      "video": {
+        "@type": "VideoObject",
+        "name": title,
+        "description": description or title,
+        "thumbnailUrl": "https://i.ytimg.com/vi/" + videoId + "/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/" + videoId,
+        "contentUrl": "https://www.youtube.com/watch?v=" + videoId,
+        "uploadDate": (page.date | isoDate)
+      }
+    })) -%}
+  {%- endif -%}
+
+  {%- set graph = (graph.push(tutorial), graph) -%}
+
+  {%- set graph = (graph.push({
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": site.url + "/" },
+      { "@type": "ListItem", "position": 2, "name": "Learn", "item": site.url + "/learn/" },
+      { "@type": "ListItem", "position": 3, "name": title, "item": pageUrl }
+    ]
+  }), graph) -%}
+{%- endif -%}
+
+<script type="application/ld+json">
+{{ { "@context": "https://schema.org", "@graph": graph } | jsonld | safe }}
+</script>

@@ -4,21 +4,9 @@ title: Base
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fundlet — {{ title }}</title>
-  <meta name="description" content="{{ description }}" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <link rel="icon" href="{{ '/resources/img/favicon.png' | url }}" />
-  <link rel="stylesheet" href="{{ '/resources/css/reset.css' | url }}" />
-  <link rel="stylesheet" href="{{ '/resources/css/brand.css' | url }}" />
-  <link rel="stylesheet" href="{{ '/resources/css/site.css' | url }}" />
-  <link rel="stylesheet" href="{{ '/resources/css/pricing.css' | url }}" />
-  <link rel="stylesheet" href="{{ '/resources/css/design-services.css' | url }}" />
+{%- set pageCss = ["pricing.css", "design-services.css"] -%}
+{%- set schemaType = "pricing" -%}
+{% include "head.njk" %}
 </head>
 
 <body>

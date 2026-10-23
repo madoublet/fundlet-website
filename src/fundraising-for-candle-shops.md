@@ -4,6 +4,8 @@ title: Fundraising for Candle Shops
 metaDescription: Run candle fundraisers directly from your Shopify store. Fundlet lets candle makers and shops offer school and community fundraisers — automated tracking, no paper forms, built into Shopify.
 ---
 
+**Short answer:** Yes — a candle shop can run candle fundraisers from its own Shopify store. Fundlet adds campaigns, per-participant tracking, and payout calculation to your existing store, so an organization sells your candles to its community and every order is attributed automatically, with no paper order forms.
+
 Candles are one of the most successful fundraising products going — they have broad appeal, feel like a real gift, and customers are happy to pay a premium for something they'll actually use. With Fundlet, your candle shop can offer fundraising programs to schools, PTAs, sports teams, and community organizations directly through your Shopify store.
 
 ---

@@ -4,6 +4,8 @@ title: Fundraising for Coffee Shops
 metaDescription: Offer coffee fundraisers through your Shopify store. Fundlet lets coffee shops and roasters run school and community fundraisers — built directly into Shopify with no extra tools.
 ---
 
+**Short answer:** Yes — a coffee shop or roaster can run coffee fundraisers from its own Shopify store. Fundlet adds campaigns, per-participant tracking, and payout calculation to your existing store, so an organization sells your coffee to its community and every order is attributed automatically.
+
 Coffee is a natural fit for fundraising — it's something people buy regularly, it ships well, and customers love discovering a new roaster through a cause they care about. With Fundlet, your coffee shop or roastery can offer fundraising programs to schools, sports teams, churches, and local organizations directly through your Shopify store.
 
 ---

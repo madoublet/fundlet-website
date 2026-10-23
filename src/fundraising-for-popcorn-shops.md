@@ -4,6 +4,8 @@ title: Fundraising for Popcorn Shops
 metaDescription: Run school and community popcorn fundraisers directly from your Shopify store. Fundlet replaces paper order forms with a fully automated fundraising experience — built into Shopify.
 ---
 
+**Short answer:** Yes — a popcorn shop can run school and community popcorn fundraisers from its own Shopify store. Fundlet adds campaigns, per-participant tracking, and payout calculation to your existing store, replacing paper order forms, cash collection, and manual tallying.
+
 Popcorn is one of the most popular fundraising products there is — but running a popcorn fundraiser has traditionally meant paper order forms, cash collection, and hours of manual tallying. Fundlet replaces all of that with a Shopify-native fundraising experience that runs itself.
 
 With Fundlet, your popcorn shop can offer professional fundraising campaigns to schools, sports leagues, churches, and clubs, all through your existing Shopify store.

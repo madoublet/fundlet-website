@@ -4,6 +4,8 @@ title: Fundraising for Nut and Snack Shops
 metaDescription: Run nut and snack fundraisers from your Shopify store. Fundlet lets specialty food shops offer school and community fundraisers — automated participant tracking, built into Shopify.
 ---
 
+**Short answer:** Yes — a nut or snack shop can run fundraisers from its own Shopify store. Fundlet adds campaigns, per-participant tracking, and payout calculation to your existing store, so shelf-stable products ship through your normal fulfillment and every order is credited to a participant.
+
 Nuts, trail mix, and specialty snacks have long been a staple of product fundraising — practical, shelf-stable, and appealing to a wide audience. With Fundlet, your nut or snack shop can run fundraising campaigns for schools, sports leagues, churches, and community groups directly through your Shopify store.
 
 ---

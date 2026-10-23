@@ -1,0 +1,57 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+sitemapExclude: true
+---
+{% set faqCount = 0 %}{% for item in collections.all %}{% if item.url == "/faq/" %}{% set faqCount = (item.templateContent | faqEntities).length %}{% endif %}{% endfor %}# Fundlet
+
+> {{ site.description | safe }}
+
+Fundlet is built and supported by {{ site.publisher.name }} ({{ site.publisher.url }}).
+It installs into an existing Shopify or Square store — merchants keep their own
+storefront, branding, products, and checkout. It is not a separate donation
+platform and does not host campaigns on a third-party domain.
+
+## How it works
+
+1. A merchant creates a campaign in the Fundlet app and links Shopify collections
+   or hand-picked products to it.
+2. Fundlet generates a branded campaign storefront and a discount code used to
+   attribute orders.
+3. The organization (school, sports team, church, nonprofit) shares the campaign
+   link; participants each get their own trackable link.
+4. Every order is attributed to a participant automatically — no paper order
+   forms and no manual reconciliation.
+5. Fundlet calculates payouts and tracks progress toward the fundraising goal.
+
+## Pricing
+
+Free trial, no credit card required to start.
+{% for plan in site.plans %}- {{ plan.name }}: ${{ plan.price }}/month — {{ plan.tagline | safe }}
+{% endfor %}
+Full detail: {{ site.url }}/pricing/
+
+## Key pages
+
+- [Home]({{ site.url }}/): what Fundlet does and who it is for
+- [Pricing]({{ site.url }}/pricing/): plans and limits
+- [FAQ]({{ site.url }}/faq/): {{ faqCount }} answered questions on campaigns, participants, payouts, and billing
+- [Fundlet vs. other fundraising options]({{ site.url }}/compare/): how Fundlet differs from fundraising companies, donation platforms, and generic Shopify apps
+- [Shopify Fundraising]({{ site.url }}/shopify-fundraising/): overview for Shopify merchants
+- [Square Online Fundraising]({{ site.url }}/square-fundraising/): overview for Square merchants
+- [Learn]({{ site.url }}/learn/): full tutorial library
+- [Roadmap]({{ site.url }}/roadmap/): what is being built now
+- [Free consultation]({{ site.url }}/contact/): 30-minute setup call
+
+## Tutorials
+{% for item in collections.all %}{% if "/learn/" in item.url %}
+- [{{ item.data.title | safe }}]({{ site.url }}{{ item.url }}){% if item.data.description %}: {{ item.data.description | safe }}{% endif %}{% endif %}{% endfor %}
+
+## Industry guides
+{% for item in collections.all %}{% if "fundraising-for-" in item.url %}
+- [{{ item.data.title | safe }}]({{ site.url }}{{ item.url }}){% if item.data.metaDescription %}: {{ item.data.metaDescription | safe }}{% endif %}{% endif %}{% endfor %}
+
+## Install
+
+- Shopify App Store: {{ site.shopifyAppUrl }}
+- Square: {{ site.squareAppUrl }}

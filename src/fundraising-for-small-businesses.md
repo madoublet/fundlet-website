@@ -4,6 +4,8 @@ title: Fundraising for Small Businesses
 metaDescription: Run fundraisers directly from your small business Shopify store. Reach new customers, build community loyalty, and grow revenue with Fundlet — built into Shopify.
 ---
 
+**Short answer:** Yes — any small business selling a physical product on Shopify can run fundraisers from its own store. Fundlet adds campaigns, per-participant tracking, and payout calculation to the store you already have, which turns fundraising into a customer-acquisition channel rather than a donation request.
+
 Fundlet is a Shopify app that lets small businesses run product fundraisers directly from their online store. No third-party platform, no manual order tracking — everything lives inside Shopify.
 
 Whether you sell popcorn, coffee, candy, or baked goods, Fundlet turns your existing products into a fundraising program that schools, sports teams, churches, and community organizations can run on your behalf.

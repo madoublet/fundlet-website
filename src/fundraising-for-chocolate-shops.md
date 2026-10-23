@@ -4,6 +4,8 @@ title: Fundraising for Chocolate Shops
 metaDescription: Run chocolate fundraisers directly from your Shopify store. Fundlet lets chocolate shops and confectioners offer school and community fundraisers — no paper forms, built into Shopify.
 ---
 
+**Short answer:** Yes — a chocolate shop can run chocolate fundraisers from its own Shopify store. Fundlet adds campaigns, per-participant tracking, and payout calculation to your existing store, so supporters buy your chocolate through your own checkout and each sale is credited to the participant who made it.
+
 Chocolate is one of the original fundraising products — easy to sell, universally loved, and a natural gift for any occasion. With Fundlet, your chocolate shop can run professional fundraising campaigns for schools, sports teams, churches, and community groups directly through your existing Shopify store.
 
 ---

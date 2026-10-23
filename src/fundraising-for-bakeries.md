@@ -4,6 +4,8 @@ title: Fundraising for Bakeries
 metaDescription: Run baked goods fundraisers from your Shopify store. Fundlet lets bakeries offer school and community fundraisers — automated participant tracking, no paper forms, built into Shopify.
 ---
 
+**Short answer:** Yes — a bakery can run school and community fundraisers directly from its own Shopify store. Fundlet adds campaigns, participant tracking, and payout calculation to the store you already have, so supporters order baked goods through your normal checkout and every sale is credited to the right participant automatically.
+
 Baked goods fundraisers are beloved for a reason — everyone buys them, and the products feel special. With Fundlet, your bakery can offer fundraising programs to schools, PTAs, sports teams, and community groups directly through your Shopify store, with automated tracking and no manual paperwork.
 
 ---

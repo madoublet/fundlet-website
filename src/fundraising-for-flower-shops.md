@@ -4,6 +4,8 @@ title: Fundraising for Flower Shops
 metaDescription: Run flower and floral fundraisers from your Shopify store. Fundlet lets florists offer school and community fundraisers — perfect for Mother's Day and spring campaigns, built into Shopify.
 ---
 
+**Short answer:** Yes — a florist can run flower fundraisers from its own Shopify store. Fundlet adds campaigns, per-participant tracking, and payout calculation to your existing store, which makes it a strong fit for seasonal drives around Mother's Day, spring, and graduation.
+
 Flowers are a natural fundraising product — they're a gift people are already planning to buy, which makes them an easy sell for any participant. With Fundlet, your flower shop or floral studio can run fundraising campaigns for schools, PTAs, sports teams, and community groups directly through your Shopify store.
 
 ---

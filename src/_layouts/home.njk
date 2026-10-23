@@ -4,20 +4,9 @@ title: Base
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fundlet — Beautiful Shopify Fundraisers</title>
-  <meta name="description" content="Run fundraisers for schools, sports teams, and churches right from your Shopify store. Organizations sell your products, you gain new customers, and every sale is tracked automatically." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <link rel="icon" href="{{ '/resources/img/favicon.png' | url }}" />
-  <link rel="stylesheet" href="{{ '/resources/css/reset.css' | url }}" />
-  <link rel="stylesheet" href="{{ '/resources/css/brand.css' | url }}" />
-  <link rel="stylesheet" href="{{ '/resources/css/site.css' | url }}" />
-  <link rel="stylesheet" href="{{ '/resources/css/index.css' | url }}" />
+{%- set pageCss = "index.css" -%}
+{%- set seoTitle = "Fundlet — Beautiful Shopify Fundraisers" -%}
+{% include "head.njk" %}
 </head>
 
 <body>
@@ -54,10 +43,10 @@ title: Base
           <div class="sub">$7,420 raised of $10,000</div>
         </div>
         <div class="float-card float-rating">
-          <span class="num">4.8</span>
+          <span class="num">{{ site.rating.value }}</span>
           <div>
             <div class="stars">★★★★★</div>
-            <div class="meta">Shopify reviews</div>
+            <div class="meta">{{ site.rating.ratingCount }} Shopify reviews</div>
           </div>
         </div>
       </div>
@@ -80,7 +69,7 @@ title: Base
       </div>
       <div class="hero-meta">
         <div class="m"><b>5 Minutes</b><span>Setup time</span></div>
-        <div class="m"><b>4.8 ★</b><span>App store</span></div>
+        <div class="m"><b>{{ site.rating.value }} ★</b><span>App store · {{ site.rating.ratingCount }} reviews</span></div>
         <div class="m"><b>Unlimited</b><span>Fundraisers at once</span></div>
         <div class="m"><b>1 link</b><span>Per fundraiser</span></div>
         <div class="m"><b>Any org</b><span>Schools, teams &amp; churches</span></div>
