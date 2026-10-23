@@ -297,13 +297,18 @@
         </url>
     
         <url>
-            <loc>/learn/</loc>
-            <lastmod>2026-10-14T17:32:03.122Z</lastmod>
+            <loc>/square/</loc>
+            <lastmod>2026-10-14T17:33:02.985Z</lastmod>
         </url>
     
         <url>
-            <loc>/square/</loc>
-            <lastmod>2026-10-14T17:33:02.985Z</lastmod>
+            <loc>/learn/</loc>
+            <lastmod>2026-10-23T02:21:31.466Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/shopify/</loc>
+            <lastmod>2026-10-23T02:23:40.540Z</lastmod>
         </url>
     
 </urlset>
