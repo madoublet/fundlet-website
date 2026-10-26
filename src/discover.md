@@ -48,3 +48,9 @@ Pick the guide closest to what you sell.
 If none of these match your shop, the mechanics are identical regardless of product — start with [Fundraising for Small Businesses](/fundraising-for-small-businesses), or see [how Fundlet compares](/compare) to traditional fundraising companies and donation platforms.
 
 [Install Fundlet on Shopify](https://apps.shopify.com/fundlet), [open it on Square](https://raise.fundlet.app), or [book a free 30-minute consultation](/contact) to talk through your first campaign.
+
+---
+
+## Looking for this from the other side?
+
+If you are a sports team, school, chapter, church, or club looking to run a fundraiser rather than host one, start with [Discover Fundlet for your Organization](/discover-organizations) — the same guides, written for the group doing the selling.

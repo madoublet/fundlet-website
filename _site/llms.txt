@@ -36,6 +36,7 @@ Full detail: https://www.fundlet.app/pricing/
 - [FAQ](https://www.fundlet.app/faq/): 49 answered questions on campaigns, participants, payouts, and billing
 - [Fundlet vs. other fundraising options](https://www.fundlet.app/compare/): how Fundlet differs from fundraising companies, donation platforms, and generic Shopify apps
 - [Discover Fundlet for your Shop](https://www.fundlet.app/discover/): index of the per-industry guides below, grouped by what the shop sells
+- [Discover Fundlet for your Organization](https://www.fundlet.app/discover-organizations/): index of the organization guides below, grouped by kind of group
 - [Shopify Fundraising](https://www.fundlet.app/shopify-fundraising/): overview for Shopify merchants
 - [Square Online Fundraising](https://www.fundlet.app/square-fundraising/): overview for Square merchants
 - [Learn](https://www.fundlet.app/learn/): full tutorial library
@@ -86,6 +87,8 @@ Full detail: https://www.fundlet.app/pricing/
 
 ## Industry guides
 
+For merchants, by what the shop sells.
+
 - [Fundraising for Popcorn Shops](https://www.fundlet.app/fundraising-for-popcorn-shops/): Run school and community popcorn fundraisers directly from your Shopify store. Fundlet replaces paper order forms with a fully automated fundraising experience — built into Shopify.
 - [Fundraising for Coffee Shops](https://www.fundlet.app/fundraising-for-coffee-shops/): Offer coffee fundraisers through your Shopify store. Fundlet lets coffee shops and roasters run school and community fundraisers — built directly into Shopify with no extra tools.
 - [Fundraising for Candy Shops](https://www.fundlet.app/fundraising-for-candy-shops/): Run candy and confectionery fundraisers from your Shopify store. Fundlet lets candy shops offer school and community fundraisers — no paper forms, no manual tracking, built into Shopify.
@@ -96,6 +99,31 @@ Full detail: https://www.fundlet.app/pricing/
 - [Fundraising for Cookie Shops](https://www.fundlet.app/fundraising-for-cookie-shops/): Run cookie fundraisers from your Shopify store. Fundlet lets cookie shops and bakeries offer school and community fundraisers — no paper order forms, automated tracking, built into Shopify.
 - [Fundraising for Flower Shops](https://www.fundlet.app/fundraising-for-flower-shops/): Run flower and floral fundraisers from your Shopify store. Fundlet lets florists offer school and community fundraisers — perfect for Mother's Day and spring campaigns, built into Shopify.
 - [Fundraising for Small Businesses](https://www.fundlet.app/fundraising-for-small-businesses/): Run fundraisers directly from your small business Shopify store. Reach new customers, build community loyalty, and grow revenue with Fundlet — built into Shopify.
+
+## Organization guides
+
+For the organizations that run the fundraisers, by kind of group.
+
+- [Fundraising for Sports Teams](https://www.fundlet.app/fundraising-for-sports-teams/): Run a sports team fundraiser with no order forms or cash collection. Players share a personal link, supporters check out online, and every sale is tracked by player. Free consultation.
+- [Fundraising for Youth Sports Leagues](https://www.fundlet.app/fundraising-for-youth-sports-leagues/): League-wide youth sports fundraising with separate campaigns per team, automatic per-player tracking, and no paper order forms. Free 30-minute consultation.
+- [Fundraising for Cheer and Dance Teams](https://www.fundlet.app/fundraising-for-cheer-and-dance-teams/): Cheer and dance team fundraising without paper order forms. Each athlete shares a personal link, supporters buy online, and sales are credited per athlete. Free consultation.
+- [Fundraising for Schools](https://www.fundlet.app/fundraising-for-schools/): School fundraising without paper order forms or cash collection. Students share a personal link, families order online, and every sale is credited by student. Free consultation.
+- [Fundraising for PTAs and PTOs](https://www.fundlet.app/fundraising-for-ptas-and-ptos/): PTA and PTO fundraising without order forms or cash handling. Online checkout, automatic per-student tracking, exportable records for your treasurer. Free consultation.
+- [Fundraising for Booster Clubs](https://www.fundlet.app/fundraising-for-booster-clubs/): Booster club fundraising with separate campaigns per team, automatic per-participant tracking, and exportable records. No order forms or cash handling. Free consultation.
+- [Fundraising for Bands and Music Programs](https://www.fundlet.app/fundraising-for-bands/): Band and music program fundraising without order forms. Students share personal links, supporters order online, and sales are tracked per student and per section. Free consultation.
+- [Fundraising for Theater and Drama Programs](https://www.fundlet.app/fundraising-for-theater-programs/): Theater and drama program fundraising with no order forms. Cast and crew share personal links, supporters order online, sales tracked per participant. Free consultation.
+- [Fundraising for Robotics and STEM Teams](https://www.fundlet.app/fundraising-for-robotics-and-stem-teams/): Robotics and STEM team fundraising without order forms. Students share personal links, supporters order online, and every sale is tracked and exportable. Free consultation.
+- [Fundraising for Sororities](https://www.fundlet.app/fundraising-for-sororities/): Sorority philanthropy fundraising with per-sister tracking and no cash handling. Share links, supporters order online, totals export for your chapter report. Free consultation.
+- [Fundraising for Fraternities](https://www.fundlet.app/fundraising-for-fraternities/): Fraternity philanthropy fundraising with per-brother tracking, online checkout, and no cash handling. Exportable totals for chapter and IFC reporting. Free consultation.
+- [Fundraising for Churches](https://www.fundlet.app/fundraising-for-churches/): Church fundraising without order forms or cash collection. Members share links, supporters order online from a local shop, and totals are tracked automatically. Free consultation.
+- [Fundraising for Youth Groups](https://www.fundlet.app/fundraising-for-youth-groups/): Youth group fundraising without cash or order forms. Students share personal links, supporters order online, and sales are credited per student. Free consultation.
+- [Fundraising for Mission Trips](https://www.fundlet.app/fundraising-for-mission-trips/): Mission trip fundraising with per-traveler tracking. Each participant shares a link, supporters order from a local shop online, and totals update automatically. Free consultation.
+- [Fundraising for Scout Troops](https://www.fundlet.app/fundraising-for-scout-troops/): Scout troop fundraising without paper order forms or cash. Scouts share personal links, supporters order online, and sales are credited per scout for their accounts. Free consultation.
+- [Fundraising for 4-H Clubs and FFA Chapters](https://www.fundlet.app/fundraising-for-4-h-and-ffa-chapters/): 4-H and FFA chapter fundraising without order forms. Members share personal links, supporters order online, and sales are tracked per member and exportable. Free consultation.
+- [Fundraising for Nonprofits](https://www.fundlet.app/fundraising-for-nonprofits/): Nonprofit fundraising through product sales instead of donation appeals. Volunteers share links, supporters order from a local shop, and totals are tracked and exportable. Free consultation.
+- [Fundraising for Animal Shelters and Rescues](https://www.fundlet.app/fundraising-for-animal-rescues/): Animal shelter and rescue fundraising through product sales. Volunteers and fosters share links, supporters order from a local shop, totals tracked automatically. Free consultation.
+- [Fundraising for Fire Departments and First Responders](https://www.fundlet.app/fundraising-for-first-responders/): Volunteer fire department and first responder fundraising through product sales. Members share links, supporters order online, totals tracked and exportable. Free consultation.
+- [Fundraising for Community Clubs and Associations](https://www.fundlet.app/fundraising-for-community-clubs/): Community club and association fundraising through product sales. Members share links, supporters order from a local shop, and totals are tracked and exportable. Free consultation.
 
 ## Install
 
