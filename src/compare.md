@@ -1,7 +1,9 @@
 ---
-layout: landing.njk
+layout: page.njk
 title: Fundlet vs. Other Fundraising Options
 permalink: /compare/
+eyebrow: Compare
+description: How Fundlet stacks up against traditional fundraising companies, donation platforms, and generic Shopify apps.
 metaDescription: How Fundlet compares to traditional fundraising companies, donation platforms like GoFundMe, and generic Shopify apps. Fundlet runs fundraisers on the merchant's own store, with automatic participant tracking and no paper order forms.
 ---
 

@@ -121,6 +121,41 @@
 }
 .page-content dl dd:last-child{margin-bottom:0}
 
+.page-content table{
+  width:100%;
+  margin:8px 0 32px;
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  border-collapse:separate;
+  border-spacing:0;
+  overflow:hidden;
+  font-size:16px;
+  line-height:1.5;
+  color:var(--ink-2);
+  text-align:left;
+}
+.page-content thead th{
+  background:var(--bg-2);
+  font-weight:700;
+  font-size:13px;
+  color:var(--ink);
+  font-family:var(--eyebrow-family);
+  letter-spacing:var(--eyebrow-spacing);
+  text-transform:var(--eyebrow-transform);
+}
+.page-content th,
+.page-content td{
+  padding:14px 18px;
+  vertical-align:top;
+  border-bottom:1px solid var(--line);
+}
+.page-content th + th,
+.page-content td + td{border-left:1px solid var(--line)}
+.page-content tbody tr:last-child th,
+.page-content tbody tr:last-child td{border-bottom:none}
+.page-content tbody tr:nth-child(even){background:color-mix(in oklab,var(--bg-2) 45%,transparent)}
+.page-content td strong{color:var(--ink)}
+
 /* ---- Learn-page layout ---- */
 
 /* Container: full-width, no padding — rows handle their own spacing */
@@ -322,4 +357,8 @@
 /* Responsive */
 @media (max-width:560px){
   .page-container{padding:0 20px 60px}
+  /* Let wide tables scroll sideways instead of blowing out the page. */
+  .page-content table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .page-content th,
+  .page-content td{padding:12px 14px;min-width:132px}
 }

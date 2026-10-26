@@ -16,7 +16,7 @@ title: Base
 <section class="page-intro">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Fundlet</span>
+      <span class="eyebrow">{{ eyebrow if eyebrow else "Fundlet" }}</span>
       <h1>{{ title }}</h1>
       {% if description %}<p class="lede">{{ description }}</p>{% endif %}
     </div>
