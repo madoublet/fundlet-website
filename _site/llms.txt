@@ -35,6 +35,7 @@ Full detail: https://www.fundlet.app/pricing/
 - [Pricing](https://www.fundlet.app/pricing/): plans and limits
 - [FAQ](https://www.fundlet.app/faq/): 49 answered questions on campaigns, participants, payouts, and billing
 - [Fundlet vs. other fundraising options](https://www.fundlet.app/compare/): how Fundlet differs from fundraising companies, donation platforms, and generic Shopify apps
+- [Discover Fundlet for your Shop](https://www.fundlet.app/discover/): index of the per-industry guides below, grouped by what the shop sells
 - [Shopify Fundraising](https://www.fundlet.app/shopify-fundraising/): overview for Shopify merchants
 - [Square Online Fundraising](https://www.fundlet.app/square-fundraising/): overview for Square merchants
 - [Learn](https://www.fundlet.app/learn/): full tutorial library
